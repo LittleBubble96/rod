@@ -1,0 +1,569 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using GameLogic.Data;
+using GameLogic.Localization;
+using TEngine;
+
+namespace GameLogic.GamePlay.CorePlay
+{
+    /// <summary>
+    /// CorePlay 玩法数据层 —— 纯数据与逻辑，不依赖 Unity GameObject
+    /// </summary>
+    public class CorePlayGamePlay : IGamePlay
+    {
+        // ================ 数据状态 ================
+
+        private LevelDataConfigParse _levelConfig;
+        private TextLevelData _currentLevelData;
+        private int _currentLevelId = -1;
+        private HashSet<int> _selectedStrokeIndices = new HashSet<int>();
+        private HashSet<int> _foundAnswerIndices = new HashSet<int>();
+        private bool _isGameRunning;
+        private string _completionMethod = "manual";
+        private readonly StrokeAnswerLookup _answerLookup = new StrokeAnswerLookup();
+
+        // ================ 事件 ================
+
+        /// <summary>笔画选中状态变化 (strokeIndex, isSelected)</summary>
+        public event Action<int, bool> OnStrokeSelectionChanged;
+
+        /// <summary>整组选中笔画变化（包含提交后清空、全选和关卡加载）</summary>
+        public event Action OnSelectionChanged;
+
+        /// <summary>答案提交结果 (success, answerCharacter, errorMessage)</summary>
+        public event Action<bool, string, string> OnAnswerSubmitted;
+
+        /// <summary>关卡通关</summary>
+        public event Action<int> OnLevelCompleted;
+
+        /// <summary>关卡加载完成</summary>
+        public event Action<TextLevelData> OnLevelLoaded;
+
+        // ================ 属性 ================
+
+        public bool IsGameRunning => _isGameRunning;
+        public int CurrentLevelId => _currentLevelId;
+        /// <summary>是否已加载有效关卡（_currentLevelId >= 1，区分首页 -1）</summary>
+        public bool HasValidLevel => _currentLevelId >= 1;
+        public TextLevelData CurrentLevelData => _currentLevelData;
+        public IReadOnlyCollection<int> SelectedStrokeIndices => _selectedStrokeIndices;
+        public IReadOnlyCollection<int> FoundAnswerIndices => _foundAnswerIndices;
+        public int TotalLevelCount => _levelConfig?.LevelCount ?? 0;
+
+        // ================ 初始化 ================
+
+        public void Initialize(LevelDataConfigParse levelConfig)
+        {
+            _levelConfig = levelConfig;
+        }
+
+        /// <summary>
+        /// 从缓存恢复初始关卡ID（仅设置ID，不加载关卡数据）。
+        /// 应在 Load() 存档后立即调用，保证 _currentLevelId 始终有效。
+        /// </summary>
+        public void InitLevelId(int levelId)
+        {
+            _currentLevelId = levelId >= 1 ? levelId : 1;
+        }
+
+        public void StartGame()
+        {
+            _isGameRunning = true;
+        }
+
+        public void EndGame()
+        {
+            _isGameRunning = false;
+            _selectedStrokeIndices.Clear();
+            OnSelectionChanged?.Invoke();
+        }
+
+        public bool IsGameOver()
+        {
+            return !_isGameRunning;
+        }
+
+        // ================ 关卡加载 ================
+
+        /// <summary>加载指定关卡（从配置全新加载）</summary>
+        public void LoadLevel(int levelId)
+        {
+            LoadLevelInternal(levelId, null, null, true, "next");
+        }
+
+        /// <summary>加载关卡，可选恢复已找到的答案 + 缓存关卡快照</summary>
+        public void LoadLevel(int levelId, List<int> restoredFoundAnswers, TextLevelData cachedLevelData = null)
+        {
+            LoadLevelInternal(levelId, restoredFoundAnswers, cachedLevelData, true, "home");
+        }
+
+        /// <summary>仅切换关卡数据，不通知视图、不启动玩法或触发通关。</summary>
+        public bool TrySetLevelData(int levelId)
+        {
+            return LoadLevelInternal(levelId, null, null, false);
+        }
+
+        private bool LoadLevelInternal(int levelId, List<int> restoredFoundAnswers, TextLevelData cachedLevelData,
+            bool startGame = true, string entry = "direct")
+        {
+            if (_levelConfig == null)
+            {
+                DebugLogError("LevelConfig 未初始化");
+                return false;
+            }
+
+            if (levelId <= 0 || levelId > _levelConfig.MaxLevelId)
+            {
+                DebugLogError($"关卡ID超出范围: {levelId}/{_levelConfig.MaxLevelId}");
+                return false;
+            }
+
+            // 关卡数据加载优先级：缓存快照 > 配置文件（通过 levelId -> levelName -> 配置）
+            TextLevelData levelData;
+            if (cachedLevelData != null)
+            {
+                levelData = cachedLevelData;
+                DebugLog($"加载关卡 {levelId}: 使用缓存快照");
+            }
+            else
+            {
+                levelData = _levelConfig.GetLevelDataByLevelId(levelId);
+                DebugLog($"加载关卡 {levelId}: 使用配置文件");
+            }
+
+            if (levelData == null || !levelData.IsValid())
+            {
+                DebugLogError($"关卡 {levelId} 对应的关卡数据未找到或无效");
+                return false;
+            }
+
+            // 验证成功后再提交状态，失败时保留原关卡和答案进度。
+            _currentLevelId = levelId;
+            _currentLevelData = levelData;
+            _answerLookup.Build(levelData.answers);
+            _selectedStrokeIndices.Clear();
+            _foundAnswerIndices.Clear();
+
+            // 恢复已找到的答案
+            if (restoredFoundAnswers != null && restoredFoundAnswers.Count > 0)
+            {
+                foreach (int idx in restoredFoundAnswers)
+                {
+                    if (idx >= 0 && idx < _currentLevelData.answers.Count)
+                        _foundAnswerIndices.Add(idx);
+                }
+            }
+
+            _isGameRunning = startGame;
+            _completionMethod = "manual";
+
+            DebugLog($"加载关卡 {levelId}: 基字『{_currentLevelData.baseCharacter}』, 共 {_currentLevelData.answers.Count} 个答案, 已找到 {_foundAnswerIndices.Count} 个");
+            if (!startGame) return true;
+
+            BiMgr.LevelStarted(levelId, levelData.levelName, levelData.baseCharacter, entry,
+                cachedLevelData != null || _foundAnswerIndices.Count > 0, _foundAnswerIndices.Count, GetRequiredAnswerCount());
+            OnLevelLoaded?.Invoke(_currentLevelData);
+            OnSelectionChanged?.Invoke();
+
+            // 如果已经全部完成，直接通关
+            if (IsLevelComplete())
+            {
+                _completionMethod = "restored_complete";
+                CompleteLevel();
+            }
+            return true;
+        }
+
+        // ================ 笔画操作 ================
+
+        /// <summary>切换笔画的选中状态</summary>
+        public void ToggleStroke(int strokeIndex)
+        {
+            if (!_isGameRunning || _currentLevelData == null) return;
+
+            if (_selectedStrokeIndices.Contains(strokeIndex))
+            {
+                _selectedStrokeIndices.Remove(strokeIndex);
+                OnStrokeSelectionChanged?.Invoke(strokeIndex, false);
+            }
+            else
+            {
+                _selectedStrokeIndices.Add(strokeIndex);
+                OnStrokeSelectionChanged?.Invoke(strokeIndex, true);
+            }
+            OnSelectionChanged?.Invoke();
+        }
+
+        /// <summary>选中基字的全部笔画，不提交答案、不改变已找到的答案。</summary>
+        public void SelectAllStrokes()
+        {
+            if (!_isGameRunning || _currentLevelData == null) return;
+            var strokes = _levelConfig?.GetGraphicData(_currentLevelData.baseCharacter)?.strokes;
+            if (strokes == null || strokes.Count == 0) return;
+
+            var addedIndices = new List<int>();
+            for (int i = 0; i < strokes.Count; i++)
+            {
+                if (_selectedStrokeIndices.Add(i)) addedIndices.Add(i);
+            }
+            if (addedIndices.Count == 0) return;
+
+            foreach (int index in addedIndices)
+                OnStrokeSelectionChanged?.Invoke(index, true);
+            OnSelectionChanged?.Invoke();
+        }
+
+        /// <summary>清除所有选中的笔画</summary>
+        public void ClearSelection()
+        {
+            if (_selectedStrokeIndices.Count == 0) return;
+
+            var indices = _selectedStrokeIndices.ToList();
+            _selectedStrokeIndices.Clear();
+            foreach (int idx in indices)
+            {
+                OnStrokeSelectionChanged?.Invoke(idx, false);
+            }
+            OnSelectionChanged?.Invoke();
+        }
+
+        // ================ 提交答案 ================
+
+        /// <summary>提交当前选中的笔画作为答案</summary>
+        public void SubmitAnswer()
+        {
+            if (!_isGameRunning || _currentLevelData == null)
+            {
+                OnAnswerSubmitted?.Invoke(false, "", LocalizationHelper.GetLocalText(LanguageKey.game_tips1));
+                return;
+            }
+
+            if (_selectedStrokeIndices.Count == 0)
+            {
+                BiMgr.AnswerSubmitted("empty", "", _foundAnswerIndices.Count, 0);
+                OnAnswerSubmitted?.Invoke(false, "", LocalizationHelper.GetLocalText(LanguageKey.game_tips2));
+                return;
+            }
+
+            int selectedCount = _selectedStrokeIndices.Count;
+            var matches = _answerLookup.Find(_selectedStrokeIndices);
+            _selectedStrokeIndices.Clear();
+            OnSelectionChanged?.Invoke();
+            if (matches != null)
+            {
+                // 同一组合可能对应多个答案，保持配置顺序，优先匹配尚未找到的答案。
+                foreach (int ansIdx in matches)
+                {
+                    if (_foundAnswerIndices.Contains(ansIdx)) continue;
+                    var answer = _currentLevelData.answers[ansIdx];
+                    BiMgr.AnswerSubmitted("correct", answer.answerCharacter, _foundAnswerIndices.Count + 1, selectedCount);
+                    OnAnswerFound(ansIdx, answer.answerCharacter);
+                    return;
+                }
+
+                var duplicate = _currentLevelData.answers[matches[0]];
+                BiMgr.AnswerSubmitted("duplicate", duplicate.answerCharacter, _foundAnswerIndices.Count, selectedCount);
+                OnAnswerSubmitted?.Invoke(false, duplicate.answerCharacter, LocalizationHelper.GetLocalText(LanguageKey.game_tips3));
+                return;
+            }
+
+            // 未匹配任何答案
+            BiMgr.AnswerSubmitted("wrong", "", _foundAnswerIndices.Count, selectedCount);
+            OnAnswerSubmitted?.Invoke(false, "", LocalizationHelper.GetLocalText(LanguageKey.game_tips4));
+        }
+
+        private void OnAnswerFound(int answerIndex, string answerCharacter)
+        {
+            _foundAnswerIndices.Add(answerIndex);
+
+            // 清除所有笔画高亮
+            OnAnswerSubmitted?.Invoke(true, answerCharacter,
+                $"正确！『{answerCharacter}』 ({_foundAnswerIndices.Count}/{GetRequiredAnswerCount()})");
+
+            // 检查是否通关
+            if (IsLevelComplete())
+            {
+                CompleteLevel();
+            }
+        }
+
+        // ================ 通关判断 ================
+
+        /// <summary>获取当前关卡所需的答案个数</summary>
+        public int GetRequiredAnswerCount()
+        {
+            if (_currentLevelData == null) return 0;
+            // 固定个数模式：数值有效时返回固定值，否则兜底按答案总数
+            if (_currentLevelData.answerCountMode == AnswerCountMode.FixedCount
+                && _currentLevelData.requiredAnswerCount > 0)
+                return _currentLevelData.requiredAnswerCount;
+            // 答案个数（默认）模式：需答对全部
+            return _currentLevelData.answers.Count;
+        }
+
+        /// <summary>当前关卡是否完成</summary>
+        public bool IsLevelComplete()
+        {
+            if (_currentLevelData == null) return false;
+            return _foundAnswerIndices.Count >= GetRequiredAnswerCount();
+        }
+
+        private void CompleteLevel()
+        {
+            if (!_isGameRunning) return;
+            _isGameRunning = false;
+            BiMgr.LevelCompleted(_foundAnswerIndices.Count, _completionMethod);
+            DebugLog($"关卡 {_currentLevelId} 通关!");
+            OnLevelCompleted?.Invoke(_currentLevelId);
+            GameEvent.Send(EventDefine.Event_LevelCompleted, _currentLevelId);
+        }
+
+        // ================ 存档 ================
+
+        /// <summary>获取当前存档数据（未开始游戏时返回 null）</summary>
+        public CorePlaySaveData GetSaveData()
+        {
+            if (_currentLevelId < 1) return null;
+            return new CorePlaySaveData
+            {
+                currentLevelId = _currentLevelId,
+                foundAnswerIndices = _foundAnswerIndices.ToList(),
+                cachedLevelData = _currentLevelData
+            };
+        }
+
+        /// <summary>将当前关卡进度写入 Restore 对象</summary>
+        /// <remarks>
+        /// 关卡数据未加载（_currentLevelData == null）时不保存，
+        /// 防止 InitLevelId 仅设了ID但未进游戏时，用空 _foundAnswerIndices / null 数据
+        /// 覆盖已有有效存档。
+        /// </remarks>
+        public void ApplyToRestore(CorePlayRestore restore)
+        {
+            if (_currentLevelId < 1) return;
+            if (_currentLevelData == null) return;
+            // 通关后 _isGameRunning 为 false：进度已由 GameManager.AdvanceSaveToNextLevel
+            // 推进到下一关并落盘，此处不再覆盖，避免把存档回退到“当前关 + 全部答案”
+            // 导致重进游戏时再次触发通关。
+            if (!_isGameRunning) return;
+            restore.SaveCurrentProgress(_currentLevelId, _foundAnswerIndices.ToList(), _currentLevelData);
+        }
+
+        // ================ 关卡信息 ================
+
+        /// <summary>获取当前关卡的基字</summary>
+        public string GetBaseCharacter()
+        {
+            return _currentLevelData?.baseCharacter ?? "";
+        }
+
+        /// <summary>是否有下一关（检查 levelId+1 是否存在于关卡表）</summary>
+        public bool HasNextLevel()
+        {
+            return _levelConfig?.GetLevelNameByLevelId(_currentLevelId + 1) != null;
+        }
+
+        /// <summary>获取已找到的答案字符列表</summary>
+        public List<string> GetFoundAnswerCharacters()
+        {
+            var result = new List<string>();
+            if (_currentLevelData == null) return result;
+
+            foreach (int idx in _foundAnswerIndices)
+            {
+                if (idx >= 0 && idx < _currentLevelData.answers.Count)
+                    result.Add(_currentLevelData.answers[idx].answerCharacter);
+            }
+            return result;
+        }
+
+        // ================ 道具提示 ================
+
+        /// <summary>
+        /// 获取一个随机未找到答案的笔画索引列表（随机选择一组笔画组合）。
+        /// 返回 null 表示没有剩余答案可提示。
+        /// </summary>
+        public List<int> GetRandomUnfoundAnswerStrokeSet()
+        {
+            if (_currentLevelData == null) return null;
+
+            // 收集所有未找到的答案
+            var unfoundAnswers = new List<LevelAnswer>();
+            for (int i = 0; i < _currentLevelData.answers.Count; i++)
+            {
+                if (!_foundAnswerIndices.Contains(i))
+                    unfoundAnswers.Add(_currentLevelData.answers[i]);
+            }
+
+            if (unfoundAnswers.Count == 0) return null;
+
+            // 随机选一个未找到的答案
+            int randAnsIdx = UnityEngine.Random.Range(0, unfoundAnswers.Count);
+            LevelAnswer selectedAnswer = unfoundAnswers[randAnsIdx];
+
+            if (selectedAnswer.strokeSets == null || selectedAnswer.strokeSets.Count == 0)
+                return null;
+
+            // 从该答案的多组笔画组合中随机选一组
+            int randSetIdx = UnityEngine.Random.Range(0, selectedAnswer.strokeSets.Count);
+            StrokeSet selectedSet = selectedAnswer.strokeSets[randSetIdx];
+
+            return selectedSet.strokeIndices;
+        }
+
+        /// <summary>是否还有未被找到的答案</summary>
+        public bool HasUnfoundAnswers()
+        {
+            if (_currentLevelData == null) return false;
+            return _foundAnswerIndices.Count < _currentLevelData.answers.Count;
+        }
+
+        // ================ 道具重置 ================
+
+        /// <summary>
+        /// 清空当前关已找到的答案与已选中笔画（不重载关卡、不重绘 DrawCharacter）。
+        /// 清选中笔画会逐个回调 OnStrokeSelectionChanged=false（View 据此复位笔画高亮）；
+        /// 视图层 slot 清空与进度文字刷新由 Event_PropResetDone 事件驱动。
+        /// </summary>
+        /// <returns>是否清空成功（关卡未加载时返回 false）</returns>
+        public bool ClearAnswers()
+        {
+            if (_currentLevelData == null || _currentLevelId < 1) return false;
+
+            ClearSelection();             // 清选中笔画，逐个回调 OnStrokeSelectionChanged=false
+            _foundAnswerIndices.Clear();  // 清已找到答案
+            return true;
+        }
+
+        // ================ 下一关道具 ================
+
+        /// <summary>当前状态是否允许使用下一关道具</summary>
+        public bool CanUseNextProp()
+        {
+            return _isGameRunning && _currentLevelData != null && !IsLevelComplete();
+        }
+
+        /// <summary>
+        /// 将当前关补齐到通关所需答案数，但暂不触发通关事件。
+        /// 返回新增答案字符，供视图依次播放入槽动画；动画结束后调用 CompletePreparedLevel。
+        /// </summary>
+        public bool PrepareNextPropCompletion(out List<string> answerCharacters)
+        {
+            answerCharacters = new List<string>();
+            if (!CanUseNextProp()) return false;
+
+            ClearSelection();
+            int requiredCount = GetRequiredAnswerCount();
+            for (int answerIndex = 0;
+                 answerIndex < _currentLevelData.answers.Count && _foundAnswerIndices.Count < requiredCount;
+                 answerIndex++)
+            {
+                if (_foundAnswerIndices.Contains(answerIndex)) continue;
+
+                _foundAnswerIndices.Add(answerIndex);
+                answerCharacters.Add(_currentLevelData.answers[answerIndex].answerCharacter);
+            }
+
+            bool prepared = answerCharacters.Count > 0 && IsLevelComplete();
+            if (prepared) _completionMethod = "next_prop";
+            return prepared;
+        }
+
+        /// <summary>完成已由下一关道具补齐的关卡，并触发统一结算流程</summary>
+        public bool CompletePreparedLevel()
+        {
+            if (!_isGameRunning || !IsLevelComplete()) return false;
+            CompleteLevel();
+            return true;
+        }
+
+        // ================ 工具 ================
+
+        [System.Diagnostics.Conditional("UNITY_EDITOR")]
+        private void DebugLog(string msg)
+        {
+            Log.Info($"[CorePlayGamePlay] {msg}");
+        }
+
+        [System.Diagnostics.Conditional("UNITY_EDITOR")]
+        private void DebugLogError(string msg)
+        {
+            Log.Error($"[CorePlayGamePlay] {msg}");
+        }
+    }
+}
+
+namespace GameLogic.GamePlay.CorePlay
+{
+    // BEGIN STROKE_ANSWER_LOOKUP
+    internal sealed class StrokeAnswerLookup
+    {
+        private readonly Dictionary<ulong, List<int>> _small = new Dictionary<ulong, List<int>>();
+        private readonly Dictionary<string, List<int>> _large = new Dictionary<string, List<int>>();
+
+        public void Build(List<LevelAnswer> answers)
+        {
+            _small.Clear();
+            _large.Clear();
+            for (int answerIndex = 0; answerIndex < answers.Count; answerIndex++)
+            {
+                foreach (var set in answers[answerIndex].strokeSets)
+                {
+                    // 重复索引的配置无法与玩家的 HashSet 相等，不把它错误地压成有效掩码。
+                    if (set.strokeIndices.Count == 0 ||
+                        new HashSet<int>(set.strokeIndices).Count != set.strokeIndices.Count) continue;
+                    if (TryMask(set.strokeIndices, out ulong mask)) Add(_small, mask, answerIndex);
+                    else Add(_large, CanonicalKey(set.strokeIndices), answerIndex);
+                }
+            }
+        }
+
+        public List<int> Find(HashSet<int> selection)
+        {
+            if (TryMask(selection, out ulong mask))
+                return _small.TryGetValue(mask, out var small) ? small : null;
+            return _large.TryGetValue(CanonicalKey(selection), out var large) ? large : null;
+        }
+
+        private static void Add<TKey>(Dictionary<TKey, List<int>> map, TKey key, int answerIndex)
+        {
+            if (!map.TryGetValue(key, out var matches))
+            {
+                matches = new List<int>();
+                map.Add(key, matches);
+            }
+            if (matches.Count == 0 || matches[matches.Count - 1] != answerIndex) matches.Add(answerIndex);
+        }
+
+        private static bool TryMask(List<int> indices, out ulong mask)
+        {
+            mask = 0;
+            foreach (int index in indices)
+            {
+                if (index < 0 || index >= 64) return false;
+                mask |= 1UL << index;
+            }
+            return true;
+        }
+
+        private static bool TryMask(HashSet<int> indices, out ulong mask)
+        {
+            mask = 0;
+            foreach (int index in indices)
+            {
+                if (index < 0 || index >= 64) return false;
+                mask |= 1UL << index;
+            }
+            return true;
+        }
+
+        private static string CanonicalKey(IEnumerable<int> indices)
+        {
+            var sorted = new List<int>(indices);
+            sorted.Sort();
+            return string.Join(",", sorted);
+        }
+    }
+    // END STROKE_ANSWER_LOOKUP
+}

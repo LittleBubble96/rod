@@ -1,3 +1,4 @@
+using GameSDK;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -30,7 +31,6 @@ namespace GameLogic
             public readonly string BiId = Guid.NewGuid().ToString("N");
             public double Started;
             public bool Shown, Retried, Overlay = true;
-            public IDisposable InputLock;
             public readonly UniTaskCompletionSource<bool> Result = new UniTaskCompletionSource<bool>();
         }
 
@@ -139,24 +139,15 @@ namespace GameLogic
         public async UniTask<bool> ShowRewardedAdAsync()
         {
             if (!IsAdAvailable) { Log.Info($"[Ad][{_adId}] show rejected state={State}"); return false; }
-            var request = new Request { Id = AdSystem.NextRequestId(), Started = Now, InputLock = UIInteractionLock.Acquire() };
+            var request = new Request { Id = AdSystem.NextRequestId(), Started = Now };
             _request = request;
             AdSystem.OpenOverlay(request.Id);
             SetState(RewardedAdState.Showing);
             Trace("ad_request", "start", "", request);
             WatchRequestAsync(request).Forget();
-            OpenAndShowAsync(request).Forget();
+            try { ShowNative(request); }
+            catch (Exception error) { Finish(request, false, true, "show_exception: " + error.Message); }
             return await request.Result.Task;
-        }
-        private async UniTaskVoid OpenAndShowAsync(Request request)
-        {
-            try
-            {
-                await GameModule.UI.ShowUIAsyncAwait<UIAd>(request.Id);
-                if (_request != request || !request.Overlay) return;
-                ShowNative(request);
-            }
-            catch (Exception error) { Finish(request, false, true, "open_or_show_exception: " + error.Message); }
         }
         private void ShowNative(Request request)
         {
@@ -208,8 +199,6 @@ namespace GameLogic
         {
             if (!request.Overlay) return;
             request.Overlay = false;
-            request.InputLock?.Dispose();
-            request.InputLock = null;
             AdSystem.CloseOverlay(request.Id);
         }
         private void Finish(Request request, bool rewarded, bool resetNative, string reason)

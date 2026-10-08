@@ -19,12 +19,12 @@ MonoBehaviour:
     assetLoadType: 0
     compressDataPackage: 1
     VideoUrl: 
-    relativeDST: E:/xx/NewText/output
-    DST: E:/xx/NewText/output
+    relativeDST: D:\Work\gameText1\output
+    DST: D:\Work\gameText1\output
     StreamCDN: 
     bundleHashLength: 32
     bundlePathIdentifier: StreamingAssets;
-    bundleExcludeExtensions: json;
+    bundleExcludeExtensions: json;.version;
     AssetsUrl: 
     MemorySize: 256
     HideAfterCallMain: 1

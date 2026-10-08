@@ -58,7 +58,6 @@ namespace GameLogic
         internal static void CloseOverlay(int requestId)
         {
             OverlayRequests.Remove(requestId);
-            if (!HasOverlay) GameModule.UI.CloseUI<UIAd>();
         }
         internal static void NotifyStateChanged(string adId) => StateChanged?.Invoke(adId);
     }

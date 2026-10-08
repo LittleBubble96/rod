@@ -1,0 +1,1558 @@
+[
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM.meta"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIAd.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish.meta"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIGuide.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop.meta"
+  },
+  {
+    "bytes": 6254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\BendText.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\BendText.cs.meta"
+  },
+  {
+    "bytes": 134,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\EmptyGraph.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\EmptyGraph.cs.meta"
+  },
+  {
+    "bytes": 9186,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\OffsetMaxAdapter.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\OffsetMaxAdapter.cs.meta"
+  },
+  {
+    "bytes": 2986,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\UIButtonScaleAnim.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\UIButtonScaleAnim.cs.meta"
+  },
+  {
+    "bytes": 2465,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\XYButton.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\Common\\XYButton.cs.meta"
+  },
+  {
+    "bytes": 2031,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\GmBtnAndInputItemWidget.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\GmBtnAndInputItemWidget.cs.meta"
+  },
+  {
+    "bytes": 2118,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\GmGroupWidget.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\GmGroupWidget.cs.meta"
+  },
+  {
+    "bytes": 9413,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\UIGM.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\UIGM.cs.meta"
+  },
+  {
+    "bytes": 467,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\UIShowGM.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\GM\\UIShowGM.cs.meta"
+  },
+  {
+    "bytes": 978,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIAd\\UIAd.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIAd\\UIAd.cs.meta"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Layout.meta"
+  },
+  {
+    "bytes": 6899,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\UICorePlay.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\UICorePlay.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Widget.meta"
+  },
+  {
+    "bytes": 4299,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Layout\\CorePlayLayoutWidget.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Layout\\CorePlayLayoutWidget.cs.meta"
+  },
+  {
+    "bytes": 20540,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Widget\\CorePlayPropWidget.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UICorePlay\\Widget\\CorePlayPropWidget.cs.meta"
+  },
+  {
+    "bytes": 3170,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\RewardItemWidget.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\RewardItemWidget.cs.meta"
+  },
+  {
+    "bytes": 18124,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\UIFinish.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\UIFinish.cs.meta"
+  },
+  {
+    "bytes": 2298,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\UIFinishCompleteAllLevel.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIFinish\\UIFinishCompleteAllLevel.cs.meta"
+  },
+  {
+    "bytes": 20272,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIGuide\\UIGuide.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIGuide\\UIGuide.cs.meta"
+  },
+  {
+    "bytes": 1489,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\UIHome.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\UIHome.cs.meta"
+  },
+  {
+    "bytes": 6659,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\UISetting.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\UISetting.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\Widget.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\Widget\\TabContent.meta"
+  },
+  {
+    "bytes": 6095,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\Widget\\TabContent\\UIHomeLevelTabContentWidget.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UIHome\\Widget\\TabContent\\UIHomeLevelTabContentWidget.cs.meta"
+  },
+  {
+    "bytes": 5160,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UIGetCoin.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UIGetCoin.cs.meta"
+  },
+  {
+    "bytes": 9227,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UITop.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UITop.cs.meta"
+  },
+  {
+    "bytes": 513,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UITopData.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI\\UITop\\UITopData.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\UI.meta"
+  },
+  {
+    "bytes": 10511,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Localization\\GameLocalizationManager.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Localization\\GameLocalizationManager.cs.meta"
+  },
+  {
+    "bytes": 243,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Localization\\LocalizationHelper.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Localization\\LocalizationHelper.cs.meta"
+  },
+  {
+    "bytes": 23013,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\CorePlayGamePlay.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\CorePlayGamePlay.cs.meta"
+  },
+  {
+    "bytes": 3814,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\CorePlayRestore.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\CorePlayRestore.cs.meta"
+  },
+  {
+    "bytes": 10232,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\LevelDataConfigParse.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\LevelDataConfigParse.cs.meta"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View.meta"
+  },
+  {
+    "bytes": 23279,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\CorePlayView.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\CorePlayView.cs.meta"
+  },
+  {
+    "bytes": 2432,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\GameViewRoot.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\GameViewRoot.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\Slot.meta"
+  },
+  {
+    "bytes": 5252,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\StrokeClickHandler.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\StrokeClickHandler.cs.meta"
+  },
+  {
+    "bytes": 181,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\ViewDefine.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\ViewDefine.cs.meta"
+  },
+  {
+    "bytes": 10078,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\Slot\\GameSlotView.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\Slot\\GameSlotView.cs.meta"
+  },
+  {
+    "bytes": 6824,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\Slot\\GameSlotViewItem.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay\\View\\Slot\\GameSlotViewItem.cs.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\CorePlay.meta"
+  },
+  {
+    "bytes": 962,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\AnimExtension.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\AnimExtension.cs.meta"
+  },
+  {
+    "bytes": 4437,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\CircleGestureDetector.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\CircleGestureDetector.cs.meta"
+  },
+  {
+    "bytes": 1657,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\CommonArgs.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\CommonArgs.cs.meta"
+  },
+  {
+    "bytes": 440,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\GameObjectExtension.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common\\GameObjectExtension.cs.meta"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Common.meta"
+  },
+  {
+    "bytes": 3724,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectManager.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectManager.cs.meta"
+  },
+  {
+    "bytes": 1978,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectMono.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectMono.cs.meta"
+  },
+  {
+    "bytes": 1784,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectTargetRegistry.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\EffectTargetRegistry.cs.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Ext.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Game.meta"
+  },
+  {
+    "bytes": 3765,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Ext\\EffectFlyCoinMono.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Ext\\EffectFlyCoinMono.cs.meta"
+  },
+  {
+    "bytes": 5393,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Game\\EffectHelper.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Game\\EffectHelper.cs.meta"
+  },
+  {
+    "bytes": 136,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Game\\EffectTargetDefine.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect\\Game\\EffectTargetDefine.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Effect.meta"
+  },
+  {
+    "bytes": 1244,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GM\\GMSingle.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GM\\GMSingle.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GM.meta"
+  },
+  {
+    "bytes": 10828,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Pool\\GameDataPoolManager.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Pool\\GameDataPoolManager.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Pool.meta"
+  },
+  {
+    "bytes": 9300,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Prop\\PropDefine.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Prop\\PropDefine.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Prop.meta"
+  },
+  {
+    "bytes": 210,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Share\\ShareSystem.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Share\\ShareSystem.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Share.meta"
+  },
+  {
+    "bytes": 587,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\BaseGameSystem.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\BaseGameSystem.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\Ext.meta"
+  },
+  {
+    "bytes": 1780,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\GameSystem.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\GameSystem.cs.meta"
+  },
+  {
+    "bytes": 1555,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\Ext\\CommonSystem.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System\\Ext\\CommonSystem.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\System.meta"
+  },
+  {
+    "bytes": 19662,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GameManager.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GameManager.cs.meta"
+  },
+  {
+    "bytes": 615,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GameDefine.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\GameDefine.cs.meta"
+  },
+  {
+    "bytes": 901,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\IGamePlay.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\IGamePlay.cs.meta"
+  },
+  {
+    "bytes": 14892,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\DrawCharacter.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\DrawCharacter.cs.meta"
+  },
+  {
+    "bytes": 3449,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Triangulator.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Triangulator.cs.meta"
+  },
+  {
+    "bytes": 59058,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\TextLevelDataScriptableObject.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\TextLevelDataScriptableObject.cs.meta"
+  },
+  {
+    "bytes": 18361,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\TextGraphicDataScriptableObject.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\TextGraphicDataScriptableObject.cs.meta"
+  },
+  {
+    "bytes": 1160,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\LevelTableScriptableObject.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\LevelTableScriptableObject.cs.meta"
+  },
+  {
+    "bytes": 1424,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\LevelCompletionReward.cs"
+  },
+  {
+    "bytes": 60,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\LevelCompletionReward.cs.meta"
+  },
+  {
+    "bytes": 7558,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\SDK\\BiMgr.Events.cs"
+  },
+  {
+    "bytes": 62,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\SDK\\BiMgr.Events.cs.meta"
+  },
+  {
+    "bytes": 5629,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameCacheManager.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameCacheManager.cs.meta"
+  },
+  {
+    "bytes": 1682,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameCacheData.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameCacheData.cs.meta"
+  },
+  {
+    "bytes": 662,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameSettingsData.cs"
+  },
+  {
+    "bytes": 254,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\GameSettingsData.cs.meta"
+  },
+  {
+    "bytes": 115,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\IRestoreData.cs"
+  },
+  {
+    "bytes": 88,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\IRestoreData.cs.meta"
+  },
+  {
+    "bytes": 339,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\Ext\\GameCommonData.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\Ext\\GameCommonData.cs.meta"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\GameScripts\\HotFix\\GameLogic\\Game\\Data\\Ext.meta"
+  },
+  {
+    "bytes": 2040,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\LevelEditor\\LevelTools.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\LevelEditor\\LevelTools.cs.meta"
+  },
+  {
+    "bytes": 1737,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\LevelEditor\\TextGraphicDataScriptableObjectEditor.cs"
+  },
+  {
+    "bytes": 85,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\LevelEditor\\TextGraphicDataScriptableObjectEditor.cs.meta"
+  },
+  {
+    "bytes": 587,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\Rod\\RodDesignMenu.cs"
+  },
+  {
+    "bytes": 243,
+    "path": "TEngine\\UnityProject\\Assets\\Editor\\Rod\\RodDesignMenu.cs.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad\\Anim.meta"
+  },
+  {
+    "bytes": 9505,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad\\UIAd.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad\\UIAd.prefab.meta"
+  },
+  {
+    "bytes": 89608,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad\\Anim\\loading.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad\\Anim\\loading.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Ad.meta"
+  },
+  {
+    "bytes": 23039,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\BtnAndInput_GM.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\BtnAndInput_GM.prefab.meta"
+  },
+  {
+    "bytes": 8666,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\GmGroup.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\GmGroup.prefab.meta"
+  },
+  {
+    "bytes": 6204,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\TopBtn_GM.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\TopBtn_GM.prefab.meta"
+  },
+  {
+    "bytes": 22916,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\UIGM.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\UIGM.prefab.meta"
+  },
+  {
+    "bytes": 12222,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\UIShowGM.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM\\UIShowGM.prefab.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\GM.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide\\Anim.meta"
+  },
+  {
+    "bytes": 14366,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide\\UIGuide.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide\\UIGuide.prefab.meta"
+  },
+  {
+    "bytes": 4957,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide\\Anim\\HandAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide\\Anim\\HandAnim.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Guide.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\Anim.meta"
+  },
+  {
+    "bytes": 56245,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\UIGetCoin.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\UIGetCoin.prefab.meta"
+  },
+  {
+    "bytes": 26900,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\UITop.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\UITop.prefab.meta"
+  },
+  {
+    "bytes": 4272,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\Anim\\UIGetCoinHideAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\Anim\\UIGetCoinHideAnim.anim.meta"
+  },
+  {
+    "bytes": 8281,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\Anim\\UIGetCoinShowAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top\\Anim\\UIGetCoinShowAnim.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Top.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\Anim.meta"
+  },
+  {
+    "bytes": 158001,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\UICorePlay.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\UICorePlay.prefab.meta"
+  },
+  {
+    "bytes": 110163,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\Anim\\propAdLoadingLop.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\Anim\\propAdLoadingLop.anim.meta"
+  },
+  {
+    "bytes": 5504,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\Anim\\ToastShow.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay\\Anim\\ToastShow.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UICorePlay.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim.meta"
+  },
+  {
+    "bytes": 85130,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\UIFinish.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\UIFinish.prefab.meta"
+  },
+  {
+    "bytes": 26476,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\UIFinishCompleteAllLevel.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\UIFinishCompleteAllLevel.prefab.meta"
+  },
+  {
+    "bytes": 343525,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishBgLoopAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishBgLoopAnim.anim.meta"
+  },
+  {
+    "bytes": 7687,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishBgLoopStarAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishBgLoopStarAnim.anim.meta"
+  },
+  {
+    "bytes": 4285,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishHideAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishHideAnim.anim.meta"
+  },
+  {
+    "bytes": 8292,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishShowAnim.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish\\Anim\\UIFinishShowAnim.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIFinish.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim.meta"
+  },
+  {
+    "bytes": 70710,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\UIHome.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\UIHome.prefab.meta"
+  },
+  {
+    "bytes": 102568,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\UISetting.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\UISetting.prefab.meta"
+  },
+  {
+    "bytes": 2745,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_HomeHide.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_HomeHide.anim.meta"
+  },
+  {
+    "bytes": 2745,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_HomeShow.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_HomeShow.anim.meta"
+  },
+  {
+    "bytes": 5697,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_SettingHide.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_SettingHide.anim.meta"
+  },
+  {
+    "bytes": 6714,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_SettingShow.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome\\Anim\\Ui_SettingShow.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\UIHome.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common\\Anim.meta"
+  },
+  {
+    "bytes": 2724,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common\\Anim\\UIFadeIn.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common\\Anim\\UIFadeIn.anim.meta"
+  },
+  {
+    "bytes": 2743,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common\\Anim\\UIFadeOut.anim"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common\\Anim\\UIFadeOut.anim.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UI\\Common.meta"
+  },
+  {
+    "bytes": 24701,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\02_coin_bar_base.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\02_coin_bar_base.png.meta"
+  },
+  {
+    "bytes": 8804,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\03_plus_button.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\03_plus_button.png.meta"
+  },
+  {
+    "bytes": 66363,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\activityBg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\activityBg.png.meta"
+  },
+  {
+    "bytes": 15108,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\backIcon.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\backIcon.png.meta"
+  },
+  {
+    "bytes": 4185,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Check.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Check.png.meta"
+  },
+  {
+    "bytes": 7917,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\CircleRedBg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\CircleRedBg.png.meta"
+  },
+  {
+    "bytes": 13207,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\coin_icon.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\coin_icon.png.meta"
+  },
+  {
+    "bytes": 2715,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Down2.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Down2.png.meta"
+  },
+  {
+    "bytes": 3062,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Exit.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\Exit.png.meta"
+  },
+  {
+    "bytes": 17801,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\gameCenterIcon.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\gameCenterIcon.png.meta"
+  },
+  {
+    "bytes": 5391,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\HandleBlue.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\HandleBlue.png.meta"
+  },
+  {
+    "bytes": 5259,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\HandleOrange.png"
+  },
+  {
+    "bytes": 3857,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\HandleOrange.png.meta"
+  },
+  {
+    "bytes": 55777,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_all_select.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_all_select.png.meta"
+  },
+  {
+    "bytes": 53438,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_bg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_bg.png.meta"
+  },
+  {
+    "bytes": 43725,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_clear.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_clear.png.meta"
+  },
+  {
+    "bytes": 42218,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_next.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_next.png.meta"
+  },
+  {
+    "bytes": 40577,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_tip.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\prop_tip.png.meta"
+  },
+  {
+    "bytes": 2545,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\RoundFillRed.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\RoundFillRed.png.meta"
+  },
+  {
+    "bytes": 4675,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\RoundToggleBackground.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\RoundToggleBackground.png.meta"
+  },
+  {
+    "bytes": 21290,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SettingBtn.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SettingBtn.png.meta"
+  },
+  {
+    "bytes": 16299,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\ShareBtn.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\ShareBtn.png.meta"
+  },
+  {
+    "bytes": 3712,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SliderBackground.png"
+  },
+  {
+    "bytes": 3846,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SliderBackground.png.meta"
+  },
+  {
+    "bytes": 2473,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SliderFillBlue.png"
+  },
+  {
+    "bytes": 3846,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\SliderFillBlue.png.meta"
+  },
+  {
+    "bytes": 2943,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\TopBarSlot.png"
+  },
+  {
+    "bytes": 3848,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common\\TopBarSlot.png.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Common.meta"
+  },
+  {
+    "bytes": 10053,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\07_answer_tile_empty.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\07_answer_tile_empty.png.meta"
+  },
+  {
+    "bytes": 11558,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\08_empty_slot.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\08_empty_slot.png.meta"
+  },
+  {
+    "bytes": 48352,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\10_submit_button_empty.png"
+  },
+  {
+    "bytes": 3702,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\10_submit_button_empty.png.meta"
+  },
+  {
+    "bytes": 5548,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\12_notification_badge_empty.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\12_notification_badge_empty.png.meta"
+  },
+  {
+    "bytes": 70951,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\bottomBg.png"
+  },
+  {
+    "bytes": 3856,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\bottomBg.png.meta"
+  },
+  {
+    "bytes": 35786,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_loading_bg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_loading_bg.png.meta"
+  },
+  {
+    "bytes": 28862,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_loading_spinner.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_loading_spinner.png.meta"
+  },
+  {
+    "bytes": 34258,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_ready.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\prop_ad_ready.png.meta"
+  },
+  {
+    "bytes": 56519,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\titleBg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game\\titleBg.png.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\Game.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Atlas\\SingleAtlas.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\Game.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\MapBg.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI.meta"
+  },
+  {
+    "bytes": 376110,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\Game\\gameContentBg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\Game\\gameContentBg.png.meta"
+  },
+  {
+    "bytes": 552952,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\Game\\popBg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\Game\\popBg.png.meta"
+  },
+  {
+    "bytes": 2207800,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\MapBg\\bg1.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\MapBg\\bg1.png.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Ad.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Guide.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home.meta"
+  },
+  {
+    "bytes": 80503,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Ad\\ad_loading_spinner.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Ad\\ad_loading_spinner.png.meta"
+  },
+  {
+    "bytes": 1686219,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\finishBg.png"
+  },
+  {
+    "bytes": 3705,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\finishBg.png.meta"
+  },
+  {
+    "bytes": 454568,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\light.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\light.png.meta"
+  },
+  {
+    "bytes": 4680,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\MessagesPanel.png"
+  },
+  {
+    "bytes": 3848,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Finish\\MessagesPanel.png.meta"
+  },
+  {
+    "bytes": 51044,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Guide\\tutorial-hand-tap .png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Guide\\tutorial-hand-tap .png.meta"
+  },
+  {
+    "bytes": 48983,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Guide\\tutorial-hand-up.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Guide\\tutorial-hand-up.png.meta"
+  },
+  {
+    "bytes": 2264472,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\home_bg.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\home_bg.png.meta"
+  },
+  {
+    "bytes": 403644,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\logo800.png"
+  },
+  {
+    "bytes": 3844,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\logo800.png.meta"
+  },
+  {
+    "bytes": 18381,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\PanelLight.png"
+  },
+  {
+    "bytes": 3848,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\PanelLight.png.meta"
+  },
+  {
+    "bytes": 12527,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\TitleBarGreen.png"
+  },
+  {
+    "bytes": 3846,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw\\UI\\Home\\TitleBarGreen.png.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\UIRaw\\Raw.meta"
+  },
+  {
+    "bytes": 19775,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Actor\\GameView\\GameSlotViewItem.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Actor\\GameView\\GameSlotViewItem.prefab.meta"
+  },
+  {
+    "bytes": 9389,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Actor\\GameView\\GameViewRoot.prefab"
+  },
+  {
+    "bytes": 161,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Actor\\GameView\\GameViewRoot.prefab.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Actor\\GameView.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics.meta"
+  },
+  {
+    "bytes": 2608,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\TextGraphicDataScriptableObject.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\TextGraphicDataScriptableObject.asset.meta"
+  },
+  {
+    "bytes": 559639,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\TextLevelDataScriptableObject.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\TextLevelDataScriptableObject.asset.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_001_025.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_026_050.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_051_075.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_076_100.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_101_125.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_126_150.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_151_175.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_176_200.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_201_225.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_226_250.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_Unassigned.meta"
+  },
+  {
+    "bytes": 748657,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_001_025\\TextGraphics_001_025.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_001_025\\TextGraphics_001_025.asset.meta"
+  },
+  {
+    "bytes": 1147340,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_026_050\\TextGraphics_026_050.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_026_050\\TextGraphics_026_050.asset.meta"
+  },
+  {
+    "bytes": 1094635,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_051_075\\TextGraphics_051_075.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_051_075\\TextGraphics_051_075.asset.meta"
+  },
+  {
+    "bytes": 1102931,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_076_100\\TextGraphics_076_100.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_076_100\\TextGraphics_076_100.asset.meta"
+  },
+  {
+    "bytes": 1028746,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_101_125\\TextGraphics_101_125.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_101_125\\TextGraphics_101_125.asset.meta"
+  },
+  {
+    "bytes": 994791,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_126_150\\TextGraphics_126_150.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_126_150\\TextGraphics_126_150.asset.meta"
+  },
+  {
+    "bytes": 1044256,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_151_175\\TextGraphics_151_175.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_151_175\\TextGraphics_151_175.asset.meta"
+  },
+  {
+    "bytes": 1191075,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_176_200\\TextGraphics_176_200.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_176_200\\TextGraphics_176_200.asset.meta"
+  },
+  {
+    "bytes": 1060097,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_201_225\\TextGraphics_201_225.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_201_225\\TextGraphics_201_225.asset.meta"
+  },
+  {
+    "bytes": 417247,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_226_250\\TextGraphics_226_250.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_226_250\\TextGraphics_226_250.asset.meta"
+  },
+  {
+    "bytes": 158858,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_Unassigned\\TextGraphics_Unassigned.asset"
+  },
+  {
+    "bytes": 197,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs\\Graphics\\TextGraphics_Unassigned\\TextGraphics_Unassigned.asset.meta"
+  },
+  {
+    "bytes": 180,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Configs\\LevelConfigs.meta"
+  },
+  {
+    "bytes": 2274,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Materials\\StrokeMaterial.mat"
+  },
+  {
+    "bytes": 196,
+    "path": "TEngine\\UnityProject\\Assets\\AssetRaw\\Materials\\StrokeMaterial.mat.meta"
+  }
+]

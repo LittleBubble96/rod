@@ -1,0 +1,1556 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator" at "2026-10-07T16:10:02.3038119Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 36644, path: "D:/Project_App/unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.16.2'. Current supported versions are: 1.0,1.1,1.2,1.3,1.4,1.4.1,1.5,1.6,1.7,1.8,1.9,1.10
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Administrator"
+[Licensing::IpcConnector] LicenseClient-Administrator channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-Administrator-2022.3.62 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 63408)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator-2022.3.62" at "2026-10-07T16:10:02.9026255Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 63408, path: "C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id:              c214e808a67a406b94728e44cceaaed9
+  Correlation Id:          be291bfb787cfe8ffe98e0a688107914
+  External correlation Id: 6048248543125080211
+  Machine Id:              J/AfDOaxMXEEMOBe+MR5MjBTYGI=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Administrator-2022.3.62" (connect: 0.57s, validation: 0.03s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Administrator-2022.3.62-notifications" at "2026-10-07T16:10:02.941529Z"
+[Licensing::Module] Connected to LicensingClient (PId: 63408, launch time: 0.00, total connection time: 0.61s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.62f3c1 (1623fc0bbb97) revision 1451004'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32581 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-75GE-4PRY-S7KE-J847-XXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:/Work/Rod/TEngine/UnityProject
+-executeMethod
+Builder.LanguageGenerateEditor.Generate
+-logFile
+D:/Work/Rod/work/rod-validation/unity-font-export.log
+Successfully changed project path to: D:/Work/Rod/TEngine/UnityProject
+D:/Work/Rod/TEngine/UnityProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [57856]  Target information:
+
+Player connection [57856]  * "[IP] 192.168.0.107 [Port] 55504 [Flags] 2 [Guid] 2542573337 [EditorId] 2542573337 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-PO2E761) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [57856] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [57856] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-55932" after 0.2 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 53 packages:
+  Packages from [https://packages.unity.cn]:
+    com.unity.ai.navigation@1.1.6 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ai.navigation@1.1.6)
+    com.unity.ide.rider@3.0.38 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ide.rider@3.0.38)
+    com.unity.ide.visualstudio@2.0.23 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ide.visualstudio@2.0.23)
+    com.unity.ide.vscode@1.2.5 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ide.vscode@1.2.5)
+    com.unity.memoryprofiler@1.1.12 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.memoryprofiler@1.1.12)
+    com.unity.nuget.newtonsoft-json@3.2.1 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1)
+    com.unity.textmeshpro@3.0.9 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.textmeshpro@3.0.9)
+    com.unity.scriptablebuildpipeline@1.21.25 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.scriptablebuildpipeline@1.21.25)
+    com.unity.burst@1.8.21 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.burst@1.8.21)
+    com.unity.collections@1.2.4 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.collections@1.2.4)
+    com.unity.mathematics@1.2.6 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.mathematics@1.2.6)
+    com.unity.profiling.core@1.0.2 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.profiling.core@1.0.2)
+    com.unity.editorcoroutines@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.editorcoroutines@1.0.0)
+    com.unity.test-framework@1.1.33 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.test-framework@1.1.33)
+    com.unity.ext.nunit@1.0.6 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ext.nunit@1.0.6)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.2d.sprite@1.0.0)
+    com.unity.ugui@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.ugui@1.0.0)
+    com.unity.modules.ai@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+  Embedded packages:
+    com.cysharp.unitask@file:D:\Work\Rod\TEngine\UnityProject\Packages\UniTask (location: D:\Work\Rod\TEngine\UnityProject\Packages\UniTask)
+    com.tuyoogame.yooasset@file:D:\Work\Rod\TEngine\UnityProject\Packages\YooAsset (location: D:\Work\Rod\TEngine\UnityProject\Packages\YooAsset)
+  Git packages:
+    com.code-philosophy.hybridclr@https://gitee.com/focus-creative-games/hybridclr_unity.git (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.code-philosophy.hybridclr@4df417e56a)
+    com.qq.weixin.minigame@https://gitee.com/wechat-minigame/minigame-tuanjie-transform-sdk.git (location: D:\Work\Rod\TEngine\UnityProject\Library\PackageCache\com.qq.weixin.minigame@ed4ad28f43)
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.07 seconds
+Artifact Garbage Collection - Removed 5 unused hashed content files
+Refreshing native plugins compatible for Editor in 12.09 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3c1 (1623fc0bbb97)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Work/Rod/TEngine/UnityProject/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017203 seconds.
+- Loaded All Assemblies, in  0.210 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2178 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.340 seconds
+Domain Reload Profiling: 2549ms
+	BeginReloadAssembly (57ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (81ms)
+		LoadAssemblies (56ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (80ms)
+			TypeCache.Refresh (79ms)
+				TypeCache.ScanAssembly (72ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2340ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2317ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2223ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: D:\Work\Rod\TEngine\UnityProject\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 36.7219ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/Work/Rod/TEngine/UnityProject
+DisplayProgressbar: Compiling Scripts
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@1.8.21\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 43.7350ms
+ExitCode: 4 Duration: 0s533ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[529/687    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.46 seconds), 2 items updated, 528 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\Tools\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/Work/Rod/TEngine/UnityProject
+ExitCode: 0 Duration: 0s335ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/Work/Rod/TEngine/UnityProject
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 1.2236ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/GameLogic.dll, with 124 defines and 238 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 11.9109ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/TEngine.Editor.dll, with 122 defines and 242 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1.5286ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 124 defines and 267 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@1.8.21\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 140.1319ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 122 defines and 282 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 12.9777ms
+ExitCode: 0 Duration: 1s698ms
+Finished compiling graph: 690 nodes, 9779 flattened edges (7923 ToBuild, 114 ToUse), maximum node priority 660
+[373/687    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[374/687    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/GameLogic.rsp
+[529/687    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[671/687    0s] Csc Library/Bee/artifacts/1900b0aE.dag/GameLogic.dll (+2 others)
+Assets\GameScripts\HotFix\GameLogic\Module\UIModule\UIBase.cs(24,37): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+
+Assets\GameScripts\HotFix\GameLogic\GameApp.cs(19,9): warning CS0436: The type 'GameEventHelper' in 'SourceGenerator\EventInterfaceGenerator\GameEventHelper.g.cs' conflicts with the imported type 'GameEventHelper' in 'GameProto, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Using the type defined in 'SourceGenerator\EventInterfaceGenerator\GameEventHelper.g.cs'.
+
+Assets\GameScripts\HotFix\GameLogic\Module\UIModule\UIModule.cs(19,22): warning CS0414: The field 'UIModule._enableErrorLog' is assigned but its value is never used
+[672/687    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/GameLogic.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/GameLogic.dll, with 124 defines and 238 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[673/687    0s] CopyFiles Library/ScriptAssemblies/GameLogic.pdb
+[674/687    0s] CopyFiles Library/ScriptAssemblies/GameLogic.dll
+[675/687    0s] Csc Library/Bee/artifacts/1900b0aE.dag/TEngine.Editor.dll (+2 others)
+[676/687    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\AssetArt\Cartoon UI\Script\Close.cs(9,27): warning CS0108: 'Close.gameObject' hides inherited member 'Component.gameObject'. Use the new keyword if hiding was intended.
+[677/687    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/TEngine.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/TEngine.Editor.dll, with 122 defines and 242 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[678/687    0s] CopyFiles Library/ScriptAssemblies/TEngine.Editor.pdb
+[679/687    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[680/687    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 124 defines and 267 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[681/687    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[682/687    0s] CopyFiles Library/ScriptAssemblies/TEngine.Editor.dll
+[683/687    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[684/687    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 122 defines and 282 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[685/687    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[686/687    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.68 seconds), 19 items updated, 687 evaluated
+Assets\GameScripts\HotFix\GameLogic\Module\UIModule\UIBase.cs(24,37): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+Assets\GameScripts\HotFix\GameLogic\GameApp.cs(19,9): warning CS0436: The type 'GameEventHelper' in 'SourceGenerator\EventInterfaceGenerator\GameEventHelper.g.cs' conflicts with the imported type 'GameEventHelper' in 'GameProto, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Using the type defined in 'SourceGenerator\EventInterfaceGenerator\GameEventHelper.g.cs'.
+Assets\GameScripts\HotFix\GameLogic\Module\UIModule\UIModule.cs(19,22): warning CS0414: The field 'UIModule._enableErrorLog' is assigned but its value is never used
+Assets\AssetArt\Cartoon UI\Script\Close.cs(9,27): warning CS0108: 'Close.gameObject' hides inherited member 'Component.gameObject'. Use the new keyword if hiding was intended.
+AssetDatabase: script compilation time: 2.923367s
+Begin MonoManager ReloadAssembly
+Total cache size 154755828
+Total cache size after purge 154755828
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.817 seconds
+Refreshing native plugins compatible for Editor in 6.58 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/AssetRaw/Configs/Rod using Guid(e84b81a32ea8158449244bf48e5f5cf7) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'c8f9c5eb9d509336f888874c790cc4f6') in 0.011641 seconds
+Start importing Assets/Editor/Rod/RodLevelEditor.cs using Guid(6358a7e111336c343b53d38dd0f9b810) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '74f0830a9c554478dc198105d7e0c5ba') in 0.005314 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Event/EventDefine.cs using Guid(a3c1809fa28a4068aab14752171b9a69) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'ffede526b863cea3ecd4bc77c508e794') in 0.000777 seconds
+Start importing Assets/Editor/Rod/RodUIBuilder.cs using Guid(c41a138993a2bc24c96ed0d14e286c47) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'b4594f89da2f1da5ef3b1d0cb2170e2f') in 0.005152 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodUISkin.cs using Guid(e497653b2b5409847863a1e4de083710) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '88979ad44c14749c4b12e7f7ceca73d3') in 0.004876 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodSession.cs using Guid(15550b4c5818f4e47b1e8418a76afe52) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'ced6e8201363a1d9ccb697788939da7a') in 0.004507 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodGameView.cs using Guid(75bff77331352a94d8fc4d5e17a0e108) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'cfa27f53500fa5155f41d4a345d9debb') in 0.003858 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/GameApp.cs using Guid(87dc927a71fa444468edfce6da4e54ca) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '24a7ca2a7f64561cf57777061b527fa4') in 0.000736 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodGameHost.cs using Guid(49edf55eafdd43a439bf2f6f1f8f38ce) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '2b07fe32cea55608dc40129a6d51feaa') in 0.004691 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodCatalog.cs using Guid(ca2442760c6047642afe3ce3fd8a5018) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '3f6e666bde0dbeb4465977a48061ee40') in 0.003984 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Ad/AdSystem.cs using Guid(cab98ac3bbebb2d4599226786113c497) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '9954265b7566afbe106b333514a60cee') in 0.000686 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodIconGraphic.cs using Guid(1baeb258c51487847892544c5f32e30b) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'dca6dd52fb5df78db9b1dd5ad1d4f3b2') in 0.004328 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Ad/RewardedAdFlow.cs using Guid(8bed301f3d7b4ee58634420bd5cf17c1) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '7b45e76ce70ec3e7623faa8c04bb44a8') in 0.000693 seconds
+Start importing Assets/GameScripts/HotFix/GameLogic/Game/Rod/RodState.cs using Guid(9d1e9b26b00ba8640b63828fccc2a766) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'a962f14e870b3e8fefd1cb8090efb5be') in 0.000763 seconds
+Refreshing native plugins compatible for Editor in 6.52 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.394 seconds
+Domain Reload Profiling: 2210ms
+	BeginReloadAssembly (87ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (685ms)
+		LoadAssemblies (651ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (79ms)
+			TypeCache.Refresh (66ms)
+				TypeCache.ScanAssembly (56ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (1394ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1332ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (1273ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Start importing Assets/Editor/AssetBundleCollector/AssetBundleCollectorSetting.asset using Guid(c0d90477c8489f0438ae73994ff045b9) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'b6507441d84aace23befcb0544828d3c') in 0.002699 seconds
+Start importing Assets/AssetArt/Atlas/Atlas_Common.spriteatlasv2 using Guid(848eeab8eaf83e244923969a34868d93) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'fa1a64dbb78433c616a4a03b2266f73b') in 0.001841 seconds
+Start importing Assets/AssetArt/Atlas/Atlas_Game.spriteatlasv2 using Guid(562f3d3421ac7e24395f5b6904f07c88) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '07a1e28436ff9aafc63e1dcb3d6eb829') in 0.001047 seconds
+Start importing Assets/Editor/Builder/Localization/AdditionalCharacters/AlimamaFangYuanTiVF.txt using Guid(e892ff8e6c39a354caa1eec0c7165e7c) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'c0188c7b3935edecaf6ee73c95ebf611') in 0.000991 seconds
+Start importing Assets/AssetRaw/Configs/Rod/RodLevels.json using Guid(ff4c9ce0de57884499a0aaa09d91c5c1) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '868b55255338db43cdd0d50e0ce04378') in 0.009217 seconds
+DisplayProgressbar: 处理图集资源
+AssetDatabase.FindAssets: Folder not found: 'Assets/AssetRaw/UIRaw/Atlas/SingleAtlas'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.AssetDatabase/<FindInFolders>d__38`1<UnityEditor.HierarchyProperty>:MoveNext ()
+UnityEditor.AssetDatabase/<FindAllAssets>d__36:MoveNext ()
+System.Linq.Enumerable/SelectEnumerableIterator`2<UnityEditor.HierarchyProperty, string>:MoveNext ()
+System.Linq.Set`1<string>:UnionWith (System.Collections.Generic.IEnumerable`1<string>)
+System.Linq.Enumerable/DistinctIterator`1<string>:FillSet ()
+System.Linq.Enumerable/DistinctIterator`1<string>:ToArray ()
+System.Linq.Enumerable:ToArray<string> (System.Collections.Generic.IEnumerable`1<string>)
+UnityEditor.AssetDatabase:FindAssets (UnityEditor.SearchFilter)
+UnityEditor.AssetDatabase:FindAssets (string,string[])
+TEngine.Editor.EditorSpriteSaveInfo:ScanExistingSprites (bool) (at Assets/TEngine/Editor/AtlasMakerEditor/EditorSpriteSaveInfo.cs:632)
+TEngine.Editor.EditorSpriteSaveInfo:Initialize () (at Assets/TEngine/Editor/AtlasMakerEditor/EditorSpriteSaveInfo.cs:35)
+TEngine.Editor.EditorSpriteSaveInfo:.cctor () (at Assets/TEngine/Editor/AtlasMakerEditor/EditorSpriteSaveInfo.cs:29)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:168)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/EditorSpriteSaveInfo.cs Line: 632)
+
+[Deleted] prop_bg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/prop_bg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 02_coin_bar_base.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/02_coin_bar_base.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 10_submit_button_empty.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/10_submit_button_empty.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] SettingBtn.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/SettingBtn.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] coin_icon.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/coin_icon.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] Check.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/Check.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] bottomBg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/bottomBg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_tip.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/prop_tip.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] TopBarSlot.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/TopBarSlot.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] HandleOrange.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/HandleOrange.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] backIcon.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/backIcon.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] SliderFillBlue.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/SliderFillBlue.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] SliderBackground.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/SliderBackground.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] Down2.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/Down2.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_next.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/prop_next.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_ad_loading_bg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/prop_ad_loading_bg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 03_plus_button.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/03_plus_button.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] RoundFillRed.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/RoundFillRed.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] HandleBlue.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/HandleBlue.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_all_select.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/prop_all_select.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_ad_ready.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/prop_ad_ready.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_ad_loading_spinner.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/prop_ad_loading_spinner.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] activityBg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/activityBg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] gameCenterIcon.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/gameCenterIcon.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 08_empty_slot.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/08_empty_slot.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] RoundToggleBackground.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/RoundToggleBackground.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] CircleRedBg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/CircleRedBg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] Exit.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/Exit.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] prop_clear.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/prop_clear.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 07_answer_tile_empty.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/07_answer_tile_empty.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] titleBg.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/titleBg.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] 12_notification_badge_empty.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Game/12_notification_badge_empty.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+[Deleted] ShareBtn.png
+Path: Assets/AssetRaw/UIRaw/Atlas/Common/ShareBtn.png
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TEngine.Editor.SpritePostprocessor:LogProcessed (string,string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:401)
+TEngine.Editor.SpritePostprocessor/<>c:<ProcessAssetChanges>b__8_0 (string) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:169)
+TEngine.Editor.SpritePostprocessor:ProcessAssets (string[],System.Action`1<string>,bool) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:196)
+TEngine.Editor.SpritePostprocessor:ProcessAssetChanges (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:165)
+TEngine.Editor.SpritePostprocessor:OnPostprocessAllAssets (string[],string[],string[],string[]) (at Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs:127)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/TEngine/Editor/AtlasMakerEditor/SpritePostprocessor.cs Line: 401)
+
+Refreshing native plugins compatible for Editor in 7.35 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4e06ff933f8a20c459f46ae28785be03): Total: 5.931 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2083 (actual=19, local cache=2064, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=568 ms
+		Asset DB Callback time: managed=155 ms, native=13 ms
+		Scripting: domain reloads=1, domain reload time=2249 ms, compile time=2924 ms, other=17 ms
+		Project Asset Count: scripts=3714, non-scripts=1848
+		Asset File Changes: new=10, changed=17, moved=0, deleted=228
+		Scan Filter Count: 0
+	InvokeBeforeRefreshCallbacks: 0.289ms
+	ApplyChangesToAssetFolders: 0.032ms
+	Scan: 103.098ms
+	OnSourceAssetsModified: 1.925ms
+	UnregisterDeletedAssets: 0.062ms
+	GetAllGuidsForCategorization: 0.340ms
+	CategorizeAssets: 50.515ms
+	ImportOutOfDateAssets: 1527.926ms (-1512.367ms without children)
+		ImportManagerImport: 99.841ms (29.461ms without children)
+			ImportInProcess: 70.164ms
+			UpdateCategorizedAssets: 0.216ms
+		CompileScripts: 2924.422ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 8.749ms
+		ReloadImportedAssets: 0.386ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.950ms
+		InitializingProgressBar: 0.006ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 5.938ms
+	PostProcessAllAssets: 145.271ms
+	Hotreload: 21.988ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 0.275ms
+	PersistCurrentRevisions: 0.779ms
+	UnloadStreamsEnd: 0.026ms
+	GenerateScriptTypeHashes: 1.296ms
+	Untracked: 4078.401ms
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 4.103ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-xunzi
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (0.5 MB). Loaded Objects now: 3322.
+Memory consumption went from 130.6 MB to 130.0 MB.
+Total: 2.990600 ms (FindLiveObjects: 0.120100 ms CreateObjectMapping: 0.032000 ms MarkObjects: 2.611200 ms  DeleteObjects: 0.227000 ms)
+
+DisplayProgressbar: 多语言字体生成
+[字体分组] 字体 [AlimamaFangYuanTiVF] 被以下语言使用: select_language_ch, select_language_en
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:GroupLanguagesByFont (GameConfig.language.TbLanguage) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:222)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:91)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 222)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集宽度不足，从 256×256 扩宽至 512×256 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:521)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 521)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集高度不足，从 512×256 扩高至 512×512 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:529)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 529)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集宽度不足，从 512×512 扩宽至 1024×512 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:521)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 521)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集高度不足，从 1024×512 扩高至 1024×1024 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:529)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 529)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集宽度不足，从 1024×1024 扩宽至 2048×1024 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:521)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 521)
+
+[字体生成] 'AlimamaFangYuanTiVF' 图集高度不足，从 2048×1024 扩高至 2048×2048 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:529)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 529)
+
+[字体生成] 'AlimamaFangYuanTiVF' 字符预烘焙成功，图集=2048×2048，字符数=510
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:505)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 505)
+
+Start importing Assets/AssetRaw/Fonts/AlimamaFangYuanTiVF SDF.asset using Guid(959c42624d0da7d4f9c6f727a39f3dfb) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '3d56a607fbb43ddfa4dfda29e8217c19') in 0.010774 seconds
+Refreshing native plugins compatible for Editor in 6.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=412dc5584e2c92e47a4c82f1ec42230d): Total: 0.057 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/AssetRaw/Fonts/AlimamaFangYuanTiVF SDF.asset using Guid(959c42624d0da7d4f9c6f727a39f3dfb) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '3d56a607fbb43ddfa4dfda29e8217c19') in 0.010432 seconds
+Refreshing native plugins compatible for Editor in 6.05 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0abc02965581e6b49984ac2af0ffe681): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[字体生成] ✔ Assets/AssetRaw/Fonts/AlimamaFangYuanTiVF SDF.asset  |  字符数=510
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:453)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:131)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 453)
+
+[字体生成] 'AlimamaFangYuanTiVF_Setting' 图集宽度不足，从 256×256 扩宽至 512×256 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:521)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:156)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 521)
+
+[字体生成] 'AlimamaFangYuanTiVF_Setting' 图集高度不足，从 512×256 扩高至 512×512 重试 ...
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:529)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:156)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 529)
+
+[字体生成] 'AlimamaFangYuanTiVF_Setting' 字符预烘焙成功，图集=512×512，字符数=97
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:TryGenerateFontAsset (TMPro.TMP_FontAsset&,UnityEngine.Font,string,int,int,int,int,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:505)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:376)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:156)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 505)
+
+Start importing Assets/AssetRaw/Fonts/Setting/AlimamaFangYuanTiVF_Setting SDF.asset using Guid(eca9018a4d7b2214ea7d8947b4f5d3c5) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'a95281f01691e28629490cabab4754d2') in 0.001562 seconds
+Refreshing native plugins compatible for Editor in 6.35 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cd36b70b90552614aa072fd2cd4da498): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/AssetRaw/Fonts/Setting/AlimamaFangYuanTiVF_Setting SDF.asset using Guid(eca9018a4d7b2214ea7d8947b4f5d3c5) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'a95281f01691e28629490cabab4754d2') in 0.001656 seconds
+Refreshing native plugins compatible for Editor in 6.12 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=40d439434f23838449248793a49c5eb4): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[字体生成] ✔ Assets/AssetRaw/Fonts/Setting/AlimamaFangYuanTiVF_Setting SDF.asset  |  字符数=97
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:BuildFontAsset (string,System.Collections.Generic.HashSet`1<char>,string,string) (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:453)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:156)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 453)
+
+Asset Pipeline Refresh (id=ef1768c05dd40444c8f1c0cda15e3ad5): Total: 0.002 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[字体生成] 全部 SDF 字体生成完毕！
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Builder.LanguageGenerateEditor:Generate () (at Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs:170)
+
+(Filename: Assets/Editor/Builder/Localization/LanguageGenerateEditor.cs Line: 170)
+
+Batchmode quit successfully invoked - shutting down!
+Killing ADB server in 0.0304624 seconds.
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Administrator-2022.3.62-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Administrator-2022.3.62 channel disconnected successfully.
+Cleanup mono
+00:10:17.921 |V| RiderPlugin                    | :1                             | AppDomain.CurrentDomain.DomainUnload lifetimeDefinition.Terminate
+abort_threads: Failed aborting id: 000000000000FB3C, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000F8C8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000FB3C, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000F8C8, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 5140
+[Performance] WinEditorMain                                                                                                  :        1 samples, Peak.  1.19 s (1.0x), Avg.  1.19 s, Total. 1.191 s (7.6%)
+[Performance] WinEditorMain.ConfigureCrashHandler                                                                            :        1 samples, Peak.  14.0 us (1.0x), Avg.  14.0 us, Total. 14.00 us (0.0%)
+[Performance] WinEditorMain.CurlRequestInitialize                                                                            :        1 samples, Peak.   240 us (1.0x), Avg.   240 us, Total. 239.6 us (0.0%)
+[Performance] WinEditorMain.SetupLogFile                                                                                     :        1 samples, Peak.   147 us (1.0x), Avg.   147 us, Total. 147.4 us (0.0%)
+[Performance] WinEditorMain.RunNativeTestsIfRequiredAndExit                                                                  :        1 samples, Peak. 100.0 ns (1.0x), Avg. 100.0 ns, Total. 100.00 ns (0.0%)
+[Performance] WinEditorMain.Licensing                                                                                        :        1 samples, Peak.  1.17 s (1.0x), Avg.  1.17 s, Total. 1.171 s (7.5%)
+[Performance] WinEditorMain.InitializeCrashHandler                                                                           :        1 samples, Peak.  17.9 ms (1.0x), Avg.  17.9 ms, Total. 17.85 ms (0.1%)
+[Performance] WinEditorMain.CreateApplication                                                                                :        1 samples, Peak.   163 us (1.0x), Avg.   163 us, Total. 162.7 us (0.0%)
+[Performance] Application.InitializeProject                                                                                  :        1 samples, Peak.  9.20 s (1.0x), Avg.  9.20 s, Total. 9.199 s (58.7%)
+[Performance] Application.PackageManager.StartServer                                                                         :        1 samples, Peak.  2.92 ms (1.0x), Avg.  2.92 ms, Total. 2.922 ms (0.0%)
+[Performance] Application.AcquireProjectLock                                                                                 :        1 samples, Peak.  2.65 ms (1.0x), Avg.  2.65 ms, Total. 2.652 ms (0.0%)
+[Performance] Application.InitializeEngineNoGraphics                                                                         :        1 samples, Peak.  33.6 ms (1.0x), Avg.  33.6 ms, Total. 33.64 ms (0.2%)
+[Performance] Application.PackageManager.Initialize                                                                          :        1 samples, Peak.   210 ms (1.0x), Avg.   210 ms, Total. 210.1 ms (1.3%)
+[Performance] Connecting to Package Manager                                                                                  :       22 samples, Peak.  41.2 us (16.2x), Avg.  2.54 us, Total. 55.80 us (0.0%)
+[Performance] Application.EngineGraphics.Initialize                                                                          :        1 samples, Peak.  23.0 ms (1.0x), Avg.  23.0 ms, Total. 22.97 ms (0.1%)
+[Performance] Application.GI.Initialize                                                                                      :        1 samples, Peak.  2.05 ms (1.0x), Avg.  2.05 ms, Total. 2.047 ms (0.0%)
+[Performance] Application.LoadAllDefaultResourcesFromEditor                                                                  :        1 samples, Peak.  1.22 ms (1.0x), Avg.  1.22 ms, Total. 1.217 ms (0.0%)
+[Performance] Application.LoadMonoAssemblies                                                                                 :        1 samples, Peak.  2.56 s (1.0x), Avg.  2.56 s, Total. 2.559 s (16.3%)
+[Performance] RestoreManagedReferences                                                                                       :        2 samples, Peak.  26.8 ms (2.0x), Avg.  13.4 ms, Total. 26.77 ms (0.2%)
+[Performance] InitializeOnLoad DrivenRectTransformUndo                                                                       :        2 samples, Peak.   243 us (1.0x), Avg.   242 us, Total. 483.3 us (0.0%)
+[Performance] InitializeOnLoad SceneSearch                                                                                   :        2 samples, Peak.  77.6 us (1.1x), Avg.  67.7 us, Total. 135.3 us (0.0%)
+[Performance] InitializeOnLoad CloudBuild                                                                                    :        2 samples, Peak.  2.80 us (1.3x), Avg.  2.10 us, Total. 4.200 us (0.0%)
+[Performance] InitializeOnLoad NativeFormatImporterUtility                                                                   :        2 samples, Peak.  1.62 ms (1.2x), Avg.  1.33 ms, Total. 2.664 ms (0.0%)
+[Performance] InitializeOnLoad SearchService                                                                                 :        2 samples, Peak.  75.0 us (1.0x), Avg.  72.7 us, Total. 145.5 us (0.0%)
+[Performance] InitializeOnLoad SettingsService                                                                               :        2 samples, Peak.  6.20 us (1.3x), Avg.  4.70 us, Total. 9.400 us (0.0%)
+[Performance] InitializeOnLoad WindowLayout                                                                                  :        2 samples, Peak.   153 us (1.0x), Avg.   149 us, Total. 298.4 us (0.0%)
+[Performance] InitializeOnLoad AssetStoreContext                                                                             :        2 samples, Peak.  14.5 ms (1.7x), Avg.  8.48 ms, Total. 16.95 ms (0.1%)
+[Performance] InitializeOnLoad PoolManager                                                                                   :        2 samples, Peak.   363 us (1.0x), Avg.   359 us, Total. 718.1 us (0.0%)
+[Performance] InitializeOnLoad MixerEffectDefinitionReloader                                                                 :        2 samples, Peak.  1.50 ms (1.2x), Avg.  1.29 ms, Total. 2.583 ms (0.0%)
+[Performance] InitializeOnLoad ProjectSearch                                                                                 :        2 samples, Peak.  78.5 us (1.5x), Avg.  53.5 us, Total. 107.0 us (0.0%)
+[Performance] InitializeOnLoad UISystemProfilerRenderService                                                                 :        2 samples, Peak.  6.00 us (1.3x), Avg.  4.75 us, Total. 9.500 us (0.0%)
+[Performance] InitializeOnLoad EditMode                                                                                      :        2 samples, Peak.   242 us (1.0x), Avg.   231 us, Total. 462.2 us (0.0%)
+[Performance] InitializeOnLoad UnityConnect                                                                                  :        2 samples, Peak.  33.0 us (1.1x), Avg.  30.7 us, Total. 61.40 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebugger                                                                               :        2 samples, Peak.   334 us (1.0x), Avg.   322 us, Total. 644.5 us (0.0%)
+[Performance] InitializeOnLoad ShortcutIntegration                                                                           :        2 samples, Peak.  33.4 us (1.0x), Avg.  33.3 us, Total. 66.60 us (0.0%)
+[Performance] InitializeOnLoad AddComponentWindow                                                                            :        2 samples, Peak.  62.9 us (1.1x), Avg.  58.3 us, Total. 116.7 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebuggerWindow                                                                         :        2 samples, Peak.  69.0 us (1.0x), Avg.  67.2 us, Total. 134.4 us (0.0%)
+[Performance] InitializeOnLoad CacheServerWindow                                                                             :        2 samples, Peak.  5.90 us (1.3x), Avg.  4.40 us, Total. 8.800 us (0.0%)
+[Performance] InitializeOnLoad PlayModeDownload                                                                              :        2 samples, Peak.  2.73 ms (1.9x), Avg.  1.40 ms, Total. 2.804 ms (0.0%)
+[Performance] InitializeOnLoad MenuItems                                                                                     :        2 samples, Peak.  61.0 us (1.2x), Avg.  52.7 us, Total. 105.5 us (0.0%)
+[Performance] InitializeOnLoad PrefabInstanceChangedListener                                                                 :        2 samples, Peak.  83.1 us (1.0x), Avg.  79.5 us, Total. 159.1 us (0.0%)
+[Performance] InitializeOnLoad ObjectSelectorSearch                                                                          :        2 samples, Peak.  22.9 us (1.1x), Avg.  20.0 us, Total. 40.00 us (0.0%)
+[Performance] InitializeOnLoad EditorMonitor                                                                                 :        2 samples, Peak.   485 us (1.3x), Avg.   368 us, Total. 736.7 us (0.0%)
+[Performance] InitializeOnLoad RetainedMode                                                                                  :        2 samples, Peak.  1.44 ms (1.1x), Avg.  1.35 ms, Total. 2.706 ms (0.0%)
+[Performance] InitializeOnLoad EditorShaderLoader                                                                            :        2 samples, Peak.   407 us (1.0x), Avg.   396 us, Total. 792.4 us (0.0%)
+[Performance] InitializeOnLoad EditorDelegateRegistration                                                                    :        2 samples, Peak.   295 us (1.1x), Avg.   261 us, Total. 521.9 us (0.0%)
+[Performance] InitializeOnLoad UIDocumentHierarchyWatcher                                                                    :        2 samples, Peak.  49.3 us (1.1x), Avg.  46.8 us, Total. 93.50 us (0.0%)
+[Performance] InitializeOnLoad LiveReloadTrackerCreator                                                                      :        2 samples, Peak.   115 us (1.2x), Avg.  94.6 us, Total. 189.1 us (0.0%)
+[Performance] InitializeOnLoad UxmlObjectEditorFactories                                                                     :        2 samples, Peak.   321 us (1.2x), Avg.   275 us, Total. 550.5 us (0.0%)
+[Performance] InitializeOnLoad UXMLEditorFactories                                                                           :        2 samples, Peak.  36.9 ms (1.1x), Avg.  34.3 ms, Total. 68.51 ms (0.4%)
+[Performance] InitializeOnLoad PurchasingService                                                                             :        2 samples, Peak.  4.57 ms (1.0x), Avg.  4.44 ms, Total. 8.871 ms (0.1%)
+[Performance] InitializeOnLoad CloudBuildPoller                                                                              :        2 samples, Peak.  67.8 us (1.0x), Avg.  66.9 us, Total. 133.9 us (0.0%)
+[Performance] InitializeOnLoad EditorGameServicesAnalytics                                                                   :        2 samples, Peak.   977 us (1.3x), Avg.   744 us, Total. 1.488 ms (0.0%)
+[Performance] InitializeOnLoad AnalyticsService                                                                              :        2 samples, Peak.   111 us (1.0x), Avg.   107 us, Total. 213.9 us (0.0%)
+[Performance] InitializeOnLoad BuildService                                                                                  :        2 samples, Peak.  89.4 us (1.0x), Avg.  85.6 us, Total. 171.2 us (0.0%)
+[Performance] InitializeOnLoad AdsService                                                                                    :        2 samples, Peak.   399 us (1.3x), Avg.   313 us, Total. 625.6 us (0.0%)
+[Performance] InitializeOnLoad UDPService                                                                                    :        2 samples, Peak.   105 us (1.1x), Avg.  93.4 us, Total. 186.7 us (0.0%)
+[Performance] InitializeOnLoad CrashService                                                                                  :        2 samples, Peak.  84.1 us (1.1x), Avg.  78.2 us, Total. 156.3 us (0.0%)
+[Performance] InitializeOnLoad ServicesRepository                                                                            :        2 samples, Peak.   700 ns (1.4x), Avg.   500 ns, Total. 1.000 us (0.0%)
+[Performance] InitializeOnLoad SearchWindow                                                                                  :        2 samples, Peak.  88.7 us (1.1x), Avg.  77.6 us, Total. 155.2 us (0.0%)
+[Performance] InitializeOnLoad CustomIndexers                                                                                :        2 samples, Peak.  11.0 ms (1.1x), Avg.  9.98 ms, Total. 19.97 ms (0.1%)
+[Performance] InitializeOnLoad SearchMonitor                                                                                 :        2 samples, Peak.   581 us (1.1x), Avg.   524 us, Total. 1.049 ms (0.0%)
+[Performance] InitializeOnLoad ParameterControllerEditor                                                                     :        2 samples, Peak.  12.2 us (1.1x), Avg.  11.0 us, Total. 22.00 us (0.0%)
+[Performance] InitializeOnLoad LayerSettingsWindow                                                                           :        2 samples, Peak.  15.5 us (1.8x), Avg.  8.85 us, Total. 17.70 us (0.0%)
+[Performance] InitializeOnLoad PackageManagerHookGUIDConverter.RegisterPackagesEventHandler                                  :        2 samples, Peak.   470 us (1.7x), Avg.   269 us, Total. 537.0 us (0.0%)
+[Performance] InitializeOnLoad EditorDragAndDrop.RegisterEditorClient                                                        :        2 samples, Peak.   195 us (1.2x), Avg.   166 us, Total. 332.4 us (0.0%)
+[Performance] InitializeOnLoad EditorEventCallbacks.InitializeFontAssetResourceChangeCallBacks                               :        2 samples, Peak.   745 us (1.0x), Avg.   730 us, Total. 1.461 ms (0.0%)
+[Performance] InitializeOnLoad SceneTemplateService.Init                                                                     :        2 samples, Peak.   802 us (1.1x), Avg.   723 us, Total. 1.446 ms (0.0%)
+[Performance] InitializeOnLoad DiagnosticSwitchesConsoleMessage.Init                                                         :        2 samples, Peak.  4.19 ms (1.8x), Avg.  2.34 ms, Total. 4.686 ms (0.0%)
+[Performance] InitializeOnLoad MemoryProfilerCompilationGuard.InjectCompileGuard                                             :        2 samples, Peak.   101 us (1.3x), Avg.  75.9 us, Total. 151.8 us (0.0%)
+[Performance] InitializeOnLoad EditorWindow.Initialize                                                                       :        2 samples, Peak.   146 us (1.1x), Avg.   134 us, Total. 267.7 us (0.0%)
+[Performance] InitializeOnLoad AssetPostprocessingInternal.RefreshCustomDependencies                                         :        2 samples, Peak.  1.72 ms (1.0x), Avg.  1.68 ms, Total. 3.364 ms (0.0%)
+[Performance] InitializeOnLoad SysrootManager.Initialize                                                                     :        2 samples, Peak.  10.8 us (1.3x), Avg.  8.55 us, Total. 17.10 us (0.0%)
+[Performance] InitializeOnLoad PackageManagerWindow.EditorInitializedInSafeMode                                              :        2 samples, Peak.  14.1 ms (2.0x), Avg.  7.09 ms, Total. 14.18 ms (0.1%)
+[Performance] InitializeOnLoad ToolShortcutContext.Init                                                                      :        2 samples, Peak.  78.3 us (1.0x), Avg.  76.4 us, Total. 152.9 us (0.0%)
+[Performance] InitializeOnLoad SceneVisibilityManager.Initialize                                                             :        2 samples, Peak.  1.72 ms (1.5x), Avg.  1.11 ms, Total. 2.225 ms (0.0%)
+[Performance] InitializeOnLoad ScopedRegistryAddedPopup.SubscribeToRegistriesAdded                                           :        2 samples, Peak.  4.66 ms (2.0x), Avg.  2.36 ms, Total. 4.713 ms (0.0%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.AfterAssemblyReload   :        2 samples, Peak.  2.29 ms (1.9x), Avg.  1.23 ms, Total. 2.468 ms (0.0%)
+[Performance] ProcessService.EditorAfterLoadAllAssemblies                                                                    :        2 samples, Peak.   217 us (1.2x), Avg.   188 us, Total. 375.6 us (0.0%)
+[Performance] Application.ReadLicenseInfo                                                                                    :        1 samples, Peak.  12.9 ms (1.0x), Avg.  12.9 ms, Total. 12.95 ms (0.1%)
+[Performance] Application.InitialRefresh                                                                                     :        1 samples, Peak.  5.93 s (1.0x), Avg.  5.93 s, Total. 5.932 s (37.9%)
+[Performance] BuilderAssetModificationProcessor.OnWillCreateAsset                                                            :       10 samples, Peak.   610 us (9.2x), Avg.  66.2 us, Total. 662.0 us (0.0%)
+[Performance] ShaderImporter.SourceAssetModified                                                                             :        3 samples, Peak.   800 ns (1.5x), Avg.   533 ns, Total. 1.600 us (0.0%)
+[Performance] ShaderIncludeImporter.SourceAssetModified                                                                      :        3 samples, Peak.  6.90 us (1.5x), Avg.  4.70 us, Total. 14.10 us (0.0%)
+[Performance] Compiling Scripts                                                                                              :        1 samples, Peak.  2.92 s (1.0x), Avg.  2.92 s, Total. 2.923 s (18.7%)
+[Performance] AssemblyReloadEvents.beforeAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.BeforeAssemblyReload :        1 samples, Peak.   295 us (1.0x), Avg.   295 us, Total. 294.7 us (0.0%)
+[Performance] PresetManagerPostProcessor.OnPreprocessAsset                                                                   :       23 samples, Peak.   786 us (17.1x), Avg.  45.9 us, Total. 1.055 ms (0.0%)
+[Performance] CancelSplashScreenOnAssetChange.OnPreprocessAsset                                                              :       23 samples, Peak.  94.9 us (16.4x), Avg.  5.77 us, Total. 132.8 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_TextMesh                                                         :        1 samples, Peak.   544 us (1.0x), Avg.   544 us, Total. 544.3 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityUI_RawImage                                                               :        1 samples, Peak.  78.9 us (1.0x), Avg.  78.9 us, Total. 78.90 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_TextMeshPro_Label                                                              :        1 samples, Peak.  43.3 us (1.0x), Avg.  43.3 us, Total. 43.30 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityUI_Image                                                                  :        1 samples, Peak.  35.6 us (1.0x), Avg.  35.6 us, Total. 35.60 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_Prefab                                                           :        1 samples, Peak.  32.7 us (1.0x), Avg.  32.7 us, Total. 32.70 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_Child                                                            :        1 samples, Peak.  32.3 us (1.0x), Avg.  32.3 us, Total. 32.30 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_SpriteRenderer                                                   :        1 samples, Peak.  35.1 us (1.0x), Avg.  35.1 us, Total. 35.10 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_VideoPlayer                                                      :        1 samples, Peak.  33.2 us (1.0x), Avg.  33.2 us, Total. 33.20 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_AudioSource                                                      :        1 samples, Peak.  43.3 us (1.0x), Avg.  43.3 us, Total. 43.30 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_TextMeshPro_UGUI                                                               :        1 samples, Peak.  33.9 us (1.0x), Avg.  33.9 us, Total. 33.90 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityStandard_MeshRenderer                                                     :        1 samples, Peak.  32.1 us (1.0x), Avg.  32.1 us, Total. 32.10 us (0.0%)
+[Performance] InitializeOnLoad LocalizeTarget_UnityUI_Text                                                                   :        1 samples, Peak.  33.5 us (1.0x), Avg.  33.5 us, Total. 33.50 us (0.0%)
+[Performance] InitializeOnLoad GetIl2CppFolderHook                                                                           :        1 samples, Peak.  6.99 ms (1.0x), Avg.  6.99 ms, Total. 6.986 ms (0.0%)
+[Performance] InitializeOnLoad CopyStrippedAOTAssembliesHook                                                                 :        1 samples, Peak.  1.02 ms (1.0x), Avg.  1.02 ms, Total. 1.019 ms (0.0%)
+[Performance] InitializeOnLoad WXExtDef                                                                                      :        1 samples, Peak.  1.38 ms (1.0x), Avg.  1.38 ms, Total. 1.380 ms (0.0%)
+[Performance] InitializeOnLoad WXSettingsHelperInterface                                                                     :        1 samples, Peak.   287 us (1.0x), Avg.   287 us, Total. 287.3 us (0.0%)
+[Performance] InitializeOnLoad WXPlayableSettingsHelperInterface                                                             :        1 samples, Peak.  73.8 us (1.0x), Avg.  73.8 us, Total. 73.80 us (0.0%)
+[Performance] InitializeOnLoad UpgradeManager                                                                                :        1 samples, Peak.  89.6 us (1.0x), Avg.  89.6 us, Total. 89.60 us (0.0%)
+[Performance] InitializeOnLoad UnityToolbarExtenderLeft                                                                      :        1 samples, Peak.  1.14 ms (1.0x), Avg.  1.14 ms, Total. 1.141 ms (0.0%)
+[Performance] InitializeOnLoad UnityEditorInspectorDrawHelper                                                                :        1 samples, Peak.   318 us (1.0x), Avg.   318 us, Total. 318.1 us (0.0%)
+[Performance] InitializeOnLoad UnityToolbarExtenderRight                                                                     :        1 samples, Peak.  32.0 ms (1.0x), Avg.  32.0 ms, Total. 32.01 ms (0.2%)
+[Performance] InitializeOnLoad ToolbarExtender                                                                               :        1 samples, Peak.  1.10 us (1.0x), Avg.  1.10 us, Total. 1.100 us (0.0%)
+[Performance] InitializeOnLoad BurstLoader                                                                                   :        1 samples, Peak.  1.06 s (1.0x), Avg.  1.06 s, Total. 1.055 s (6.7%)
+[Performance] InitializeOnLoad BackgroundWatcher                                                                             :        1 samples, Peak.   145 us (1.0x), Avg.   145 us, Total. 144.5 us (0.0%)
+[Performance] InitializeOnLoad UnityTestProtocolStarter                                                                      :        1 samples, Peak.   130 us (1.0x), Avg.   130 us, Total. 129.6 us (0.0%)
+[Performance] InitializeOnLoad TestStarter                                                                                   :        1 samples, Peak.   481 us (1.0x), Avg.   481 us, Total. 481.0 us (0.0%)
+[Performance] InitializeOnLoad RerunCallbackInitializer                                                                      :        1 samples, Peak.  1.84 ms (1.0x), Avg.  1.84 ms, Total. 1.842 ms (0.0%)
+[Performance] InitializeOnLoad VisualStudioIntegration                                                                       :        1 samples, Peak.  16.0 ms (1.0x), Avg.  16.0 ms, Total. 15.96 ms (0.1%)
+[Performance] InitializeOnLoad VisualStudioEditor                                                                            :        1 samples, Peak.  1.00 us (1.0x), Avg.  1.00 us, Total. 1.000 us (0.0%)
+[Performance] InitializeOnLoad TestRunnerApiListener                                                                         :        1 samples, Peak.  80.0 us (1.0x), Avg.  80.0 us, Total. 80.00 us (0.0%)
+[Performance] InitializeOnLoad PrefabLayoutRebuilder                                                                         :        1 samples, Peak.   188 us (1.0x), Avg.   188 us, Total. 187.8 us (0.0%)
+[Performance] InitializeOnLoad RiderScriptEditor                                                                             :        1 samples, Peak.  73.8 ms (1.0x), Avg.  73.8 ms, Total. 73.75 ms (0.5%)
+[Performance] InitializeOnLoad CallbackInitializer                                                                           :        1 samples, Peak.   670 us (1.0x), Avg.   670 us, Total. 670.4 us (0.0%)
+[Performance] InitializeOnLoad SpriteEditorWindow                                                                            :        1 samples, Peak.   292 us (1.0x), Avg.   292 us, Total. 292.1 us (0.0%)
+[Performance] InitializeOnLoad NavigationWindow                                                                              :        1 samples, Peak.   413 us (1.0x), Avg.   413 us, Total. 412.7 us (0.0%)
+[Performance] InitializeOnLoad VSCodeScriptEditor                                                                            :        1 samples, Peak.  1.65 ms (1.0x), Avg.  1.65 ms, Total. 1.652 ms (0.0%)
+[Performance] InitializeOnLoad PlayerLoopHelper.InitOnEditor                                                                 :        1 samples, Peak.  3.66 ms (1.0x), Avg.  3.66 ms, Total. 3.664 ms (0.0%)
+[Performance] InitializeOnLoad $BurstDirectCallInitializer.Initialize                                                        :        2 samples, Peak.  5.95 ms (1.8x), Avg.  3.36 ms, Total. 6.722 ms (0.0%)
+[Performance] InitializeOnLoad MemoryProfilerSettings.RuntimeInitialize                                                      :        1 samples, Peak.   379 us (1.0x), Avg.   379 us, Total. 378.7 us (0.0%)
+[Performance] InitializeOnLoad EditorGUICompatibilityHelper.RuntimeInitialize                                                :        1 samples, Peak.  1.81 ms (1.0x), Avg.  1.81 ms, Total. 1.807 ms (0.0%)
+[Performance] InitializeOnLoad TestJobDataHolder.ResumeRunningJobs                                                           :        1 samples, Peak.   586 us (1.0x), Avg.   586 us, Total. 586.1 us (0.0%)
+[Performance] InitializeOnLoad AnalyticsReporter.RegisterCallbacks                                                           :        1 samples, Peak.   173 us (1.0x), Avg.   173 us, Total. 173.4 us (0.0%)
+[Performance] InitializeOnLoad BuildDefineScope.ScheduleRecovery                                                             :        1 samples, Peak.  53.2 us (1.0x), Avg.  53.2 us, Total. 53.20 us (0.0%)
+[Performance] InitializeOnLoad VisualStudioEditor.LegacyVisualStudioCodePackageDisabler                                      :        1 samples, Peak.  1.80 ms (1.0x), Avg.  1.80 ms, Total. 1.804 ms (0.0%)
+[Performance] InitializeOnLoad MemoryProfilerModuleOverride.InitializeOverride                                               :        1 samples, Peak.   304 us (1.0x), Avg.   304 us, Total. 304.4 us (0.0%)
+[Performance] InitializeOnLoad MetadataInjector.EditorInitMetadata                                                           :        1 samples, Peak.   197 us (1.0x), Avg.   197 us, Total. 196.6 us (0.0%)
+[Performance] InitializeOnLoad ListenerConfigImportEditor.RegisterListener                                                   :        1 samples, Peak.  41.0 us (1.0x), Avg.  41.0 us, Total. 41.00 us (0.0%)
+[Performance] DidReloadScriptsTestRunnerWindow.CompilationCallback                                                           :        1 samples, Peak.   328 us (1.0x), Avg.   328 us, Total. 327.6 us (0.0%)
+[Performance] DidReloadScriptsTestListCache.ScriptReloaded                                                                   :        1 samples, Peak.   827 us (1.0x), Avg.   827 us, Total. 827.2 us (0.0%)
+[Performance] DidReloadScriptsAdvancedDropdownWindow.OnScriptReload                                                          :        1 samples, Peak.   149 us (1.0x), Avg.   149 us, Total. 148.5 us (0.0%)
+[Performance] BuilderAssetModificationProcessor.OnWillSaveAssets                                                             :        5 samples, Peak.   528 us (4.9x), Avg.   109 us, Total. 543.9 us (0.0%)
+[Performance] TerrainModificationProcessor.OnWillSaveAssets                                                                  :        5 samples, Peak.   433 us (5.0x), Avg.  87.3 us, Total. 436.4 us (0.0%)
+[Performance] VersionControl.Task.Wait                                                                                       :        1 samples, Peak.  5.50 us (1.0x), Avg.  5.50 us, Total. 5.500 us (0.0%)
+[Performance] AssetDatabase.ImportAssets                                                                                     :        9 samples, Peak.  57.2 ms (6.9x), Avg.  8.30 ms, Total. 74.67 ms (0.5%)
+[Performance] UtilityWindowPostProcessor.OnPostprocessAllAssets                                                              :       10 samples, Peak.   472 us (5.1x), Avg.  92.1 us, Total. 920.9 us (0.0%)
+[Performance] SpritePostprocessor.OnPostprocessAllAssets                                                                     :       10 samples, Peak.  13.7 ms (4.9x), Avg.  2.79 ms, Total. 27.86 ms (0.2%)
+[Performance] TMPro_TexturePostProcessor.OnPostprocessAllAssets                                                              :       10 samples, Peak.   932 us (3.1x), Avg.   298 us, Total. 2.979 ms (0.0%)
+[Performance] BuilderAssetPostprocessor.OnPostprocessAllAssets                                                               :       10 samples, Peak.  1.85 ms (4.8x), Avg.   382 us, Total. 3.821 ms (0.0%)
+[Performance] ArtifactBrowserPostProcessor.OnPostprocessAllAssets                                                            :       10 samples, Peak.   320 us (4.9x), Avg.  65.4 us, Total. 653.8 us (0.0%)
+[Performance] AssetEvents.OnPostprocessAllAssets                                                                             :       20 samples, Peak.   120 us (7.0x), Avg.  17.2 us, Total. 343.0 us (0.0%)
+[Performance] AudioMixerPostprocessor.OnPostprocessAllAssets                                                                 :       10 samples, Peak.   180 us (4.9x), Avg.  37.1 us, Total. 370.8 us (0.0%)
+[Performance] StyleCatalogPostProcessor.OnPostprocessAllAssets                                                               :       10 samples, Peak.  8.59 ms (5.0x), Avg.  1.72 ms, Total. 17.24 ms (0.1%)
+[Performance] BuildCatalog                                                                                                   :        1 samples, Peak.  7.93 ms (1.0x), Avg.  7.93 ms, Total. 7.933 ms (0.1%)
+[Performance] ModelImporterPostProcessor.OnPostprocessAllAssets                                                              :       10 samples, Peak.   677 us (4.7x), Avg.   143 us, Total. 1.430 ms (0.0%)
+[Performance] RetainedModeAssetPostprocessor.OnPostprocessAllAssets                                                          :       10 samples, Peak.  1.39 ms (4.9x), Avg.   284 us, Total. 2.836 ms (0.0%)
+[Performance] AssetChangedListener.OnPostprocessAllAssets                                                                    :       10 samples, Peak.  1.52 ms (4.6x), Avg.   332 us, Total. 3.325 ms (0.0%)
+[Performance] SpeedTreePostProcessor.OnPostprocessAllAssets                                                                  :       10 samples, Peak.   160 us (4.3x), Avg.  37.5 us, Total. 374.5 us (0.0%)
+[Performance] TextAssetPostProcessor.OnPostprocessAllAssets                                                                  :       10 samples, Peak.   439 us (4.8x), Avg.  91.7 us, Total. 917.4 us (0.0%)
+[Performance] SpriteEditorTexturePostprocessor.OnPostprocessAllAssets                                                        :       10 samples, Peak.   309 us (4.2x), Avg.  74.2 us, Total. 741.9 us (0.0%)
+[Performance] SyncVS.PostprocessSyncProject                                                                                  :        5 samples, Peak.   104 ms (5.0x), Avg.  20.9 ms, Total. 104.3 ms (0.7%)
+[Performance] EditorApplication.projectChanged: UnityEditor.Audio.MixerEffectDefinitionReloader.OnProjectChanged             :        1 samples, Peak.   266 us (1.0x), Avg.   266 us, Total. 265.6 us (0.0%)
+[Performance] EditorApplication.projectChanged: TEngine.UnityToolbarExtenderRight.UpdateScenes                               :        1 samples, Peak.  13.8 ms (1.0x), Avg.  13.8 ms, Total. 13.76 ms (0.1%)
+[Performance] Application.ImportPackagesAndSetTemplateWhenCreatingProject                                                    :        1 samples, Peak.  9.37 ms (1.0x), Avg.  9.37 ms, Total. 9.370 ms (0.1%)
+[Performance] Application.SyncCurrentColorSpace                                                                              :        1 samples, Peak.  4.05 ms (1.0x), Avg.  4.05 ms, Total. 4.053 ms (0.0%)
+[Performance] Application.OnUsbDevicesChanged                                                                                :        1 samples, Peak.  4.14 ms (1.0x), Avg.  4.14 ms, Total. 4.136 ms (0.0%)
+[Performance] Application.AssetInstanceCacheUpdate                                                                           :        1 samples, Peak.   200 ns (1.0x), Avg.   200 ns, Total. 200.0 ns (0.0%)
+[Performance] Application.UnityExtensions.Initialize                                                                         :        1 samples, Peak.  2.02 ms (1.0x), Avg.  2.02 ms, Total. 2.023 ms (0.0%)
+[Performance] CodeEditorProjectSync.SyncEditorProject                                                                        :        1 samples, Peak.  85.7 ms (1.0x), Avg.  85.7 ms, Total. 85.67 ms (0.5%)
+[Performance] Application.ExecuteStartups                                                                                    :        1 samples, Peak.  28.3 ms (1.0x), Avg.  28.3 ms, Total. 28.32 ms (0.2%)
+[Performance] Menu.RegisterMenuInterface                                                                                     :       26 samples, Peak.   600 ns (5.0x), Avg.   119 ns, Total. 3.100 us (0.0%)
+[Performance] Gizmo.RebuildRenderers                                                                                         :        1 samples, Peak.  27.2 ms (1.0x), Avg.  27.2 ms, Total. 27.23 ms (0.2%)
+[Performance] Gizmo.AddGizmoRenderers                                                                                        :      101 samples, Peak.  1.05 ms (37.8x), Avg.  27.8 us, Total. 2.804 ms (0.0%)
+[Performance] Application.editorInitializingProject                                                                          :        1 samples, Peak.  62.0 ms (1.0x), Avg.  62.0 ms, Total. 61.95 ms (0.4%)
+[Performance] Application.InitializeMenu                                                                                     :        1 samples, Peak.  28.5 ms (1.0x), Avg.  28.5 ms, Total. 28.51 ms (0.2%)
+[Performance] Menu.RebuildAll                                                                                                :        1 samples, Peak.  28.5 ms (1.0x), Avg.  28.5 ms, Total. 28.50 ms (0.2%)
+[Performance] Menu.BuildRegisteredMenuInterfaces                                                                             :        1 samples, Peak.  27.2 ms (1.0x), Avg.  27.2 ms, Total. 27.22 ms (0.2%)
+[Performance] Menu.FilterMenuItem                                                                                            :      771 samples, Peak.  8.35 ms (755.8x), Avg.  11.0 us, Total. 8.515 ms (0.1%)
+[Performance] UpdateAllMenus                                                                                                 :        1 samples, Peak.   318 us (1.0x), Avg.   318 us, Total. 317.6 us (0.0%)
+[Performance] Menu.RebuildOSMainMenu                                                                                         :        2 samples, Peak.  1.34 ms (1.2x), Avg.  1.09 ms, Total. 2.185 ms (0.0%)
+[Performance] EditorSceneManager.sceneClosing: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneClosing           :        1 samples, Peak.   179 us (1.0x), Avg.   179 us, Total. 178.6 us (0.0%)
+[Performance] GUIView.RepaintAll.PlayerLoopController                                                                        :        1 samples, Peak.  1000 ns (1.0x), Avg.  1000 ns, Total. 1000.0 ns (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneTemplate.SceneTemplateService.OnNewSceneCreated           :        1 samples, Peak.   167 us (1.0x), Avg.   167 us, Total. 166.9 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnNewSceneCreated     :        1 samples, Peak.   141 us (1.0x), Avg.   141 us, Total. 140.8 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneManagement.StageNavigationManager.OnNewSceneCreated       :        1 samples, Peak.  38.6 us (1.0x), Avg.  38.6 us, Total. 38.60 us (0.0%)
+[Performance] Application.InvokeFinishedLoadingProject                                                                       :        1 samples, Peak.  3.84 ms (1.0x), Avg.  3.84 ms, Total. 3.839 ms (0.0%)
+[Performance] ProcessService.OnProjectLoaded                                                                                 :        1 samples, Peak.  30.8 us (1.0x), Avg.  30.8 us, Total. 30.80 us (0.0%)
+[Performance] AssetDatabase.ImportAsset                                                                                      :        2 samples, Peak.  44.9 ms (1.5x), Avg.  30.8 ms, Total. 61.61 ms (0.4%)
+[Performance] AssetDatabase.Refresh                                                                                          :        1 samples, Peak.  2.54 ms (1.0x), Avg.  2.54 ms, Total. 2.536 ms (0.0%)
+[Performance] EditorApplication.quitting: TEngine.UnityToolbarExtenderLeft.OnEditorQuit                                      :        1 samples, Peak.   172 us (1.0x), Avg.   172 us, Total. 172.4 us (0.0%)
+[Performance] EditorApplication.quitting: Unity.Burst.Editor.BurstLoader.OnEditorApplicationQuitting                         :        1 samples, Peak.  14.1 us (1.0x), Avg.  14.1 us, Total. 14.10 us (0.0%)
+[Performance] EditorApplication.quitting: callback in UnityEditor.TextCore.Text.EditorEventCallbacks                         :        1 samples, Peak.  7.70 ms (1.0x), Avg.  7.70 ms, Total. 7.696 ms (0.0%)
+[Performance] Killing ADB server                                                                                             :        1 samples, Peak.  31.7 ms (1.0x), Avg.  31.7 ms, Total. 31.72 ms (0.2%)
+[Performance] Application.Shutdown.PauseProfilerSession                                                                      :        1 samples, Peak.  18.5 us (1.0x), Avg.  18.5 us, Total. 18.50 us (0.0%)
+[Performance] Application.Shutdown.PauseAssetImportWorkers                                                                   :        1 samples, Peak.   212 us (1.0x), Avg.   212 us, Total. 212.3 us (0.0%)
+[Performance] Application.Shutdown.SaveAssets                                                                                :        1 samples, Peak.   385 us (1.0x), Avg.   385 us, Total. 385.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupRenderPipeline                                                                     :        1 samples, Peak.  2.00 us (1.0x), Avg.  2.00 us, Total. 2.000 us (0.0%)
+[Performance] Application.Shutdown.StopPreloadManager                                                                        :        1 samples, Peak.  9.69 ms (1.0x), Avg.  9.69 ms, Total. 9.694 ms (0.1%)
+[Performance] Application.Shutdown.DestroyWorld                                                                              :        1 samples, Peak.   380 us (1.0x), Avg.   380 us, Total. 379.5 us (0.0%)
+[Performance] Application.Shutdown.CleanupAfterLoad                                                                          :        1 samples, Peak.   105 ms (1.0x), Avg.   105 ms, Total. 105.2 ms (0.7%)
+[Performance] Application.Shutdown.Progress                                                                                  :        1 samples, Peak.  8.60 us (1.0x), Avg.  8.60 us, Total. 8.600 us (0.0%)
+[Performance] Application.Shutdown.GICleanupManagers                                                                         :        1 samples, Peak.   383 us (1.0x), Avg.   383 us, Total. 383.5 us (0.0%)
+[Performance] Application.Shutdown.MenuCleanupClass                                                                          :        1 samples, Peak.   156 us (1.0x), Avg.   156 us, Total. 156.0 us (0.0%)
+[Performance] Application.Shutdown.ADBSaveStateBeforeShutdown                                                                :        1 samples, Peak.  7.60 us (1.0x), Avg.  7.60 us, Total. 7.600 us (0.0%)
+[Performance] Application.Shutdown.RemoteShutdown                                                                            :        1 samples, Peak.   800 ns (1.0x), Avg.   800 ns, Total. 800.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupVCProvider                                                                         :        1 samples, Peak.  9.70 us (1.0x), Avg.  9.70 us, Total. 9.700 us (0.0%)
+[Performance] Application.Shutdown.InputShutdown                                                                             :        1 samples, Peak.   400 ns (1.0x), Avg.   400 ns, Total. 400.0 ns (0.0%)
+[Performance] Application.Shutdown.GizmoManagerDestroy                                                                       :        1 samples, Peak.   597 us (1.0x), Avg.   597 us, Total. 597.3 us (0.0%)
+[Performance] Application.Shutdown.ProfilerSession                                                                           :        1 samples, Peak.   103 us (1.0x), Avg.   103 us, Total. 102.7 us (0.0%)
+[Performance] Application.Shutdown.ReleaseGfxWindowOnAllGUIViews                                                             :        1 samples, Peak.   200 ns (1.0x), Avg.   200 ns, Total. 200.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupEngine                                                                             :        1 samples, Peak.   144 ms (1.0x), Avg.   144 ms, Total. 143.9 ms (0.9%)
+[Performance] Application.Shutdown.CleanupAssetDatabase                                                                      :        1 samples, Peak.  3.92 ms (1.0x), Avg.  3.92 ms, Total. 3.923 ms (0.0%)
+[Performance] Application.Shutdown.ScriptCompilationCleanUp                                                                  :        1 samples, Peak.  9.58 ms (1.0x), Avg.  9.58 ms, Total. 9.585 ms (0.1%)
+[Performance] Application.Shutdown.DestroyJobSystem                                                                          :        1 samples, Peak.   145 us (1.0x), Avg.   145 us, Total. 145.5 us (0.0%)
+[Performance] Application.Shutdown.CleanupPersistentManager                                                                  :        1 samples, Peak.   477 us (1.0x), Avg.   477 us, Total. 477.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupAsyncReadManager                                                                   :        1 samples, Peak.   177 us (1.0x), Avg.   177 us, Total. 177.0 us (0.0%)
+[Performance] Application.Shutdown.CleanupProgressBar                                                                        :        1 samples, Peak.   300 ns (1.0x), Avg.   300 ns, Total. 300.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupMono                                                                               :        1 samples, Peak.  54.1 ms (1.0x), Avg.  54.1 ms, Total. 54.13 ms (0.3%)
+[Performance] Application.Shutdown.CleanupStdConverters                                                                      :        1 samples, Peak.  5.40 us (1.0x), Avg.  5.40 us, Total. 5.400 us (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportModuleNativeDlls                                                  :        1 samples, Peak.   700 ns (1.0x), Avg.   700 ns, Total. 700.0 ns (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportNativeLibraries                                                   :        1 samples, Peak. 0.0 (-nan(ind)x), Avg. 0.0, Total. 0.0 (0.0%)
+[Performance] Application.Shutdown.CleanupAutoDocumentation                                                                  :        1 samples, Peak.   216 us (1.0x), Avg.   216 us, Total. 216.4 us (0.0%)
+[Performance] Application.Shutdown.ShaderNameManagerDestroy                                                                  :        1 samples, Peak.  34.3 us (1.0x), Avg.  34.3 us, Total. 34.30 us (0.0%)
+[Performance] Application.Shutdown.CleanupCacheServer                                                                        :        1 samples, Peak. 100.0 ns (1.0x), Avg. 100.0 ns, Total. 100.00 ns (0.0%)
+[Performance] Application.Shutdown.Virtualization_Shutdown                                                                   :        1 samples, Peak.   300 ns (1.0x), Avg.   300 ns, Total. 300.0 ns (0.0%)
+[Performance] Application.Shutdown.DevConnections                                                                            :        1 samples, Peak.   113 us (1.0x), Avg.   113 us, Total. 113.4 us (0.0%)
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

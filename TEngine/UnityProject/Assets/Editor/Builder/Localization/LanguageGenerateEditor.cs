@@ -4,8 +4,6 @@ using System.IO;
 using System.Linq;
 using GameConfig;
 using GameConfig.language;
-using GameLogic.Data;
-using GameLogic.GamePlay.CorePlay;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -45,12 +43,6 @@ namespace Builder
         /// <summary>设置面板字体名称后缀</summary>
         private const string SettingSuffix = "_Setting";
 
-        /// <summary>关卡字体输出子目录</summary>
-        private const string LevelSubDir = "Level";
-
-        /// <summary>关卡字体名称后缀</summary>
-        private const string LevelSuffix = "_Level";
-
         /// <summary>SDF 字体使用的 Shader 名称</summary>
         private const string SDFShaderName = "TextMeshPro/Distance Field";
 
@@ -63,69 +55,6 @@ namespace Builder
         //  主入口
         // ================================================================
 
-        [MenuItem("TEngine/Localization/测试", priority = -100)]
-        public static void Generate_Test()
-        {
-            string srcPath = SourceFontDir + "/AaFengKuangYuanShiRen.ttf";
-            Font sourceFont = AssetDatabase.LoadAssetAtPath<Font>(srcPath);
-            //创建一个没有字符得tmp资源
-            TMP_FontAsset fontAsset = TMP_FontAsset.CreateFontAsset(
-                sourceFont,
-                SamplingPointSize,
-                AtlasPadding,
-                RenderMode,
-                AtlasMaxSize,
-                AtlasMaxSize,
-                AtlasPopulationMode.Dynamic,
-                false
-            );
-            //加入需要用到得字
-            fontAsset.TryAddCharacters("A");
-            string assetName    = $"AaFengKuangYuanShiRen SDF.asset";
-            string assetPath    = Path.Combine(OutputFontDir + "/Test", assetName).Replace('\\', '/');
-            //获取之前得字体资源
-            TMP_FontAsset oldFontAsset = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(assetPath);
-            //设置名字 （必须在 CopySerialized 之前）
-            fontAsset.name = "AaFengKuangYuanShiRen SDF";
-            if (oldFontAsset != null)
-            {
-                var material = oldFontAsset.material;
-                var atlasTexture = oldFontAsset.atlasTexture;
-                //设置名字 防止为空 （必须在 CopySerialized 之前）
-                fontAsset.atlasTexture.name = $"AaFengKuangYuanShiRen SDF Atlas";
-                //复制之前得设置
-                EditorUtility.CopySerialized(fontAsset, oldFontAsset);
-                EditorUtility.CopySerialized(fontAsset.atlasTexture, oldFontAsset.atlasTexture);
-                oldFontAsset.material = material;
-                oldFontAsset.atlasTextures[0] = atlasTexture;
-                
-                //更新材质属性
-                GenerateTMPUtility.UpdateMaterialProperty(material, oldFontAsset);
-                fontAsset = oldFontAsset;
-            }
-            else
-            {
-                // 创建材质并绑定
-                Material material = new Material(Shader.Find("TextMeshPro/Distance Field"));
-                material.name = $"AaFengKuangYuanShiRen SDF Material";
-                fontAsset.atlasTexture.name = $"AaFengKuangYuanShiRen SDF Atlas";
-                GenerateTMPUtility.UpdateMaterialProperty(material, fontAsset);
-                fontAsset.material = material;
-                AssetDatabase.CreateAsset(fontAsset, assetPath);
-                AssetDatabase.AddObjectToAsset(material, fontAsset);
-                AssetDatabase.AddObjectToAsset(fontAsset.atlasTexture, fontAsset);
-            }
-            GenerateTMPUtility.SetTextureReadable(fontAsset.atlasTexture, false);
-            fontAsset.ReadFontAssetDefinition();
-            
-            AssetDatabase.SaveAssets();
-            AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(fontAsset));  // Re-import font asset to get the new updated version.
-            
-            AssetDatabase.Refresh();
-            
-            TMPro_EventManager.ON_FONT_PROPERTY_CHANGED(true, fontAsset);
-        }
-        
         /// <summary>
         /// 菜单入口：TEngine -> Localization -> 生成语言文件。
         /// 1) 加载配置表
@@ -170,7 +99,7 @@ namespace Builder
                 // 构建「设置面板 key」集合（TbLanguage 中定义的 Name）
                 HashSet<string> settingKeys = BuildSettingKeySet(langTable);
                 // ---- 3 & 4. 逐字体收集字符并生成 SDF 资源 ----
-                float totalSteps = fontGroups.Count * 2f;   // 每种字体 × 2（普通 + 设置）
+                float totalSteps = fontGroups.Count * 4f;   // 每种字体 × 4（两次收集和两次构建）
                 int   step = 0;
 
                 foreach (var kv in fontGroups)
@@ -184,6 +113,13 @@ namespace Builder
                     EditorUtility.DisplayProgressBar("多语言字体生成", $"分析字符 [{fontFileName}] 普通文本 ...", progress);
 
                     HashSet<char> normalChars = CollectCharsForFontGroup(langs, contentTable, settingKeys, settingOnly: false);
+                    // 通用UI补充字符按源字体名管理，不扫描文字关卡或拼音。
+                    string extraPath = Path.Combine("Assets/Editor/Builder/Localization/AdditionalCharacters",
+                        Path.GetFileNameWithoutExtension(fontFileName) + ".txt");
+                    if (File.Exists(extraPath))
+                        foreach (char c in File.ReadAllText(extraPath))
+                            if (!char.IsControl(c)) normalChars.Add(c);
+                    EnsureDirectory(OutputFontDir);
 
                     // 3b. 生成普通字体 SDF 资源
                     step++;
@@ -225,25 +161,6 @@ namespace Builder
                     }
                 }
 
-                // ---- 4.5 收集关卡文字并生成独立的关卡字体资源 ----
-                EditorUtility.DisplayProgressBar("多语言字体生成", "收集关卡文字 ...", 0.93f);
-                HashSet<char> levelChars = CollectLevelCharsForFontGroup();
-
-                if (levelChars.Count > 0)
-                {
-                    string levelDir = Path.Combine(OutputFontDir, LevelSubDir);
-                    EnsureDirectory(levelDir);
-
-                    // 关卡文字使用主游戏字体，优先匹配 AlibabaPuHuiTi-3-95-ExtraBold
-                    string levelFont = "AlibabaPuHuiTi-3-95-ExtraBold";
-
-                    BuildFontAsset(levelFont, levelChars, levelDir, LevelSuffix);
-                }
-                else
-                {
-                    Debug.LogWarning("[字体生成] 无关卡文字字符，跳过关卡字体生成。");
-                }
-
                 // ---- 5. 保存并刷新 ----
                 EditorUtility.DisplayProgressBar("多语言字体生成", "刷新资源数据库 ...", 0.98f);
                 AssetDatabase.SaveAssets();
@@ -256,6 +173,7 @@ namespace Builder
             {
                 EditorUtility.ClearProgressBar();
                 Debug.LogError($"[字体生成] 异常:\n{ex}");
+                if (Application.isBatchMode) throw;
                 EditorUtility.DisplayDialog("字体生成失败", ex.Message, "确定");
             }
         }
@@ -364,44 +282,6 @@ namespace Builder
         }
         
         /// <summary>
-        /// 获取关卡得文字 生成一个单独得字体
-        /// </summary>
-        /// <returns></returns>
-        private static HashSet<char> CollectLevelCharsForFontGroup()
-        {
-            HashSet<char> chars = new HashSet<char>();
-            TextLevelDataScriptableObject levelDataScriptable = AssetDatabase.LoadAssetAtPath<TextLevelDataScriptableObject>(
-                "Assets/AssetRaw/Configs/LevelConfigs/TextLevelDataScriptableObject.asset");
-            foreach (var level in levelDataScriptable.levelDataList)
-            {
-                foreach (var c in level.baseCharacter)
-                {
-                    chars.Add(c);
-                }
-
-                foreach (var answer in level.answers)
-                {
-                    foreach (var c in answer.answerCharacter)
-                    {
-                        chars.Add(c);
-                    }
-                }
-            }
-            //添加白名单
-            foreach (var writeChar in GenerateTMPDefine.WhiteList)
-            {
-                chars.Add(writeChar);
-            }
-
-            //添加韵母
-            foreach (var intonation in GenerateTMPDefine.LevelIntonation)
-            {
-                chars.Add(intonation);
-            }
-            return chars;
-        }
-        
-        /// <summary>
         /// 按顺序排序
         /// </summary>
         /// <param name="chars"></param>
@@ -437,7 +317,7 @@ namespace Builder
         /// 加载一款源字体（.ttf），创建对应的 TMPro SDF FontAsset 并保存为 .asset 文件。
         /// 先校验并移除字体中不存在的字符，再以 256×256 起步的图集预烘焙项目相关字符，
         /// 若图集装不下则逐步扩容重试（256→512→1024→...→4096）。
-        /// 最终使用 Dynamic 模式兜底——运行时仍可动态生成缺失字形。
+        /// 烘焙阶段使用Dynamic；正式产物为Static，缺字或容量不足必须失败。
         /// 
         /// 生成流程参照 TMPro 标准做法：
         ///   - 新建时：创建 Material → UpdateMaterialProperty → AddObjectToAsset 嵌入子资源
@@ -465,8 +345,7 @@ namespace Builder
             Font sourceFont = AssetDatabase.LoadAssetAtPath<Font>(srcPath);
             if (sourceFont == null)
             {
-                Debug.LogError($"[字体生成] 源字体缺失: {srcPath}");
-                return;
+                throw new InvalidOperationException($"源字体缺失: {srcPath}");
             }
 
             // -- 计算资源名与路径 --
@@ -476,10 +355,11 @@ namespace Builder
             string assetCoreName = Path.GetFileNameWithoutExtension(assetName);
 
             // -- 校验并移除字体中不存在的字符（避免 TryAddCharacters 因无字形字符无限扩容） --
+            characters.RemoveWhere(char.IsControl);
             int removedCount = RemoveMissingGlyphs(sourceFont, characters, fontBaseName, nameSuffix);
             if (removedCount > 0)
             {
-                Debug.LogWarning($"[字体生成] '{fontBaseName}{nameSuffix}' 已移除 {removedCount} 个字体不存在的字符，剩余 {characters.Count} 个。");
+                throw new InvalidOperationException($"字体 {fontBaseName}{nameSuffix} 缺少 {removedCount} 个必需字符，见字形校验日志；禁止导出不完整静态图集。");
             }
 
             if (characters.Count == 0)
@@ -502,7 +382,7 @@ namespace Builder
             }
 
             // ================================================================
-            //  保存/更新资源（参照 Generate_Test 标准流程）
+            // 保存/更新资源，保留已有GUID与材质引用
             // ================================================================
 
             // 设置名字（必须在 CopySerialized 之前）
@@ -520,7 +400,7 @@ namespace Builder
                 List<TMP_FontAsset> fullBacks = new List<TMP_FontAsset>();
                 fullBacks.AddRange(oldFontAsset.fallbackFontAssetTable);
                 EditorUtility.CopySerialized(fontAsset, oldFontAsset);
-                EditorUtility.CopySerialized(fontAsset.atlasTexture, oldFontAsset.atlasTexture);
+                EditorUtility.CopySerialized(fontAsset.atlasTexture, atlasTexture);
                 oldFontAsset.material = material;
                 oldFontAsset.atlasTextures[0] = atlasTexture;
 
@@ -529,7 +409,8 @@ namespace Builder
                 //关联fullback
                 foreach (var tmpFontAsset in fullBacks)
                 {
-                    oldFontAsset.fallbackFontAssetTable.Add(tmpFontAsset);
+                    if (tmpFontAsset != null && tmpFontAsset != oldFontAsset && !oldFontAsset.fallbackFontAssetTable.Contains(tmpFontAsset))
+                        oldFontAsset.fallbackFontAssetTable.Add(tmpFontAsset);
                 }
                 fontAsset = oldFontAsset;
             }
@@ -651,20 +532,10 @@ namespace Builder
                 }
             }
 
-            // 已尝试所有扩容方案，仍有字符装不下（可能是个别异常字符）
-            // 记录警告但不阻断——Dynamic 模式会在运行时处理缺失字符
-            if (fontAsset != null && fontAsset.TryAddCharacters(charString, out var finalMissing))
-            {
-                Debug.LogWarning($"[字体生成] '{fontBaseName}{nameSuffix}' 扩容至 {currentW}×{currentH} 后" +
-                                 $"仍有 {finalMissing.Length} 个字符无法预烘焙，" +
-                                 "将由 Dynamic 模式运行时生成。");
-                return true;
-            }
-
-            // 最终兜底：直接返回已创建的 FontAsset，不全量预烘焙也 OK
-            Debug.LogWarning($"[字体生成] '{fontBaseName}{nameSuffix}' 无法全量预烘焙字符，" +
-                             $"图集={currentW}×{currentH}，将依赖 Dynamic 模式。");
-            return fontAsset != null;
+            // 最终产物为Static，不能再声称运行时Dynamic兜底。
+            if (fontAsset != null) UnityEngine.Object.DestroyImmediate(fontAsset);
+            fontAsset = null;
+            throw new InvalidOperationException($"字体 {fontBaseName}{nameSuffix} 超过最大图集容量，导出已停止。");
         }
 
         /// <summary>

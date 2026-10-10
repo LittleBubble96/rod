@@ -12,6 +12,8 @@ namespace GameLogic.Rod
         public RodSaveData save;
         public bool home=true,busy,adReady,adLoading;
         public string popup,message,rerollCost,skipCost;
+        // 已完成的启动阶段比例；不按时间插值，也不把失败显示为加载完成。
+        public float loadingProgress;
         public int selectedFace=-1;
         public HashSet<int> revival=new HashSet<int>();
     }
@@ -25,6 +27,7 @@ namespace GameLogic.Rod
         private float helpUntil;
         private GameObject help;
         private RodViewModel model;
+        private readonly RodUINodePool nodes = new RodUINodePool();
         public void Initialize(RodUISkin value){skin=value;EnsureRoot();}
         private void EnsureRoot()
         {
@@ -39,10 +42,26 @@ namespace GameLogic.Rod
         public void Render(RodViewModel vm)
         {
             model=vm;EnsureRoot();
-            if(content!=null){content.gameObject.SetActive(false);if(Application.isPlaying)Destroy(content.gameObject);else DestroyImmediate(content.gameObject);}
-            content=Rect(frame,"Content",0,0,750,1500);content.anchorMin=content.anchorMax=content.pivot=new Vector2(.5f,.5f);content.anchoredPosition=Vector2.zero;
+            // 帮助提示只属于当前交互；刷新或切页时回收，避免计时器影响新弹窗。
+            help = null;
+            nodes.Begin();
+            try { RenderContent(vm); }
+            finally { nodes.End(); }
+        }
+
+        private void RenderContent(RodViewModel vm)
+        {
+            content=Rent(frame,"Content",RodUINodePool.Kind.Rect,0,0,750,1500).Rect;content.anchorMin=content.anchorMax=content.pivot=new Vector2(.5f,.5f);content.anchoredPosition=Vector2.zero;
             Panel(content,"Background",0,0,750,1500,skin.mint,null);
-            if(vm.save==null){Text(content,"LoadingTitle","六面算筹",65,360,620,110,64);Text(content,"LoadingMessage",vm.message??"正在准备棋盘",65,610,620,160,30);Panel(content,"ProgressTrack",95,820,560,30,skin.ink,skin.slot);Panel(content,"ProgressFill",100,825,vm.busy?180:545,20,skin.gold,skin.slot);return;}
+            if(vm.save==null){
+                float progress=Mathf.Clamp01(vm.loadingProgress);
+                Text(content,"LoadingTitle","六面算筹",65,360,620,110,64);
+                Text(content,"LoadingMessage",vm.message??"正在准备棋盘",65,610,620,160,30);
+                Panel(content,"ProgressTrack",95,820,560,30,skin.ink,skin.slot);
+                Panel(content,"ProgressFill",100,825,550*progress,20,skin.gold,skin.slot);
+                Text(content,"LoadingPercent",Mathf.RoundToInt(progress*100)+"%",225,875,300,55,28);
+                return;
+            }
             if(vm.home)Home();else Board();
             if(!string.IsNullOrEmpty(vm.popup))Modal(vm.popup);
             Header();
@@ -74,15 +93,19 @@ namespace GameLogic.Rod
                 var card=Button(content,"Region_"+f,"",x,y,335,183,model.selectedFace==f?skin.gold:skin.cream,()=>Emit("select",face));
                 int[] prizes=r.prizes??RodRules.LegacyPrizes;
                 Text(card,"Face",RodCatalog.Faces[f],20,10,66,57,38);Text(card,"Awards",$"第一 {prizes[f*2]}   第二 {prizes[f*2+1]}",104,20,210,40,22);
-                int mine=r.dice.Where(d=>d.region==f).Sum(d=>d.value);
+                int mine=0;
+                for(int i=0;i<r.dice.Length;i++)if(r.dice[i].region==f)mine+=r.dice[i].value;
                 Text(card,"Power",$"你 {mine}    甲 {r.opponentPower[f]}    乙 {r.opponentPower[6+f]}    丙 {r.opponentPower[12+f]}",12,76,310,36,21);
-                var placed=r.dice.Where(d=>d.region==f).ToArray();
-                for(int n=0;n<placed.Length;n++)Text(card,"Placed_"+n,placed[n].value.ToString(),16+n*32,123,30,36,23);
+                int placedCount=0;
+                for(int i=0;i<r.dice.Length;i++){
+                    if(r.dice[i].region!=f)continue;
+                    Text(card,"Placed_"+placedCount,r.dice[i].value.ToString(),16+placedCount*32,123,30,36,23);placedCount++;
+                }
             }
             var tray=Panel(content,"Tray",30,855,690,310,skin.cream,skin.panel);
             Text(tray,"TrayTitle",model.save.tutorialCompleted?"选择同花色，整组落区":"点击一枚算筹选中同花色，再点确认",18,15,654,43,24);
-            var hand=r.dice.Where(d=>d.region<0).ToArray();
-            for(int n=0;n<hand.Length;n++){var d=hand[n];int face=d.face;Die(tray,d.value,RodCatalog.Faces[face],25+n%5*128,78+n/5*110,96,()=>Emit("select",face),model.selectedFace==face);}
+            int handCount=0;
+            for(int i=0;i<r.dice.Length;i++){var d=r.dice[i];if(d.region>=0)continue;int face=d.face;Die(tray,d.value,RodCatalog.Faces[face],25+handCount%5*128,78+handCount/5*110,96,()=>Emit("select",face),model.selectedFace==face);handCount++;}
             Tool(content,"Reroll","重投",RodIcon.Reroll,model.rerollCost,32,1200,()=>Emit("reroll"));
             Tool(content,"Skip","下一关",RodIcon.Next,model.skipCost,202,1200,()=>Emit("skip"),r.levelId<200);
             Button(content,"Confirm","确认落区",386,1210,328,118,skin.gold,()=>Emit("place"),model.selectedFace>=0&&r.phase==RodPhase.AwaitGroup);
@@ -121,29 +144,74 @@ namespace GameLogic.Rod
                 var scores=RodRules.ScoreRun(model.save.activeRun);Text(panel,"FailedScore",$"你的总分 {scores[0]}\n本局最高 {scores.Max()}",55,190,550,190,42);
                 Button(panel,"Revive","选择算筹复活",95,480,470,100,skin.gold,()=>Emit("revive"));Button(panel,"Restart","免费重开",95,625,470,85,skin.mint,()=>Emit("restart"));
             }else if(kind=="revive"){
-                var r=model.save.activeRun;int points=r.dice.Where(d=>model.revival.Contains(d.id)).Sum(d=>d.value);
+                var r=model.save.activeRun;int points=0;
+                for(int i=0;i<r.dice.Length;i++)if(model.revival.Contains(r.dice[i].id))points+=r.dice[i].value;
                 Text(panel,"Selection",$"已选 {points} / 6 点",75,145,460,60,34);
                 var info=Button(panel,"Info","",552,145,60,60,skin.mint,()=>ShowHelp(panel));Icon(info,RodIcon.Help,8,8,44,skin.ink);
                 for(int n=0;n<9;n++){var d=r.dice[n];int id=d.id;Die(panel,d.value,RodCatalog.Faces[d.face],91+n%3*173,255+n/3*145,116,()=>Emit("pick",id),model.revival.Contains(id));}
-                AdButton(panel,"ReviveAd","看广告复活",95,795,470,90,()=>Emit("reviveAd"),points==6);
+                AdButton(panel,"ReviveAd","看广告复活",95,795,470,90,()=>Emit("reviveAd"),points==6&&model.adReady);
+                // 随主弹窗预建一次，点击仅切换可见性；不在点击回调中创建节点。
+                var hint=Panel(panel,"ReviveHelp",65,210,530,135,skin.ink,skin.panel);
+                Text(hint,"Tip","广告完成后，才会取回\n所选的这几枚算筹",18,16,494,103,26,Color.white);
+                hint.gameObject.SetActive(false);
             }
         }
         private void ShowHelp(Transform parent)
-        {if(help!=null)Destroy(help);var p=Panel(parent,"ReviveHelp",65,210,530,135,skin.ink,skin.panel);Text(p,"Tip","广告完成后，才会取回\n所选的这几枚算筹",18,16,494,103,26,Color.white);help=p.gameObject;helpUntil=Time.unscaledTime+3;}
+        {
+            var hint=parent.Find("ReviveHelp");
+            if(hint==null)return;
+            help=hint.gameObject;help.SetActive(true);helpUntil=Time.unscaledTime+3;
+        }
         private void AdButton(Transform p,string name,string label,float x,float y,float w,float h,Action action,bool enabled=true)
         {var b=Button(p,name,model.adLoading?"广告加载中":label,x,y,w,h,skin.gold,action,enabled&&!model.adLoading);Icon(b,model.adLoading?RodIcon.Loading:RodIcon.Ad,12,(h-38)/2,38,skin.ink);}
         private void Die(Transform p,int value,string face,float x,float y,float size,Action action,bool selected=false)
-        {value=Mathf.Clamp(value,1,3);var b=Button(p,"Die_"+face,"",x,y,size,size,selected?skin.gold:Color.white,action??(()=>{}));Text(b,"Face",face,3,2,size-6,size*.58f,36);Text(b,"Points",new string('●',value),2,size*.59f,size-4,size*.27f,17);}
+        {value=Mathf.Clamp(value,1,3);var b=Button(p,"Die_"+face,"",x,y,size,size,selected?skin.gold:Color.white,action);Text(b,"Face",face,3,2,size-6,size*.58f,36);Text(b,"Points",value==1?"●":value==2?"●●":"●●●",2,size*.59f,size-4,size*.27f,17);}
         private void Emit(string action,int value=0)=>Action?.Invoke(action,value);
         public RectTransform Rect(Transform p,string name,float x,float y,float w,float h)
         {var r=new GameObject(name,typeof(RectTransform)).GetComponent<RectTransform>();r.SetParent(p,false);r.anchorMin=r.anchorMax=new Vector2(0,1);r.pivot=new Vector2(0,1);r.anchoredPosition=new Vector2(x,-y);r.sizeDelta=new Vector2(w,h);return r;}
         private RectTransform Panel(Transform p,string n,float x,float y,float w,float h,Color color,Sprite sprite,bool hit=false)
-        {var r=Rect(p,n,x,y,w,h);var i=r.gameObject.AddComponent<Image>();i.color=color;i.sprite=sprite;i.type=sprite?Image.Type.Sliced:Image.Type.Simple;i.raycastTarget=hit;return r;}
+        {
+            var node=Rent(p,n,RodUINodePool.Kind.Panel,x,y,w,h);
+            SetImage(node.Image,color,sprite,hit);
+            return node.Rect;
+        }
         private RectTransform Button(Transform p,string n,string text,float x,float y,float w,float h,Color color,Action click,bool enabled=true)
-        {var r=Panel(p,n,x,y,w,h,color,skin.button,true);var b=r.gameObject.AddComponent<Button>();b.interactable=enabled;b.onClick.AddListener(()=>click());if(text!="")Text(r,"Label",text,12,7,w-24,h-14,30);return r;}
+        {
+            var node=Rent(p,n,RodUINodePool.Kind.Button,x,y,w,h);
+            SetImage(node.Image,color,skin.button,click!=null);
+            node.Callback=click;
+            node.Button.interactable=enabled;
+            if(text!="")Text(node.Rect,"Label",text,12,7,w-24,h-14,30);
+            return node.Rect;
+        }
         private void Text(Transform p,string n,string text,float x,float y,float w,float h,float size,Color? color=null)
-        {var r=Rect(p,n,x,y,w,h);var t=r.gameObject.AddComponent<TextMeshProUGUI>();t.font=skin.font;t.text=text;t.fontSize=size;t.color=color??skin.ink;t.alignment=TextAlignmentOptions.Center;t.raycastTarget=false;t.enableWordWrapping=true;t.overflowMode=TextOverflowModes.Ellipsis;}
+        {
+            var t=Rent(p,n,RodUINodePool.Kind.Text,x,y,w,h).Text;
+            t.font=skin.font;t.text=text;t.fontSize=size;t.color=color??skin.ink;t.alignment=TextAlignmentOptions.Center;t.raycastTarget=false;t.enableWordWrapping=true;t.overflowMode=TextOverflowModes.Ellipsis;
+        }
         private void Icon(Transform p,RodIcon icon,float x,float y,float size,Color color)
-        {var r=Rect(p,icon.ToString(),x,y,size,size);var g=r.gameObject.AddComponent<RodIconGraphic>();g.icon=icon;g.color=color;g.raycastTarget=false;}
+        {
+            var g=Rent(p,icon.ToString(),RodUINodePool.Kind.Icon,x,y,size,size).Icon;
+            if(g.icon!=icon){g.icon=icon;g.SetVerticesDirty();}
+            g.color=color;g.raycastTarget=false;
+        }
+
+        /// <summary>借出节点并更新布局；组件只在首次创建时分配。</summary>
+        private RodUINodePool.Node Rent(Transform parent,string name,RodUINodePool.Kind kind,float x,float y,float w,float h)
+        {
+            var node=nodes.Rent(parent,name,kind);
+            var rect=node.Rect;
+            rect.anchorMin=rect.anchorMax=rect.pivot=new Vector2(0,1);
+            rect.anchoredPosition=new Vector2(x,-y);
+            rect.sizeDelta=new Vector2(w,h);
+            return node;
+        }
+
+        private static void SetImage(Image image,Color color,Sprite sprite,bool hit)
+        {
+            image.color=color;image.sprite=sprite;
+            image.type=sprite?Image.Type.Sliced:Image.Type.Simple;
+            image.raycastTarget=hit;
+        }
     }
 }

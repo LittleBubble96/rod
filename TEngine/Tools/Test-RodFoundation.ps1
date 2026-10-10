@@ -1,8 +1,11 @@
-param([string]$UnityData = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data')
+param(
+    [string]$UnityData = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data',
+    [string]$OutputDirectory
+)
 $ErrorActionPreference = 'Stop'
 $taskEngine = Split-Path $PSScriptRoot -Parent
 $taskRoot = Split-Path $taskEngine -Parent
-$taskOutput = Join-Path $taskRoot 'work/rod-validation'
+$taskOutput = if ($OutputDirectory) { [System.IO.Path]::GetFullPath($OutputDirectory) } else { Join-Path $taskRoot 'work/rod-validation' }
 New-Item -ItemType Directory -Force -Path $taskOutput | Out-Null
 $taskExe = Join-Path $taskOutput 'RodFoundationTests.exe'
 $taskArguments = @('/nologo', '/target:exe', "/out:$taskExe")

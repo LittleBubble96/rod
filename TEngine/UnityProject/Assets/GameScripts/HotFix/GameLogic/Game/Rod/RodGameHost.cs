@@ -20,25 +20,49 @@ namespace GameLogic.Rod
         private float toastUntil;
         private readonly UniTaskCompletionSource initialized=new UniTaskCompletionSource();
         public RodSession Session=>session;
+        /// <summary>本地准备、事件订阅和首屏渲染均完成后才允许外部测试操作按钮。</summary>
+        public bool IsReady { get; private set; }
         private void Start(){InitializeAsync().Forget();}
         public async UniTask InitializeAsync()
         {
             if(starting){await initialized.Task;return;}starting=true;
             try{
                 if(skin==null||levelConfig==null)throw new InvalidOperationException("游戏资源缺失，请执行六面算筹/生成UI与预览场景。");
-                SDK.InitializeAndLogin();
                 if(EventSystem.current==null){var e=new GameObject("EventSystem",typeof(EventSystem),typeof(StandaloneInputModule));}
                 view=GetComponent<RodGameView>();if(view==null)view=gameObject.AddComponent<RodGameView>();view.Initialize(skin);vm.busy=true;view.Render(vm);
                 await UniTask.Yield();
-                var catalog=JsonUtility.FromJson<RodCatalog>(levelConfig.text);catalog.Validate();
+                if(disposed)throw new OperationCanceledException("游戏入口已销毁。");
+                // 进度只在实际阶段完成后推进。SDK 此处只完成初始化，不声称异步登录成功。
+                SDK.InitializeAndLogin();
+                await ShowLoadingStage(1,"平台初始化完成");
+                var catalog=JsonUtility.FromJson<RodCatalog>(levelConfig.text);
+                await ShowLoadingStage(2,"关卡读取完成");
+                catalog.Validate();
+                await ShowLoadingStage(3,"关卡校验完成");
                 var repo=usePreviewSave?(Application.isBatchMode?new RodSaveRepository(new MemoryStorage()):new RodSaveRepository(new WindowReadCacheFileSystem("rod_preview_v1.json"))):RodSaveRepository.CreateLocal();
                 session=new RodSession(catalog,repo.Load(),repo.Commit,s=>s.Copy());
+                await ShowLoadingStage(4,"存档恢复完成");
                 session.RefreshDay();
+                await ShowLoadingStage(5,"游戏准备完成");
                 view.Action+=Handle;session.Changed+=Refresh;AdSystem.StateChanged+=AdChanged;
-                AdSystem.EnterPage(AdIds.RewardedVideo);vm.busy=false;vm.message=null;Refresh();initialized.TrySetResult();
-            }catch(Exception e){vm.busy=false;vm.message="启动失败，原存档已保留。\n"+e.Message;view?.Render(vm);initialized.TrySetException(e);Debug.LogException(e);throw;}
+                AdSystem.EnterPage(AdIds.RewardedVideo);vm.busy=false;vm.message=null;Refresh();IsReady=true;initialized.TrySetResult();
+            }catch(OperationCanceledException) when(disposed){initialized.TrySetCanceled();}
+            catch(Exception e){vm.busy=false;vm.message="启动失败，原存档已保留。\n"+e.Message;view?.Render(vm);initialized.TrySetException(e);Debug.LogException(e);throw;}
         }
-        private void Update(){if(session!=null&&!string.IsNullOrEmpty(vm.message)&&Time.unscaledTime>=toastUntil){vm.message=null;Refresh();}}
+
+        /// <summary>
+        /// 展示已完成阶段数 / 五个本地准备阶段，并让出一帧供进度条绘制。
+        /// 这不是下载字节进度或耗时估计；YooAsset 的前置下载由启动链自行统计。
+        /// </summary>
+        private async UniTask ShowLoadingStage(int completed,string message)
+        {
+            vm.loadingProgress=completed/5f;
+            vm.message=message;
+            view.Render(vm);
+            await UniTask.Yield();
+            if(disposed)throw new OperationCanceledException("游戏入口已销毁。");
+        }
+        private void Update(){if(vm.save!=null&&session!=null&&!string.IsNullOrEmpty(vm.message)&&Time.unscaledTime>=toastUntil){vm.message=null;Refresh();}}
         private void Toast(string text){vm.message=text;toastUntil=Time.unscaledTime+4;}
         private uint Seed(){var bytes=Guid.NewGuid().ToByteArray();uint n=BitConverter.ToUInt32(bytes,0);return n==0?1:n;}
         private void Handle(string action,int value)
@@ -52,7 +76,8 @@ namespace GameLogic.Rod
                 case "home":session.Checkpoint();vm.home=true;vm.popup=null;vm.selectedFace=-1;break;
                 case "rules":vm.popup="rules";break;
                 case "coins":session.RefreshDay();vm.popup="coins";break;
-                case "close":vm.popup=null;break;
+                // 选筹只是失败弹窗的子流程，关闭应返回失败结果而不是露出终局棋盘。
+                case "close":vm.popup=vm.popup=="revive"?"failed":null;vm.revival.Clear();break;
                 case "select":if(s.activeRun!=null&&s.activeRun.phase==RodPhase.AwaitGroup&&RodRules.SelectGroup(s.activeRun,value).Length>0)vm.selectedFace=value;break;
                 case "place":session.Place(vm.selectedFace);vm.selectedFace=-1;ShowTerminal();break;
                 case "restart":session.Start(s.activeRun.levelId,Seed());vm.selectedFace=-1;vm.popup=null;break;

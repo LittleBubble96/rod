@@ -12,13 +12,14 @@ namespace GameLogic.Rod
         public RodSaveData save;
         public bool home=true,busy,adReady,adLoading;
         public string popup,message,rerollCost,skipCost;
+        public string levelName;
         // 已完成的启动阶段比例；不按时间插值，也不把失败显示为加载完成。
         public float loadingProgress;
         public int selectedFace=-1;
         public HashSet<int> revival=new HashSet<int>();
     }
-    /// <summary>仅布局与展示；业务由Action事件交给Presenter。设计尺寸750×1500。</summary>
-    public sealed class RodGameView : MonoBehaviour
+    /// <summary>仅布局与展示；业务由Action事件交给Presenter。Loading按原稿853×1844；其余页面暂用750×1500功能布局。</summary>
+    public sealed partial class RodGameView : MonoBehaviour
     {
         public RodUISkin skin;
         public event Action<string,int> Action;
@@ -28,7 +29,8 @@ namespace GameLogic.Rod
         private GameObject help;
         private RodViewModel model;
         private readonly RodUINodePool nodes = new RodUINodePool();
-        public void Initialize(RodUISkin value){skin=value;EnsureRoot();}
+        private Vector2 referenceSize = new Vector2(750, 1500);
+        public void Initialize(RodUISkin value){skin=value;if(skin.loadingArt!=null)skin.loadingArt.Validate();if(skin.pageArt!=null)skin.pageArt.Validate();EnsureRoot();}
         private void EnsureRoot()
         {
             if(frame!=null)return;
@@ -37,11 +39,28 @@ namespace GameLogic.Rod
             var scaler=GetComponent<CanvasScaler>();if(scaler==null)scaler=gameObject.AddComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ConstantPixelSize;
             frame=Rect(transform,"SafeFrame",0,0,750,1500);frame.anchorMin=frame.anchorMax=frame.pivot=new Vector2(.5f,.5f);Fit();
         }
-        private void Fit(){if(frame==null)return;var safe=Screen.safeArea;float scale=Mathf.Min(safe.width/750f,safe.height/1500f);frame.localScale=Vector3.one*scale;frame.anchoredPosition=safe.center-new Vector2(Screen.width,Screen.height)*.5f;lastSafe=safe;lastW=Screen.width;lastH=Screen.height;}
-        private void Update(){if(Screen.safeArea!=lastSafe||Screen.width!=lastW||Screen.height!=lastH)Fit();if(help!=null&&Time.unscaledTime>=helpUntil){help.SetActive(false);help=null;}}
+        private void Fit(){if(frame==null)return;FitViewport(new Vector2(Screen.width,Screen.height),Screen.safeArea);}
+        /// <summary>页面以安全区宽度为基准重排；仅极端横屏采用最小高度约束。Loading保留插画比例。</summary>
+        private void FitViewport(Vector2 viewport, Rect safe)
+        {
+            bool pages = model?.save != null && skin.pageArt != null;
+            referenceSize = pages ? new Vector2(853,1844) :
+                skin.loadingArt != null ? new Vector2(853,1844) : new Vector2(750,1500);
+            float scale = Mathf.Min(safe.width/referenceSize.x,safe.height/referenceSize.y);
+            frame.sizeDelta=referenceSize;
+            frame.localScale=Vector3.one*scale;
+            frame.anchoredPosition=safe.center-viewport*.5f;
+            lastSafe=safe; lastW=(int)viewport.x; lastH=(int)viewport.y;
+        }
+        private void Update(){if(model!=null&&(Screen.safeArea!=lastSafe||Screen.width!=lastW||Screen.height!=lastH))Render(model);if(help!=null&&Time.unscaledTime>=helpUntil){help.SetActive(false);help=null;}}
         public void Render(RodViewModel vm)
+            => Render(vm, new Vector2(Screen.width,Screen.height), Screen.safeArea);
+
+        /// <summary>显式视口用于嵌入式预览和离屏渲染；与真机走同一套布局，不另设测试布局。</summary>
+        public void Render(RodViewModel vm, Vector2 viewport, Rect safeArea)
         {
             model=vm;EnsureRoot();
+            FitViewport(viewport,safeArea);
             // 帮助提示只属于当前交互；刷新或切页时回收，避免计时器影响新弹窗。
             help = null;
             nodes.Begin();
@@ -51,7 +70,9 @@ namespace GameLogic.Rod
 
         private void RenderContent(RodViewModel vm)
         {
-            content=Rent(frame,"Content",RodUINodePool.Kind.Rect,0,0,750,1500).Rect;content.anchorMin=content.anchorMax=content.pivot=new Vector2(.5f,.5f);content.anchoredPosition=Vector2.zero;
+            content=Rent(frame,"Content",RodUINodePool.Kind.Rect,0,0,referenceSize.x,referenceSize.y).Rect;content.anchorMin=content.anchorMax=content.pivot=new Vector2(.5f,.5f);content.anchoredPosition=Vector2.zero;
+            if(vm.save==null && skin.loadingArt!=null){RenderLoadingArt(vm);return;}
+            if(vm.save!=null && skin.pageArt!=null){RenderPagesArt(vm);return;}
             Panel(content,"Background",0,0,750,1500,skin.mint,null);
             if(vm.save==null){
                 float progress=Mathf.Clamp01(vm.loadingProgress);
@@ -204,13 +225,16 @@ namespace GameLogic.Rod
             rect.anchorMin=rect.anchorMax=rect.pivot=new Vector2(0,1);
             rect.anchoredPosition=new Vector2(x,-y);
             rect.sizeDelta=new Vector2(w,h);
+            rect.localScale=Vector3.one;
             return node;
         }
 
         private static void SetImage(Image image,Color color,Sprite sprite,bool hit)
         {
             image.color=color;image.sprite=sprite;
-            image.type=sprite?Image.Type.Sliced:Image.Type.Simple;
+            image.type=sprite && sprite.border!=Vector4.zero?Image.Type.Sliced:Image.Type.Simple;
+            image.material=null;
+            image.fillCenter=true;
             image.raycastTarget=hit;
         }
     }

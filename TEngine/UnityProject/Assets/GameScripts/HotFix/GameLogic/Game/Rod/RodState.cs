@@ -67,6 +67,9 @@ namespace GameLogic.Rod
         public long highestSeenUtcTicks;
         public string tutorialStep = "welcome";
         public bool tutorialCompleted;
+        // 默认不静音，兼容没有这些字段的历史存档；只保存用户选择，不依赖UI状态。
+        public bool musicMuted;
+        public bool soundMuted;
         public List<RodLevelProgress> levels = new List<RodLevelProgress>();
         public RodRun activeRun;
         public bool hasActiveRun; // JsonUtility不能可靠保留内联对象null，写入显式标记。
@@ -109,6 +112,8 @@ namespace GameLogic.Rod
 
         public static int[] LegacyPrizes => new[] {10,5,10,8,9,6,8,7,8,5,7,5};
         public static int[] UniformPrizes => new[] {10,5,10,5,10,5,10,5,10,5,10,5};
+        /// <summary>2026-10-13 确认的差异化配置；每次返回独立数组，防止修改污染其他对局。仅用于新配置，旧局仍用存档快照。</summary>
+        public static int[] CurrentPrizes => new[] {12,4,10,8,11,5,9,6,8,5,7,3};
 
         public static int[] Score(int[,] power, int[] prizes = null)
         {

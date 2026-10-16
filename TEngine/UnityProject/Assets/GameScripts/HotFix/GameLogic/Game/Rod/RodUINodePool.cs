@@ -15,7 +15,7 @@ namespace GameLogic.Rod
     /// </summary>
     internal sealed class RodUINodePool
     {
-        internal enum Kind { Rect, Panel, Button, Text, Icon }
+        internal enum Kind { Rect, Panel, Button, Text, Icon, Group }
 
         /// <summary>缓存组件与唯一点击监听；刷新只替换 Callback，不叠加监听。</summary>
         internal sealed class Node
@@ -25,6 +25,7 @@ namespace GameLogic.Rod
             internal Button Button;
             internal TextMeshProUGUI Text;
             internal RodIconGraphic Icon;
+            internal CanvasGroup Group;
             internal Kind Type;
             internal Action Callback;
             internal ulong Generation;
@@ -125,6 +126,7 @@ namespace GameLogic.Rod
             }
             if (kind == Kind.Text) node.Text = node.Rect.gameObject.AddComponent<TextMeshProUGUI>();
             if (kind == Kind.Icon) node.Icon = node.Rect.gameObject.AddComponent<RodIconGraphic>();
+            if (kind == Kind.Group) node.Group = node.Rect.gameObject.AddComponent<CanvasGroup>();
             return node;
         }
     }

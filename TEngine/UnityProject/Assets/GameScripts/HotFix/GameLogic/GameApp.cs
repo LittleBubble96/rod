@@ -33,7 +33,7 @@ public partial class GameApp
                 StartupTelemetry.Success(step);
             }
             step=16;StartupTelemetry.Start(step);
-            AudioSystem.Instance.PlayBgm(AudioDefine.game_Bgm,.4f);
+            // 算筹入口独占音乐声道，恢复存档开关后再播放，避免此处提前播放造成双重音轨。
             StartupTelemetry.Success(step);GameEvent.Send(EventDefine.GameStartSuccessEvent);SDK.ReportGameStart();
         }catch(Exception e){StartupTelemetry.Fail(step,"rod_startup_exception",e.Message);Debug.LogException(e);}
     }

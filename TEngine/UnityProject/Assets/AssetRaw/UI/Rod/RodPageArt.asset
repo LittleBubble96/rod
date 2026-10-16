@@ -1,0 +1,426 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4296aa66a724575a6336fef0ec661d1, type: 3}
+  m_Name: RodPageArt
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: cc353d89dd199344dac89f7a62df24a2, type: 3}
+  - {fileID: 21300000, guid: fa7ea278dd34c7d40a11285421c4dd8b, type: 3}
+  - {fileID: 21300000, guid: 244bc4afc92793b488e8204afb34f408, type: 3}
+  - {fileID: 21300000, guid: 093cb3a425f75c74c9da38aa45695a41, type: 3}
+  - {fileID: 21300000, guid: 5a6f9953edd4c3b4b80f63fe9a52747b, type: 3}
+  - {fileID: 21300000, guid: a0ac7fe126d852f4db316528e8c65fb4, type: 3}
+  - {fileID: 21300000, guid: 4404dffeb908b994fa3565869adbb361, type: 3}
+  - {fileID: 21300000, guid: 94e31514d7f2b6b47adcddea7c29e485, type: 3}
+  - {fileID: 21300000, guid: 8a91acdc5c767a3449f44cb4354fd6a5, type: 3}
+  - {fileID: 21300000, guid: 006bb3017d09b3e4d81218357126f827, type: 3}
+  - {fileID: 21300000, guid: 05c9bc18ecf30304ab73b580b411a201, type: 3}
+  - {fileID: 21300000, guid: 2e0643e6e11a17540bc04b9c0edc2e3f, type: 3}
+  - {fileID: 21300000, guid: 9098f6502b36f674094d07d39c63444f, type: 3}
+  - {fileID: 21300000, guid: 5b8dbe4500b091c43a9f2a36b5599ec8, type: 3}
+  - {fileID: 21300000, guid: aebf6011cccdecf488abdc8dd02f8233, type: 3}
+  - {fileID: 21300000, guid: f9955566133684348b072e2bea3cd8c3, type: 3}
+  - {fileID: 21300000, guid: a205ff1e57d897843b5340cdd1e34486, type: 3}
+  - {fileID: 21300000, guid: 4ffcf235fe92d9c47bc28278c289ba15, type: 3}
+  - {fileID: 21300000, guid: 242452fe658d69c459cc0e0e0f41b3d5, type: 3}
+  - {fileID: 21300000, guid: 449f33e13baeb834ab5c98b6a721885a, type: 3}
+  - {fileID: 21300000, guid: db80c53dc1d721748b01edc2f9bb2b9c, type: 3}
+  - {fileID: 21300000, guid: d6819c29c3145af4fb90108f27c496ce, type: 3}
+  - {fileID: 21300000, guid: 8f110ffa261ca1b47a75a7db3c7554ea, type: 3}
+  - {fileID: 21300000, guid: c4b6e92b66bfc2c45b276a610b9faae6, type: 3}
+  - {fileID: 21300000, guid: 98bd11d36d9b07b499d91311c68eeb88, type: 3}
+  - {fileID: 21300000, guid: a85a874e19023d747821a58c35547748, type: 3}
+  - {fileID: 21300000, guid: ea66b53b65cc5614189333e9f60316f8, type: 3}
+  - {fileID: 21300000, guid: 62a19308ef5270343a8e06de9920685f, type: 3}
+  - {fileID: 21300000, guid: bc42e22e526e445439cba543cd555e94, type: 3}
+  - {fileID: 21300000, guid: c254fe7660d4f5f4398ef987a2fd1d6b, type: 3}
+  - {fileID: 21300000, guid: d83798296ce5c5b4fabb93774df5a0ae, type: 3}
+  - {fileID: 21300000, guid: 45bc6f4ad625a5e41ae320a5bd66e5db, type: 3}
+  - {fileID: 21300000, guid: 7fd6c14e09122164db53f9cb58538031, type: 3}
+  - {fileID: 21300000, guid: 9b02c9a0baefcb141b09eb3ac5759e73, type: 3}
+  - {fileID: 21300000, guid: e7936f13c469d58468b5176730f39a04, type: 3}
+  - {fileID: 21300000, guid: b561d11d03280574b886150839af4eaf, type: 3}
+  - {fileID: 21300000, guid: cf9eca526af5b144d9e4a9b9a11afc67, type: 3}
+  - {fileID: 21300000, guid: 821af645f2af8ea479136b529c185367, type: 3}
+  - {fileID: 21300000, guid: 1601d2e5fbdf7514886dd24d09ae7df4, type: 3}
+  - {fileID: 21300000, guid: 768b23e6f2a274a46988934eeaff648c, type: 3}
+  - {fileID: 21300000, guid: 30669bd87f1f19946b2d2bf21d6334d6, type: 3}
+  - {fileID: 21300000, guid: 9bc4ea10c436b844ea280ec2ffd0aedb, type: 3}
+  - {fileID: 21300000, guid: 4f98edf8aa71ab049b9c66e63ed513cb, type: 3}
+  - {fileID: 21300000, guid: d19dcf490fd84d94cb0d6b1e88a5f5db, type: 3}
+  - {fileID: 21300000, guid: 6a3747a281e787747a63dd7f0888ddea, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  homeCoinIcon: {fileID: 21300000, guid: cf508b333d0bdc64baea506d5560bc8f, type: 3}
+  headerAdd: {fileID: 21300000, guid: 40fe6b04428dcf547a2921762aab350b, type: 3}
+  ruleParts:
+  - section: 1
+    name: RuleDieOne
+    sprite: {fileID: 21300000, guid: ce6646155a4f1b94fa018034dc159c77, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 9
+      y: 5
+      width: 138
+      height: 150
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 1
+    name: RuleDieTwo
+    sprite: {fileID: 21300000, guid: a1cc4e6b4a5bfba4a88c73461f756d6f, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 6
+      width: 140
+      height: 151
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 1
+    name: RuleDieThree
+    sprite: {fileID: 21300000, guid: 6a44f09ee8426b046b6c128b7d8c9697, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 0
+      width: 145
+      height: 157
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleSelectTray
+    sprite: {fileID: 21300000, guid: 28b2f90dc63ae2c4a8071296590b6a06, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 86
+      width: 418
+      height: 94
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleSelectedDie
+    sprite: {fileID: 21300000, guid: db615be10e8a00e4c8fcc798d8341aa0, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 6
+      width: 118
+      height: 131
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleSelectDieOne
+    sprite: {fileID: 21300000, guid: 54db40138fa8754479dba6ba0ee28ba9, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 13
+      width: 113
+      height: 124
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleSelectDieTwo
+    sprite: {fileID: 21300000, guid: bec8c98c7ba10284aa9e2510a339fe2f, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 13
+      width: 113
+      height: 124
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleHand
+    sprite: {fileID: 21300000, guid: c127755cb4eb8ae46ac4485959b76750, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 92
+      height: 104
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleTapRays
+    sprite: {fileID: 21300000, guid: 3f082ec537041cd49a1b126874467ae9, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 75
+      width: 38
+      height: 35
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleCheck2_416
+    sprite: {fileID: 21300000, guid: c85a8a91c18cdf94fa080b5d9cdf2b0f, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 2
+      width: 42
+      height: 42
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleCheck2_543
+    sprite: {fileID: 21300000, guid: 0c08860e518102e41b15f6dcef2e7f91, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 8
+      width: 42
+      height: 42
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 2
+    name: RuleCheck2_668
+    sprite: {fileID: 21300000, guid: 924065dedc67a3448b58bb811aed7368, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 278
+      y: 8
+      width: 42
+      height: 42
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RulePlaceTray
+    sprite: {fileID: 21300000, guid: 02abd953bc8f68a499eab63edb598060, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 74
+      width: 535
+      height: 164
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RulePlaceDieThree
+    sprite: {fileID: 21300000, guid: 62041e7e74417c3458fa1d22df6c9278, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 117
+      width: 74
+      height: 89
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RulePlaceDieOne
+    sprite: {fileID: 21300000, guid: 2aee5e258d2a45d4bb52df4a6f28483a, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 117
+      width: 74
+      height: 89
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RulePlaceDieTwo
+    sprite: {fileID: 21300000, guid: 5defa9390138b8e42af93abf85e7b515, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 117
+      width: 74
+      height: 89
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleCheck3_311
+    sprite: {fileID: 21300000, guid: 303d9d45975ce3345bd49f595bb3ad6b, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 112
+      width: 31
+      height: 31
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleCheck3_384
+    sprite: {fileID: 21300000, guid: ede28c7a8ddfc0d48819468e487ed879, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 112
+      width: 31
+      height: 31
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleCheck3_457
+    sprite: {fileID: 21300000, guid: 9282f9cb70f61744d88c9ecc3e248663, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 112
+      width: 31
+      height: 31
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleArrow
+    sprite: {fileID: 21300000, guid: ccfee46b82f2a604996603c0fc4e130b, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 44
+      width: 163
+      height: 101
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleRegionFrame
+    sprite: {fileID: 21300000, guid: 43d67e04b7f0c5b46b13c71cb7ca87af, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 0
+      width: 263
+      height: 210
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleRegionFlower
+    sprite: {fileID: 21300000, guid: 3427a4654ca233d4fb41de1620e0dc0e, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 290
+      y: 21
+      width: 67
+      height: 81
+    text: 
+    fontSize: 0
+    color: {r: 0.6, g: 0.29411766, b: 0.050980393, a: 1}
+  - section: 3
+    name: RuleRegionName
+    sprite: {fileID: 0}
+    rect:
+      serializedVersion: 2
+      x: 375
+      y: 15
+      width: 43
+      height: 56
+    text: "\u82B1"
+    fontSize: 32
+    color: {r: 0.015686275, g: 0.24313726, b: 0.25882354, a: 1}
+  - section: 3
+    name: RuleRegionScore
+    sprite: {fileID: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 19
+      width: 67
+      height: 44
+    text: 10/8
+    fontSize: 25
+    color: {r: 0.88235295, g: 0.2627451, b: 0.03137255, a: 1}
+  - section: 3
+    name: RuleEmptySlot0
+    sprite: {fileID: 21300000, guid: d9f5a261dcba7a845a81312e25263404, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 107
+      width: 68
+      height: 83
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleSlotFlower0
+    sprite: {fileID: 21300000, guid: d83798296ce5c5b4fabb93774df5a0ae, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 303
+      y: 130
+      width: 39
+      height: 40
+    text: 
+    fontSize: 0
+    color: {r: 0.75686276, g: 0.7176471, b: 0.6117647, a: 1}
+  - section: 3
+    name: RuleEmptySlot1
+    sprite: {fileID: 21300000, guid: 8698823de0bce0044a8e42fdbfc0ff0a, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 362
+      y: 107
+      width: 68
+      height: 83
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleSlotFlower1
+    sprite: {fileID: 21300000, guid: d83798296ce5c5b4fabb93774df5a0ae, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 377
+      y: 130
+      width: 39
+      height: 40
+    text: 
+    fontSize: 0
+    color: {r: 0.75686276, g: 0.7176471, b: 0.6117647, a: 1}
+  - section: 3
+    name: RuleEmptySlot2
+    sprite: {fileID: 21300000, guid: dcf0e622fe51d854a8571a25dab86afe, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 107
+      width: 68
+      height: 83
+    text: 
+    fontSize: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - section: 3
+    name: RuleSlotFlower2
+    sprite: {fileID: 21300000, guid: d83798296ce5c5b4fabb93774df5a0ae, type: 3}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 130
+      width: 39
+      height: 40
+    text: 
+    fontSize: 0
+    color: {r: 0.75686276, g: 0.7176471, b: 0.6117647, a: 1}

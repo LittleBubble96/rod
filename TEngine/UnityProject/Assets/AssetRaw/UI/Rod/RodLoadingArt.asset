@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6543adb4b7da49544a9059dab9727231, type: 3}
+  m_Name: RodLoadingArt
+  m_EditorClassIdentifier: 
+  illustration: {fileID: 0}
+  footer: {fileID: 0}
+  background: {fileID: 21300000, guid: b29374a4b149b7c489364953beaba659, type: 3}
+  homeBackground: {fileID: 21300000, guid: ff89ab860bd7ee8419938a38cfd73bfb, type: 3}
+  logo: {fileID: 21300000, guid: e1fdf70a09c8c95419002397d71ada99, type: 3}
+  track: {fileID: 21300000, guid: 24fff1994a153204d88e8f89ade87d67, type: 3}
+  trackMiddle: {fileID: 0}
+  trackEnd: {fileID: 0}
+  fill: {fileID: 21300000, guid: 97dd2d5891a52c24f98a4b538497d633, type: 3}
+  caption: {fileID: 0}

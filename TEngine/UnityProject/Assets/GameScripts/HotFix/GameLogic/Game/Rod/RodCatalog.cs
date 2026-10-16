@@ -25,8 +25,8 @@ namespace GameLogic.Rod
     public sealed class RodCatalog
     {
         public int schemaVersion=1;
-        public string contentVersion="rod-uniform-1";
-        public int[] prizes=RodRules.UniformPrizes;
+        public string contentVersion="rod-differentiated-1";
+        public int[] prizes=RodRules.CurrentPrizes;
         public RodLevel[] levels;
         public static readonly int[] Values={3,2,2,1,1,1,1,1,1};
         public static readonly string[] Faces={"风","花","雪","月","方","圆"};

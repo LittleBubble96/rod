@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 VALUES = [3, 2, 2, 1, 1, 1, 1, 1, 1]
 FACES = ['风', '花', '雪', '月', '方', '圆']
-PRIZES = [(10,5)]*6
+PRIZES = [(12,4),(10,8),(11,5),(9,6),(8,5),(7,3)]
 CHAPTERS = ['初识六面','同值抵消','次奖取舍','分散落筹','追加与避碰','多区联动','筹力预算','领先与守分','复杂抵消','综合试炼']
 TACTICS = ['争取空区','避开同值','保住次奖','制造抵消','追加逆转','分散收益','绕开强区','比较总分','末轮取舍','综合判断']
 
@@ -69,14 +69,14 @@ def validate(data):
         w=l['winningWitness']; assert len(w['facesByDieId'])==9
         assert all(0<=x<6 for x in w['facesByDieId'])
         s=scores([totals(w['facesByDieId'])]+[totals(f) for f in l['opponentFaces']])
-        assert s==w['finalScores'] and s[0]>=max(s[1:]) and sum(s)<=90
+        assert s==w['finalScores'] and s[0]>=max(s[1:]) and sum(s)<=sum(map(sum, PRIZES))
         assert all(isinstance(l['reward'][k],int) and 0<=l['reward'][k]<=100000 for k in ('coin','reroll','skip'))
         override=l.get('firstRollOverride')
         assert override is None or (len(override)==9 and all(isinstance(f,int) and 0<=f<6 for f in override))
         rate=l['estimatedWinRate']
         assert (rate is None and l['simulationTrials']==0 and l.get('balanceStatus')=='needs_resimulation') or (isinstance(rate,(int,float)) and 0<=rate<=1)
-    assert scores([[4,0,0,0,0,0],[4,0,0,0,0,0],[3,0,0,0,0,0],[2,0,0,0,0,0]])==[0,0,10,5]
-    assert scores([[4,0,0,0,0,0]]*3+[[2,0,0,0,0,0]])==[0,0,0,10]
+    assert scores([[4,0,0,0,0,0],[4,0,0,0,0,0],[3,0,0,0,0,0],[2,0,0,0,0,0]])==[0,0,12,4]
+    assert scores([[4,0,0,0,0,0]]*3+[[2,0,0,0,0,0]])==[0,0,0,12]
     assert scores([[4,0,0,0,0,0]]*2+[[2,0,0,0,0,0]]*2)==[0,0,0,0]
 
 def build():
@@ -103,7 +103,7 @@ def build():
                 winningWitness=dict(facesByDieId=w[0],finalScores=w[1]),
                 tutorial='first_match' if i==1 else ('cancellation_example' if i==2 else ''),
                 firstRollOverride=w[0] if i==1 else None))
-    data=dict(schemaVersion=1,contentVersion='rod-uniform-1',status='design_candidate_not_live',
+    data=dict(schemaVersion=1,contentVersion='rod-differentiated-1',status='design_candidate_not_live',
         faces=FACES,dieValues=VALUES,prizes=[list(p) for p in PRIZES],levels=levels)
     validate(data)
     folder=ROOT/'关卡'; folder.mkdir(parents=True,exist_ok=True)

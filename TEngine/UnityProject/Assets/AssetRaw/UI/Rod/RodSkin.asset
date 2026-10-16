@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RodSkin
   m_EditorClassIdentifier: 
   font: {fileID: 11400000, guid: 959c42624d0da7d4f9c6f727a39f3dfb, type: 2}
+  loadingArt: {fileID: 11400000, guid: d12ec45ca1348db4ea66cdcdd4c1d057, type: 2}
   panel: {fileID: 21300000, guid: 97bf5e9b74ef99447b32eb28c72ca114, type: 3}
   button: {fileID: 21300000, guid: 64ea6548d78aa9c4cb6ad9b810a1b762, type: 3}
   slot: {fileID: 21300000, guid: d76eee0f0087cfb48a654dd3bcf3113e, type: 3}

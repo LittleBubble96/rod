@@ -15,6 +15,8 @@ namespace GameLogic.Rod
         public bool usePreviewSave;
         private RodGameView view;
         private RodSession session;
+        private RodCatalog catalog;
+        private RodAudioOutput audioOutput;
         private RodViewModel vm=new RodViewModel();
         private bool starting,disposed;
         private float toastUntil;
@@ -35,7 +37,7 @@ namespace GameLogic.Rod
                 // 进度只在实际阶段完成后推进。SDK 此处只完成初始化，不声称异步登录成功。
                 SDK.InitializeAndLogin();
                 await ShowLoadingStage(1,"平台初始化完成");
-                var catalog=JsonUtility.FromJson<RodCatalog>(levelConfig.text);
+                catalog=JsonUtility.FromJson<RodCatalog>(levelConfig.text);
                 await ShowLoadingStage(2,"关卡读取完成");
                 catalog.Validate();
                 await ShowLoadingStage(3,"关卡校验完成");
@@ -44,6 +46,7 @@ namespace GameLogic.Rod
                 await ShowLoadingStage(4,"存档恢复完成");
                 session.RefreshDay();
                 await ShowLoadingStage(5,"游戏准备完成");
+                audioOutput=new RodAudioOutput(gameObject,skin);
                 view.Action+=Handle;session.Changed+=Refresh;AdSystem.StateChanged+=AdChanged;
                 AdSystem.EnterPage(AdIds.RewardedVideo);vm.busy=false;vm.message=null;Refresh();IsReady=true;initialized.TrySetResult();
             }catch(OperationCanceledException) when(disposed){initialized.TrySetCanceled();}
@@ -68,6 +71,8 @@ namespace GameLogic.Rod
         private void Handle(string action,int value)
         {
             if(session==null||vm.busy)return;
+            if(!RodPresentationRules.Allows(vm.popup,action))return;
+            audioOutput?.Click();
             try{
                 vm.message=null;
                 var s=session.Snapshot;
@@ -78,7 +83,11 @@ namespace GameLogic.Rod
                 case "coins":session.RefreshDay();vm.popup="coins";break;
                 // 选筹只是失败弹窗的子流程，关闭应返回失败结果而不是露出终局棋盘。
                 case "close":vm.popup=vm.popup=="revive"?"failed":null;vm.revival.Clear();break;
-                case "select":if(s.activeRun!=null&&s.activeRun.phase==RodPhase.AwaitGroup&&RodRules.SelectGroup(s.activeRun,value).Length>0)vm.selectedFace=value;break;
+                case "select":vm.selectedFace=RodPresentationRules.ToggleFace(s.activeRun,vm.selectedFace,value);break;
+                case "club":SDK.OpenGameClub();break;
+                case "settings":vm.popup="settings";break;
+                case "music":session.SetAudioMuted(true,!s.musicMuted);break;
+                case "sound":session.SetAudioMuted(false,!s.soundMuted);break;
                 case "place":session.Place(vm.selectedFace);vm.selectedFace=-1;ShowTerminal();break;
                 case "restart":session.Start(s.activeRun.levelId,Seed());vm.selectedFace=-1;vm.popup=null;break;
                 case "next":session.Start(s.activeRun.levelId+1,Seed());vm.selectedFace=-1;vm.popup=null;vm.home=false;break;
@@ -94,7 +103,14 @@ namespace GameLogic.Rod
                 case "adCoin":ShowAd("coin").Forget();return;
                 case "double":ShowAd("double").Forget();return;
                 case "revive":vm.revival.Clear();vm.popup="revive";break;
-                case "pick":if(!vm.revival.Add(value))vm.revival.Remove(value);break;
+                case "pick":
+                    if(vm.revival.Contains(value)){vm.revival.Remove(value);break;}
+                    var run=s.activeRun;
+                    if(run==null||run.phase!=RodPhase.Failed||value<0||value>=run.dice.Length||run.dice[value].region<0)break;
+                    int points=run.dice[value].value;
+                    foreach(int id in vm.revival)points+=run.dice[id].value;
+                    if(points>6){Toast("最多选择6点筹力");break;}
+                    vm.revival.Add(value);break;
                 case "reviveAd":ShowAd("revive").Forget();return;
                 }
             }catch(Exception e){Toast("操作未完成："+e.Message);Debug.LogWarning(e);}
@@ -121,6 +137,9 @@ namespace GameLogic.Rod
         {
             if(disposed||session==null||view==null)return;
             vm.save=session.Snapshot;vm.rerollCost=session.ToolCost(false);vm.skipCost=session.ToolCost(true);
+            audioOutput?.Apply(vm.save);
+            int levelId=vm.save.activeRun?.levelId??vm.save.currentLevelId;
+            vm.levelName=catalog.Get(levelId).name;
             vm.adReady=AdSystem.IsAdAvailable(AdIds.RewardedVideo);vm.adLoading=AdSystem.IsLoading(AdIds.RewardedVideo);view.Render(vm);
         }
         private void Save(){if(session==null)return;try{session.Checkpoint();}catch(Exception e){Toast("保存失败，请重试："+e.Message);Debug.LogException(e);Refresh();}}

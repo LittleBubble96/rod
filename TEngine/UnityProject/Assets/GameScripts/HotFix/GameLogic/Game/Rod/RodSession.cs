@@ -31,6 +31,11 @@ namespace GameLogic.Rod
             persist(next); state=next; Changed?.Invoke();
         }
         public void Checkpoint()=>persist(clone(state));
+        /// <summary>音频设置与其他存档一样先提交副本；保存失败不得改变当前生效设置。</summary>
+        public void SetAudioMuted(bool music, bool muted)=>Mutate(s=>{
+            RequireIdle(s);
+            if(music)s.musicMuted=muted;else s.soundMuted=muted;
+        });
         public void RefreshDay()=>Mutate(UpdateDay);
         private void UpdateDay(RodSaveData s)
         {

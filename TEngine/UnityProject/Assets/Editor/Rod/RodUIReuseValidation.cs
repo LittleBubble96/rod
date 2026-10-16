@@ -93,7 +93,7 @@ namespace Rod.Editor
                 model.busy = false;
                 model.message = "启动失败，原存档已保留";
                 view.Render(model);
-                Require(Mathf.Approximately(fill.sizeDelta.x, 330), "进度未绑定已完成阶段");
+                Require(Mathf.Approximately(fill.sizeDelta.x, (skin.loadingArt != null ? RodLoadingArt.FillWidth : 550) * .6f), "进度未绑定已完成阶段");
                 Require(root.GetComponentsInChildren<TextMeshProUGUI>().First(t => t.name == "LoadingPercent").text == "60%", "百分比与进度条不同步");
                 Debug.Log("[RodUIReuseValidation] PASS: stable instances, duplicate faces, single callbacks, inactive callbacks, ad readiness, help lifetime, stage progress and failure progress.");
             }

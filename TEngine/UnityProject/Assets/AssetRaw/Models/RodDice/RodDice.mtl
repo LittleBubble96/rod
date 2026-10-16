@@ -1,0 +1,5 @@
+newmtl RodDiceIvory
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+Ns 40
+map_Kd RodDiceAlbedo.png

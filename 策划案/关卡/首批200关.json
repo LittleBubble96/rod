@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "rod-uniform-1",
-  "status": "design_candidate_not_live",
+  "contentVersion": "rod-differentiated-1",
+  "status": "runtime_mirror_not_playtested",
   "faces": [
     "风",
     "花",
@@ -23,28 +23,28 @@
   ],
   "prizes": [
     [
-      10,
-      5
+      12,
+      4
     ],
     [
       10,
+      8
+    ],
+    [
+      11,
       5
     ],
     [
-      10,
+      9,
+      6
+    ],
+    [
+      8,
       5
     ],
     [
-      10,
-      5
-    ],
-    [
-      10,
-      5
-    ],
-    [
-      10,
-      5
+      7,
+      3
     ]
   ],
   "levels": [
@@ -91,9 +91,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 106159081,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.993,
+      "simulationSeed": 2026101301,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -112,9 +112,9 @@
           4
         ],
         "finalScores": [
-          40,
-          5,
-          15,
+          36,
+          4,
+          17,
           0
         ]
       },
@@ -129,7 +129,8 @@
         5,
         2,
         4
-      ]
+      ],
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 2,
@@ -174,9 +175,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 1365549086,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.954,
+      "simulationSeed": 2026101302,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -195,14 +196,15 @@
           5
         ],
         "finalScores": [
-          20,
-          10,
-          15,
-          10
+          17,
+          11,
+          14,
+          7
         ]
       },
       "tutorial": "cancellation_example",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 3,
@@ -247,9 +249,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 977690551,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.997,
+      "simulationSeed": 2026101303,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -268,14 +270,15 @@
           1
         ],
         "finalScores": [
-          30,
-          15,
-          15,
-          5
+          31,
+          13,
+          11,
+          4
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 4,
@@ -320,9 +323,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 1737176681,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.998,
+      "simulationSeed": 2026101304,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -341,14 +344,15 @@
           4
         ],
         "finalScores": [
-          30,
+          32,
           0,
-          15,
+          12,
           0
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 5,
@@ -393,9 +397,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 1631936180,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.986,
+      "simulationSeed": 2026101305,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 1,
@@ -414,14 +418,15 @@
           2
         ],
         "finalScores": [
-          35,
-          10,
+          33,
+          7,
           15,
-          10
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 6,
@@ -466,9 +471,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 1.0,
-      "simulationSeed": 1780879864,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.996,
+      "simulationSeed": 2026101306,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -487,14 +492,15 @@
           1
         ],
         "finalScores": [
-          35,
-          10,
-          20,
-          15
+          33,
+          12,
+          18,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 7,
@@ -539,9 +545,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.9875,
-      "simulationSeed": 464919946,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.99,
+      "simulationSeed": 2026101307,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -560,14 +566,15 @@
           1
         ],
         "finalScores": [
-          20,
-          15,
-          10,
-          10
+          21,
+          19,
+          8,
+          9
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 8,
@@ -612,9 +619,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.9875,
-      "simulationSeed": 414729467,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.996,
+      "simulationSeed": 2026101308,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -633,14 +640,15 @@
           4
         ],
         "finalScores": [
-          40,
-          15,
+          36,
+          19,
           10,
           5
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 9,
@@ -685,9 +693,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9875,
-      "simulationSeed": 1757553498,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.974,
+      "simulationSeed": 2026101309,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -707,13 +715,14 @@
         ],
         "finalScores": [
           20,
-          20,
-          10,
-          20
+          16,
+          12,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 10,
@@ -758,9 +767,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9875,
-      "simulationSeed": 1113953559,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.987,
+      "simulationSeed": 2026101310,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 1,
@@ -780,13 +789,14 @@
         ],
         "finalScores": [
           20,
-          15,
+          12,
           5,
-          20
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 11,
@@ -831,9 +841,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9875,
-      "simulationSeed": 1841451858,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.984,
+      "simulationSeed": 2026101311,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -852,14 +862,15 @@
           2
         ],
         "finalScores": [
-          20,
-          5,
-          20,
-          10
+          21,
+          6,
+          21,
+          7
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 12,
@@ -904,9 +915,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.975,
-      "simulationSeed": 1096678117,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.968,
+      "simulationSeed": 2026101312,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -925,14 +936,15 @@
           4
         ],
         "finalScores": [
-          25,
-          10,
-          15,
-          20
+          26,
+          12,
+          14,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 13,
@@ -978,8 +990,8 @@
         ]
       ],
       "estimatedWinRate": 0.975,
-      "simulationSeed": 484379634,
-      "simulationTrials": 80,
+      "simulationSeed": 2026101313,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -998,14 +1010,15 @@
           4
         ],
         "finalScores": [
-          35,
-          20,
-          15,
-          10
+          36,
+          19,
+          11,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 14,
@@ -1050,9 +1063,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9625,
-      "simulationSeed": 933627706,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.663,
+      "simulationSeed": 2026101314,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -1071,14 +1084,15 @@
           2
         ],
         "finalScores": [
-          35,
+          28,
           15,
-          20,
-          15
+          19,
+          20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 15,
@@ -1123,9 +1137,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.975,
-      "simulationSeed": 1844866269,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.944,
+      "simulationSeed": 2026101315,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 1,
@@ -1133,25 +1147,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          1,
+          4,
           3,
           1,
-          1,
           5,
-          3,
-          5,
-          1,
-          1,
-          1
+          0,
+          0,
+          2,
+          2
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          15
+          23,
+          16,
+          22,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 16,
@@ -1196,9 +1211,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9625,
-      "simulationSeed": 1055508979,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.89,
+      "simulationSeed": 2026101316,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -1206,25 +1221,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          1,
-          1,
+          2,
+          5,
+          5,
           4,
           0,
           3,
-          5,
-          3,
+          1,
+          1,
           3
         ],
         "finalScores": [
-          20,
-          15,
-          10,
-          20
+          19,
+          19,
+          9,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 17,
@@ -1269,9 +1285,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.9625,
-      "simulationSeed": 1580778034,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.948,
+      "simulationSeed": 2026101317,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -1291,13 +1307,14 @@
         ],
         "finalScores": [
           30,
-          10,
-          10,
-          15
+          9,
+          12,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 18,
@@ -1342,9 +1359,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9625,
-      "simulationSeed": 1524927249,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.808,
+      "simulationSeed": 2026101318,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -1352,25 +1369,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          2,
           4,
           4,
-          1,
+          4,
           0,
-          3,
-          3,
-          0,
-          0,
+          5,
+          2,
+          5,
           3
         ],
         "finalScores": [
           20,
-          20,
-          20,
-          10
+          19,
+          13,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 19,
@@ -1415,9 +1433,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 443364347,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.852,
+      "simulationSeed": 2026101319,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 0,
@@ -1425,25 +1443,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          2,
-          5,
-          4,
-          4,
           5,
           0,
-          3,
           2,
-          3
+          0,
+          0,
+          2,
+          4,
+          2,
+          4
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          10
+          30,
+          17,
+          19,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 20,
@@ -1488,9 +1507,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 189548587,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.869,
+      "simulationSeed": 2026101320,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 40,
         "reroll": 1,
@@ -1498,25 +1517,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          0,
           3,
+          5,
           2,
-          0,
+          3,
+          5,
           0,
           3,
-          0,
-          4,
-          2
+          0
         ],
         "finalScores": [
-          20,
-          20,
+          33,
+          31,
           5,
           10
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 21,
@@ -1561,9 +1581,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 452889623,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.999,
+      "simulationSeed": 2026101321,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -1582,14 +1602,15 @@
           1
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          10
+          19,
+          17,
+          7,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 22,
@@ -1634,9 +1655,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 1179673975,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.806,
+      "simulationSeed": 2026101322,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -1645,24 +1666,25 @@
       "winningWitness": {
         "facesByDieId": [
           4,
-          3,
           0,
+          1,
           5,
-          4,
-          0,
+          5,
+          5,
+          2,
           1,
-          1,
-          4
+          2
         ],
         "finalScores": [
           25,
-          20,
-          10,
-          25
+          15,
+          11,
+          24
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 23,
@@ -1707,9 +1729,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 917071929,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.895,
+      "simulationSeed": 2026101323,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -1717,25 +1739,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          4,
           0,
-          4,
+          5,
           1,
+          0,
           4,
           4,
           2,
-          2
+          2,
+          3
         ],
         "finalScores": [
+          31,
           20,
-          20,
-          20,
-          15
+          19,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 24,
@@ -1780,9 +1803,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9375,
-      "simulationSeed": 199595373,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.782,
+      "simulationSeed": 2026101324,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -1801,14 +1824,15 @@
           4
         ],
         "finalScores": [
-          25,
+          24,
           20,
-          15,
-          20
+          13,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 25,
@@ -1853,9 +1877,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.95,
-      "simulationSeed": 1704338197,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.743,
+      "simulationSeed": 2026101325,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 1,
@@ -1874,14 +1898,15 @@
           0
         ],
         "finalScores": [
-          30,
-          20,
-          5,
-          15
+          28,
+          16,
+          6,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 26,
@@ -1926,9 +1951,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9375,
-      "simulationSeed": 725275880,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.868,
+      "simulationSeed": 2026101326,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -1947,14 +1972,15 @@
           5
         ],
         "finalScores": [
-          30,
-          20,
+          29,
+          18,
           15,
-          10
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 27,
@@ -1999,9 +2025,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9375,
-      "simulationSeed": 1205256316,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.902,
+      "simulationSeed": 2026101327,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2020,14 +2046,15 @@
           2
         ],
         "finalScores": [
-          30,
-          5,
-          20,
-          20
+          31,
+          4,
+          21,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 28,
@@ -2072,9 +2099,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.9375,
-      "simulationSeed": 887683805,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.894,
+      "simulationSeed": 2026101328,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2093,14 +2120,15 @@
           2
         ],
         "finalScores": [
-          25,
-          10,
-          15,
-          20
+          24,
+          11,
+          17,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 29,
@@ -2145,9 +2173,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.925,
-      "simulationSeed": 83437344,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.866,
+      "simulationSeed": 2026101329,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2166,14 +2194,15 @@
           5
         ],
         "finalScores": [
-          25,
-          15,
-          20,
-          20
+          26,
+          13,
+          17,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 30,
@@ -2218,9 +2247,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9375,
-      "simulationSeed": 1746494386,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.972,
+      "simulationSeed": 2026101330,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 1,
@@ -2239,14 +2268,15 @@
           3
         ],
         "finalScores": [
-          30,
-          15,
-          5,
-          15
+          31,
+          12,
+          8,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 31,
@@ -2291,9 +2321,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.925,
-      "simulationSeed": 398266121,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.778,
+      "simulationSeed": 2026101331,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2312,14 +2342,15 @@
           2
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          19,
+          19,
+          19,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 32,
@@ -2364,9 +2395,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.925,
-      "simulationSeed": 767286935,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.852,
+      "simulationSeed": 2026101332,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2385,14 +2416,15 @@
           0
         ],
         "finalScores": [
-          25,
-          15,
+          22,
+          14,
           20,
-          15
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 33,
@@ -2437,9 +2469,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.925,
-      "simulationSeed": 526972591,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.944,
+      "simulationSeed": 2026101333,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2458,14 +2490,15 @@
           2
         ],
         "finalScores": [
-          30,
-          30,
+          33,
+          29,
           5,
-          10
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 34,
@@ -2510,9 +2543,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 247771458,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.917,
+      "simulationSeed": 2026101334,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2531,14 +2564,15 @@
           2
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          20
+          26,
+          21,
+          19,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 35,
@@ -2583,9 +2617,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 246831325,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.932,
+      "simulationSeed": 2026101335,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 1,
@@ -2604,14 +2638,15 @@
           1
         ],
         "finalScores": [
-          30,
-          15,
+          28,
+          12,
           20,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 36,
@@ -2656,9 +2691,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 910089248,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.763,
+      "simulationSeed": 2026101336,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2666,25 +2701,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
           1,
           1,
-          4,
-          1,
-          1,
-          4,
           3,
-          5
+          0,
+          5,
+          4,
+          1,
+          5,
+          3
         ],
         "finalScores": [
-          20,
-          15,
-          15,
-          20
+          23,
+          19,
+          22,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 37,
@@ -2729,9 +2765,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 1435568577,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.822,
+      "simulationSeed": 2026101337,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2739,25 +2775,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
           1,
-          0,
+          1,
           4,
-          3,
-          0,
+          5,
           2,
-          1,
-          4
+          2,
+          3,
+          5,
+          5
         ],
         "finalScores": [
-          20,
-          10,
-          20,
-          15
+          27,
+          17,
+          19,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 38,
@@ -2802,9 +2839,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 1412323062,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.866,
+      "simulationSeed": 2026101338,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2812,25 +2849,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
           0,
-          4,
+          0,
           5,
           5,
           2,
           1,
-          5,
-          5
+          3,
+          1,
+          3
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          36,
+          14,
+          14,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 39,
@@ -2875,9 +2913,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 156723906,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.835,
+      "simulationSeed": 2026101339,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 0,
@@ -2896,14 +2934,15 @@
           4
         ],
         "finalScores": [
-          30,
-          15,
-          15,
-          20
+          28,
+          14,
+          16,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 40,
@@ -2948,9 +2987,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.9125,
-      "simulationSeed": 1982566459,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.903,
+      "simulationSeed": 2026101340,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 45,
         "reroll": 1,
@@ -2969,14 +3008,15 @@
           5
         ],
         "finalScores": [
-          15,
-          10,
-          15,
+          20,
+          9,
+          12,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 41,
@@ -3021,9 +3061,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 165816388,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.689,
+      "simulationSeed": 2026101341,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3031,25 +3071,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
           4,
+          0,
           1,
-          5,
-          1,
-          1,
-          2,
-          5,
-          2,
+          3,
+          0,
+          4,
+          0,
           4
         ],
         "finalScores": [
-          25,
           20,
-          20,
-          15
+          18,
+          14,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 42,
@@ -3094,9 +3135,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 749434320,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.867,
+      "simulationSeed": 2026101342,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3116,13 +3157,14 @@
         ],
         "finalScores": [
           20,
-          15,
-          15,
-          20
+          14,
+          17,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 43,
@@ -3167,9 +3209,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 361834677,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.634,
+      "simulationSeed": 2026101343,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3177,25 +3219,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          3,
+          2,
           1,
-          5,
+          2,
           4,
-          0,
+          2,
           4,
-          5,
-          5,
-          5,
-          4
+          2,
+          1
         ],
         "finalScores": [
+          25,
           20,
-          20,
-          20,
-          20
+          12,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 44,
@@ -3240,9 +3283,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 907009572,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.86,
+      "simulationSeed": 2026101344,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3261,14 +3304,15 @@
           1
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          10
+          29,
+          17,
+          22,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 45,
@@ -3313,9 +3357,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 780854593,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.876,
+      "simulationSeed": 2026101345,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 1,
@@ -3334,14 +3378,15 @@
           5
         ],
         "finalScores": [
-          20,
-          15,
-          15,
-          20
+          18,
+          16,
+          17,
+          16
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 46,
@@ -3386,9 +3431,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 978038183,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.898,
+      "simulationSeed": 2026101346,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3407,14 +3452,15 @@
           0
         ],
         "finalScores": [
-          25,
-          15,
-          20,
-          15
+          26,
+          16,
+          16,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 47,
@@ -3459,9 +3505,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 1130382982,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.78,
+      "simulationSeed": 2026101347,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3470,24 +3516,25 @@
       "winningWitness": {
         "facesByDieId": [
           0,
-          3,
-          5,
-          1,
-          1,
+          2,
           5,
           2,
-          1,
-          4
+          4,
+          5,
+          4,
+          2,
+          2
         ],
         "finalScores": [
-          20,
-          0,
-          20,
-          15
+          30,
+          8,
+          26,
+          24
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 48,
@@ -3532,9 +3579,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 993456901,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.844,
+      "simulationSeed": 2026101348,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3553,14 +3600,15 @@
           3
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          15
+          28,
+          18,
+          16,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 49,
@@ -3605,9 +3653,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.8875,
-      "simulationSeed": 610943587,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.717,
+      "simulationSeed": 2026101349,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3626,14 +3674,15 @@
           0
         ],
         "finalScores": [
-          25,
-          20,
+          21,
+          19,
           20,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 50,
@@ -3678,9 +3727,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.9,
-      "simulationSeed": 1990026343,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.923,
+      "simulationSeed": 2026101350,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 1,
@@ -3699,14 +3748,15 @@
           2
         ],
         "finalScores": [
-          30,
-          25,
+          32,
+          19,
           10,
-          15
+          16
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 51,
@@ -3751,9 +3801,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.8875,
-      "simulationSeed": 643883322,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.743,
+      "simulationSeed": 2026101351,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3772,14 +3822,15 @@
           5
         ],
         "finalScores": [
-          25,
-          20,
-          10,
-          15
+          21,
+          21,
+          12,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 52,
@@ -3824,9 +3875,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.8875,
-      "simulationSeed": 1156041353,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.809,
+      "simulationSeed": 2026101352,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3834,25 +3885,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          2,
-          4,
-          5,
+          3,
+          0,
+          0,
           5,
           0,
-          3,
           4,
-          5
+          1,
+          5,
+          3
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          18,
+          12,
+          18,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 53,
@@ -3897,9 +3949,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.8875,
-      "simulationSeed": 797419605,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.832,
+      "simulationSeed": 2026101353,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3908,24 +3960,25 @@
       "winningWitness": {
         "facesByDieId": [
           4,
-          0,
-          3,
+          5,
           4,
           3,
-          5,
-          2,
+          0,
           3,
-          5
+          3,
+          1,
+          1
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          25
+          32,
+          11,
+          18,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 54,
@@ -3970,9 +4023,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.875,
-      "simulationSeed": 730043304,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.603,
+      "simulationSeed": 2026101354,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -3980,25 +4033,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
           2,
           3,
-          5,
-          0,
-          4,
-          4,
           2,
-          4
+          5,
+          5,
+          5,
+          1,
+          4,
+          5
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          15
+          27,
+          8,
+          13,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 55,
@@ -4043,9 +4097,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.875,
-      "simulationSeed": 592967494,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.866,
+      "simulationSeed": 2026101355,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 1,
@@ -4053,25 +4107,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          2,
           1,
-          4,
           0,
+          1,
+          2,
+          2,
           1,
           3,
           4,
-          5,
-          5
+          1
         ],
         "finalScores": [
           30,
-          30,
-          10,
-          15
+          29,
+          20,
+          0
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 56,
@@ -4116,9 +4171,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.875,
-      "simulationSeed": 952848937,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.615,
+      "simulationSeed": 2026101356,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -4137,14 +4192,15 @@
           1
         ],
         "finalScores": [
-          30,
-          15,
-          20,
-          15
+          27,
+          17,
+          22,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 57,
@@ -4189,9 +4245,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 104049566,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.6,
+      "simulationSeed": 2026101357,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -4210,14 +4266,15 @@
           0
         ],
         "finalScores": [
-          30,
+          24,
           20,
-          10,
-          20
+          7,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 58,
@@ -4262,9 +4319,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.875,
-      "simulationSeed": 1641680741,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.86,
+      "simulationSeed": 2026101358,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -4283,14 +4340,15 @@
           0
         ],
         "finalScores": [
-          30,
-          20,
-          10,
-          20
+          27,
+          19,
+          11,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 59,
@@ -4335,9 +4393,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 1110089986,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.859,
+      "simulationSeed": 2026101359,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 0,
@@ -4356,14 +4414,15 @@
           1
         ],
         "finalScores": [
-          25,
-          25,
-          10,
-          10
+          26,
+          20,
+          12,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 60,
@@ -4408,9 +4467,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 829595527,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.687,
+      "simulationSeed": 2026101360,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 50,
         "reroll": 1,
@@ -4430,13 +4489,14 @@
         ],
         "finalScores": [
           25,
-          15,
-          20,
-          20
+          17,
+          21,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 61,
@@ -4481,9 +4541,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 1227793534,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.864,
+      "simulationSeed": 2026101361,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4502,14 +4562,15 @@
           3
         ],
         "finalScores": [
-          30,
-          10,
-          20,
+          29,
+          12,
+          17,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 62,
@@ -4554,9 +4615,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 1763314651,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.947,
+      "simulationSeed": 2026101362,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4575,14 +4636,15 @@
           4
         ],
         "finalScores": [
-          35,
-          20,
-          10,
-          15
+          39,
+          17,
+          7,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 63,
@@ -4627,9 +4689,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 1304361140,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.822,
+      "simulationSeed": 2026101363,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4648,14 +4710,15 @@
           1
         ],
         "finalScores": [
-          30,
-          20,
-          10,
-          20
+          29,
+          18,
+          12,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 64,
@@ -4700,9 +4763,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.85,
-      "simulationSeed": 1004998128,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.775,
+      "simulationSeed": 2026101364,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4721,14 +4784,15 @@
           3
         ],
         "finalScores": [
-          35,
-          20,
-          5,
-          20
+          32,
+          21,
+          8,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 65,
@@ -4773,9 +4837,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.8625,
-      "simulationSeed": 2113888694,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.724,
+      "simulationSeed": 2026101365,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 1,
@@ -4794,14 +4858,15 @@
           4
         ],
         "finalScores": [
-          35,
-          10,
-          20,
-          20
+          33,
+          11,
+          22,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 66,
@@ -4846,9 +4911,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.85,
-      "simulationSeed": 1937129751,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.672,
+      "simulationSeed": 2026101366,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4867,14 +4932,15 @@
           3
         ],
         "finalScores": [
-          30,
-          10,
-          20,
-          25
+          29,
+          8,
+          17,
+          28
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 67,
@@ -4919,9 +4985,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.8375,
-      "simulationSeed": 1010518171,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.811,
+      "simulationSeed": 2026101367,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -4940,14 +5006,15 @@
           5
         ],
         "finalScores": [
-          45,
-          10,
-          20,
-          10
+          41,
+          11,
+          23,
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 68,
@@ -4992,9 +5059,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.8375,
-      "simulationSeed": 326057465,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.741,
+      "simulationSeed": 2026101368,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5020,7 +5087,8 @@
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 69,
@@ -5065,9 +5133,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.825,
-      "simulationSeed": 537215381,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.824,
+      "simulationSeed": 2026101369,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5087,13 +5155,14 @@
         ],
         "finalScores": [
           25,
-          25,
-          10,
-          10
+          22,
+          13,
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 70,
@@ -5138,9 +5207,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.825,
-      "simulationSeed": 402476965,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.939,
+      "simulationSeed": 2026101370,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 1,
@@ -5159,14 +5228,15 @@
           5
         ],
         "finalScores": [
-          20,
-          20,
+          24,
+          17,
           15,
-          20
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 71,
@@ -5211,9 +5281,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.825,
-      "simulationSeed": 1600794296,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.575,
+      "simulationSeed": 2026101371,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5232,14 +5302,15 @@
           2
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          20
+          21,
+          17,
+          8,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 72,
@@ -5284,9 +5355,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.8125,
-      "simulationSeed": 417648144,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.677,
+      "simulationSeed": 2026101372,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5294,25 +5365,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
           4,
+          2,
+          1,
+          5,
+          4,
+          1,
+          1,
           0,
-          5,
-          4,
-          1,
-          1,
-          5,
-          5
+          0
         ],
         "finalScores": [
-          20,
-          20,
-          20,
+          23,
+          12,
+          23,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 73,
@@ -5357,9 +5429,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.825,
-      "simulationSeed": 1954117817,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.89,
+      "simulationSeed": 2026101373,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5379,13 +5451,14 @@
         ],
         "finalScores": [
           35,
-          5,
-          25,
-          10
+          3,
+          24,
+          9
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 74,
@@ -5430,9 +5503,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.8125,
-      "simulationSeed": 1221894856,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.707,
+      "simulationSeed": 2026101374,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5451,14 +5524,15 @@
           4
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          15
+          24,
+          20,
+          23,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 75,
@@ -5503,9 +5577,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.8125,
-      "simulationSeed": 1046913802,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.778,
+      "simulationSeed": 2026101375,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 1,
@@ -5514,24 +5588,25 @@
       "winningWitness": {
         "facesByDieId": [
           3,
-          4,
-          4,
-          3,
-          5,
+          2,
+          2,
+          0,
           3,
           2,
           3,
-          3
+          4,
+          2
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          15
+          24,
+          22,
+          15,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 76,
@@ -5576,9 +5651,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.8125,
-      "simulationSeed": 1832537819,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.721,
+      "simulationSeed": 2026101376,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5598,13 +5673,14 @@
         ],
         "finalScores": [
           25,
-          25,
+          23,
           20,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 77,
@@ -5649,9 +5725,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.8,
-      "simulationSeed": 862228190,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.686,
+      "simulationSeed": 2026101377,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5670,14 +5746,15 @@
           3
         ],
         "finalScores": [
-          25,
-          10,
-          25,
-          15
+          23,
+          8,
+          21,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 78,
@@ -5722,9 +5799,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.8125,
-      "simulationSeed": 1939522969,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.746,
+      "simulationSeed": 2026101378,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5733,24 +5810,25 @@
       "winningWitness": {
         "facesByDieId": [
           4,
-          2,
           3,
-          1,
+          3,
           2,
-          5,
-          4,
           0,
+          1,
+          5,
+          2,
           4
         ],
         "finalScores": [
-          20,
-          10,
-          20,
-          20
+          24,
+          14,
+          19,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 79,
@@ -5795,9 +5873,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.7875,
-      "simulationSeed": 930683076,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.698,
+      "simulationSeed": 2026101379,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 0,
@@ -5816,14 +5894,15 @@
           2
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          23,
+          18,
+          19,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 80,
@@ -5868,9 +5947,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.7875,
-      "simulationSeed": 330832270,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.659,
+      "simulationSeed": 2026101380,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 55,
         "reroll": 1,
@@ -5889,14 +5968,15 @@
           3
         ],
         "finalScores": [
-          30,
-          15,
-          25,
-          10
+          31,
+          12,
+          28,
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 81,
@@ -5941,9 +6021,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.7875,
-      "simulationSeed": 1759470680,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.638,
+      "simulationSeed": 2026101381,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -5951,25 +6031,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          2,
-          3,
           0,
-          4,
+          0,
           3,
           5,
           0,
-          2
+          5,
+          5,
+          1,
+          3
         ],
         "finalScores": [
-          30,
-          25,
-          10,
-          25
+          24,
+          24,
+          12,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 82,
@@ -6014,9 +6095,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.775,
-      "simulationSeed": 876996552,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.559,
+      "simulationSeed": 2026101382,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6024,25 +6105,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
           3,
-          1,
           4,
           0,
-          5,
           3,
-          0,
+          4,
+          2,
           3,
           1
         ],
         "finalScores": [
-          30,
-          10,
-          10,
-          30
+          22,
+          19,
+          22,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 83,
@@ -6087,9 +6169,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.775,
-      "simulationSeed": 271697970,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.588,
+      "simulationSeed": 2026101383,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6108,14 +6190,15 @@
           0
         ],
         "finalScores": [
-          20,
+          19,
+          16,
           15,
-          15,
-          20
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 84,
@@ -6160,9 +6243,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 231300870,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.639,
+      "simulationSeed": 2026101384,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6170,25 +6253,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          4,
+          2,
+          1,
           5,
           4,
-          3,
-          3,
-          0,
+          2,
           0,
           5,
-          4,
-          2
+          0
         ],
         "finalScores": [
-          25,
-          25,
-          15,
-          10
+          32,
+          28,
+          13,
+          9
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 85,
@@ -6233,9 +6317,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.775,
-      "simulationSeed": 1470569994,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.55,
+      "simulationSeed": 2026101385,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 1,
@@ -6243,25 +6327,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          5,
-          4,
-          3,
           0,
+          2,
+          2,
+          1,
+          1,
           4,
-          3,
           4,
-          3
+          1,
+          1
         ],
         "finalScores": [
           25,
-          20,
-          20,
-          15
+          12,
+          16,
+          25
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 86,
@@ -6306,9 +6391,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 484579162,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.638,
+      "simulationSeed": 2026101386,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6316,25 +6401,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          5,
+          1,
+          0,
+          1,
           2,
-          4,
-          4,
-          3,
+          0,
+          0,
+          0,
           5,
-          4,
-          4
+          3
         ],
         "finalScores": [
-          25,
-          20,
-          20,
+          27,
+          22,
+          18,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 87,
@@ -6379,9 +6465,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 684286400,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.681,
+      "simulationSeed": 2026101387,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6389,25 +6475,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
+          4,
           5,
           2,
-          3,
-          2,
-          5,
-          5,
-          5,
-          4
+          1,
+          1,
+          0,
+          1,
+          0,
+          2
         ],
         "finalScores": [
-          30,
+          32,
+          12,
           10,
-          10,
-          30
+          29
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 88,
@@ -6452,9 +6539,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 519751915,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.73,
+      "simulationSeed": 2026101388,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6473,14 +6560,15 @@
           4
         ],
         "finalScores": [
-          20,
-          20,
-          15,
+          24,
+          19,
+          12,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 89,
@@ -6525,9 +6613,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 1553748651,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.739,
+      "simulationSeed": 2026101389,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6546,14 +6634,15 @@
           3
         ],
         "finalScores": [
-          20,
-          15,
+          21,
+          13,
           15,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 90,
@@ -6598,9 +6687,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 1271092810,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.71,
+      "simulationSeed": 2026101390,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 1,
@@ -6608,25 +6697,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          4,
-          3,
+          2,
           3,
           4,
+          4,
+          2,
           3,
           3,
-          5,
+          2,
           1
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          15
+          28,
+          12,
+          17,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 91,
@@ -6671,9 +6761,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.7625,
-      "simulationSeed": 1861647698,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.618,
+      "simulationSeed": 2026101391,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6692,14 +6782,15 @@
           1
         ],
         "finalScores": [
-          25,
-          20,
-          15,
-          25
+          27,
+          19,
+          16,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 92,
@@ -6744,9 +6835,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.75,
-      "simulationSeed": 752713657,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.658,
+      "simulationSeed": 2026101392,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6755,24 +6846,25 @@
       "winningWitness": {
         "facesByDieId": [
           4,
-          0,
-          5,
           4,
+          0,
+          0,
           5,
           0,
-          1,
-          2,
-          5
+          0,
+          0,
+          2
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          20
+          23,
+          18,
+          21,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 93,
@@ -6817,9 +6909,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.75,
-      "simulationSeed": 451719755,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.81,
+      "simulationSeed": 2026101393,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6838,14 +6930,15 @@
           1
         ],
         "finalScores": [
-          30,
-          10,
-          15,
+          28,
+          12,
+          12,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 94,
@@ -6890,9 +6983,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.7375,
-      "simulationSeed": 914140401,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.44,
+      "simulationSeed": 2026101394,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -6911,14 +7004,15 @@
           1
         ],
         "finalScores": [
-          30,
-          20,
-          20,
-          10
+          28,
+          15,
+          25,
+          9
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 95,
@@ -6963,9 +7057,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.75,
-      "simulationSeed": 1120962034,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.823,
+      "simulationSeed": 2026101395,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 1,
@@ -6984,14 +7078,15 @@
           1
         ],
         "finalScores": [
-          25,
-          15,
-          10,
-          15
+          27,
+          13,
+          8,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 96,
@@ -7036,9 +7131,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.7375,
-      "simulationSeed": 1134254312,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.756,
+      "simulationSeed": 2026101396,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -7057,14 +7152,15 @@
           2
         ],
         "finalScores": [
-          30,
-          25,
-          15,
-          20
+          31,
+          22,
+          17,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 97,
@@ -7109,9 +7205,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.7375,
-      "simulationSeed": 2021772595,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.633,
+      "simulationSeed": 2026101397,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -7119,25 +7215,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
           2,
-          4,
-          1,
           0,
-          3,
+          0,
+          5,
+          4,
           2,
           2,
-          2
+          1,
+          5
         ],
         "finalScores": [
-          25,
-          25,
-          10,
-          20
+          30,
+          23,
+          13,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 98,
@@ -7182,9 +7279,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.7375,
-      "simulationSeed": 1305820868,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.452,
+      "simulationSeed": 2026101398,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -7192,25 +7289,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          3,
           0,
-          5,
-          5,
-          3,
-          4,
-          5,
-          3,
-          2
+          0,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          25,
+          17,
+          17,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 99,
@@ -7255,9 +7353,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.725,
-      "simulationSeed": 1295757,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.523,
+      "simulationSeed": 2026101399,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 0,
@@ -7276,14 +7374,15 @@
           1
         ],
         "finalScores": [
-          35,
-          20,
-          10,
-          15
+          32,
+          19,
+          11,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 100,
@@ -7328,9 +7427,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.7375,
-      "simulationSeed": 2146523309,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.47,
+      "simulationSeed": 2026101400,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 60,
         "reroll": 1,
@@ -7338,25 +7437,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          2,
           4,
-          0,
-          0,
-          1,
           3,
+          2,
+          1,
           5,
-          5,
+          4,
           2,
           4
         ],
         "finalScores": [
-          15,
-          15,
-          10,
-          15
+          31,
+          12,
+          16,
+          29
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 101,
@@ -7401,9 +7501,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.725,
-      "simulationSeed": 267916867,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.794,
+      "simulationSeed": 2026101401,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7422,14 +7522,15 @@
           0
         ],
         "finalScores": [
+          27,
           25,
-          25,
-          10,
-          10
+          7,
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 102,
@@ -7474,9 +7575,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.725,
-      "simulationSeed": 1828147374,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.553,
+      "simulationSeed": 2026101402,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7495,14 +7596,15 @@
           4
         ],
         "finalScores": [
-          30,
-          10,
+          29,
+          12,
           15,
-          20
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 103,
@@ -7547,9 +7649,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.725,
-      "simulationSeed": 841224134,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.728,
+      "simulationSeed": 2026101403,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7569,13 +7671,14 @@
         ],
         "finalScores": [
           25,
+          18,
           15,
-          20,
-          20
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 104,
@@ -7620,9 +7723,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.7125,
-      "simulationSeed": 842735842,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.56,
+      "simulationSeed": 2026101404,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7641,14 +7744,15 @@
           2
         ],
         "finalScores": [
-          30,
-          20,
-          25,
-          15
+          29,
+          17,
+          22,
+          20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 105,
@@ -7693,9 +7797,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.7125,
-      "simulationSeed": 115808499,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.941,
+      "simulationSeed": 2026101405,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 1,
@@ -7714,14 +7818,15 @@
           4
         ],
         "finalScores": [
-          25,
-          10,
+          28,
+          11,
           15,
-          20
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 106,
@@ -7766,9 +7871,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.7125,
-      "simulationSeed": 1457244783,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.733,
+      "simulationSeed": 2026101406,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7787,14 +7892,15 @@
           2
         ],
         "finalScores": [
-          25,
-          20,
-          15,
+          27,
+          17,
+          14,
           25
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 107,
@@ -7839,9 +7945,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.7,
-      "simulationSeed": 926844837,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.664,
+      "simulationSeed": 2026101407,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7860,14 +7966,15 @@
           0
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          25
+          26,
+          13,
+          23,
+          26
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 108,
@@ -7912,9 +8019,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.7125,
-      "simulationSeed": 2080213878,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.389,
+      "simulationSeed": 2026101408,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7933,14 +8040,15 @@
           4
         ],
         "finalScores": [
-          30,
-          20,
-          20,
+          27,
+          19,
+          23,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 109,
@@ -7985,9 +8093,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.6875,
-      "simulationSeed": 427621233,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.537,
+      "simulationSeed": 2026101409,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -7995,25 +8103,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          1,
           0,
-          1,
-          5,
-          3,
-          1,
-          3,
           4,
-          4
+          5,
+          2,
+          0,
+          4,
+          4,
+          3
         ],
         "finalScores": [
-          30,
-          30,
-          15,
-          10
+          20,
+          19,
+          10,
+          8
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 110,
@@ -8058,9 +8167,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.7,
-      "simulationSeed": 1203316833,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.66,
+      "simulationSeed": 2026101410,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 1,
@@ -8068,25 +8177,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          3,
           5,
-          4,
           0,
           2,
+          3,
+          2,
           4,
-          0,
-          4,
-          3
+          3,
+          5
         ],
         "finalScores": [
-          20,
+          27,
+          21,
           10,
-          10,
-          20
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 111,
@@ -8131,9 +8241,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.6875,
-      "simulationSeed": 595521113,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.709,
+      "simulationSeed": 2026101411,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8152,14 +8262,15 @@
           1
         ],
         "finalScores": [
-          25,
+          24,
+          16,
           20,
-          15,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 112,
@@ -8204,9 +8315,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.675,
-      "simulationSeed": 780069245,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.514,
+      "simulationSeed": 2026101412,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8227,12 +8338,13 @@
         "finalScores": [
           30,
           20,
-          15,
-          10
+          13,
+          9
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 113,
@@ -8277,9 +8389,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.6875,
-      "simulationSeed": 1184887282,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.685,
+      "simulationSeed": 2026101413,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8287,25 +8399,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          1,
-          1,
-          0,
+          3,
           2,
-          2,
-          4,
-          4,
-          0
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          4
         ],
         "finalScores": [
-          20,
-          20,
-          20,
-          20
+          25,
+          18,
+          22,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 114,
@@ -8350,9 +8463,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.6625,
-      "simulationSeed": 1131856736,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.647,
+      "simulationSeed": 2026101414,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8372,13 +8485,14 @@
         ],
         "finalScores": [
           25,
-          20,
-          25,
-          15
+          18,
+          22,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 115,
@@ -8423,9 +8537,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.675,
-      "simulationSeed": 1743851888,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.598,
+      "simulationSeed": 2026101415,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 1,
@@ -8433,25 +8547,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
-          4,
-          4,
-          3,
           2,
-          4,
-          5,
+          1,
+          3,
+          3,
+          1,
+          2,
           0,
-          3
+          0,
+          5
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          15
+          24,
+          19,
+          21,
+          5
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 116,
@@ -8496,9 +8611,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.6625,
-      "simulationSeed": 1581641767,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.421,
+      "simulationSeed": 2026101416,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8517,14 +8632,15 @@
           5
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          15
+          24,
+          15,
+          19,
+          16
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 117,
@@ -8569,9 +8685,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.65,
-      "simulationSeed": 905597768,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.519,
+      "simulationSeed": 2026101417,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8579,25 +8695,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
           1,
           5,
           0,
-          0,
-          4,
+          5,
+          3,
+          5,
           1,
-          3,
-          3,
-          1
+          3
         ],
         "finalScores": [
-          15,
-          15,
-          15,
-          15
+          35,
+          16,
+          24,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 118,
@@ -8642,9 +8759,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.65,
-      "simulationSeed": 670106956,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.509,
+      "simulationSeed": 2026101418,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8663,14 +8780,15 @@
           0
         ],
         "finalScores": [
-          25,
-          10,
-          25,
-          20
+          26,
+          9,
+          26,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 119,
@@ -8715,9 +8833,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.65,
-      "simulationSeed": 1378728853,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.601,
+      "simulationSeed": 2026101419,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 0,
@@ -8736,14 +8854,15 @@
           2
         ],
         "finalScores": [
-          30,
-          15,
-          10,
-          25
+          32,
+          12,
+          8,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 120,
@@ -8788,9 +8907,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.65,
-      "simulationSeed": 1139060339,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.759,
+      "simulationSeed": 2026101420,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 65,
         "reroll": 1,
@@ -8798,25 +8917,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          4,
           3,
+          2,
+          3,
+          4,
+          4,
           1,
-          5,
           3,
-          5,
-          3,
-          5,
-          5,
-          5
+          2
         ],
         "finalScores": [
-          30,
-          15,
-          10,
-          25
+          28,
+          19,
+          5,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 121,
@@ -8861,9 +8981,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.65,
-      "simulationSeed": 1583366286,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.663,
+      "simulationSeed": 2026101421,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -8882,14 +9002,15 @@
           5
         ],
         "finalScores": [
+          21,
+          11,
           20,
-          10,
-          20,
-          20
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 122,
@@ -8934,9 +9055,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.6375,
-      "simulationSeed": 1028477992,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.609,
+      "simulationSeed": 2026101422,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -8955,14 +9076,15 @@
           2
         ],
         "finalScores": [
-          25,
-          10,
-          20,
-          20
+          23,
+          12,
+          18,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 123,
@@ -9007,9 +9129,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.6375,
-      "simulationSeed": 246929949,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.434,
+      "simulationSeed": 2026101423,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9017,25 +9139,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
           3,
-          3,
-          5,
-          3,
-          3,
+          1,
           2,
           4,
-          0
+          3,
+          2,
+          0,
+          5,
+          2
         ],
         "finalScores": [
-          25,
           20,
-          15,
-          25
+          20,
+          16,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 124,
@@ -9080,9 +9203,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 36973804,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.568,
+      "simulationSeed": 2026101424,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9090,25 +9213,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          3,
+          2,
+          2,
+          1,
+          3,
           4,
-          3,
-          3,
+          2,
           5,
-          5,
-          3,
-          5,
-          3,
-          4
+          3
         ],
         "finalScores": [
-          20,
-          20,
+          28,
+          18,
           10,
-          20
+          28
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 125,
@@ -9153,9 +9277,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.6375,
-      "simulationSeed": 1710520838,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.239,
+      "simulationSeed": 2026101425,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 1,
@@ -9163,25 +9287,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          1,
           3,
-          0,
-          0,
+          2,
+          4,
           1,
-          1,
-          0,
-          5,
-          1
+          2,
+          4,
+          4,
+          5
         ],
         "finalScores": [
-          25,
-          15,
-          10,
-          20
+          23,
+          16,
+          14,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 126,
@@ -9226,9 +9351,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 188984488,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.697,
+      "simulationSeed": 2026101426,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9247,14 +9372,15 @@
           5
         ],
         "finalScores": [
-          40,
-          25,
-          5,
-          10
+          34,
+          23,
+          6,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 127,
@@ -9299,9 +9425,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 767289119,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.588,
+      "simulationSeed": 2026101427,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9322,12 +9448,13 @@
         "finalScores": [
           25,
           15,
-          20,
-          25
+          17,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 128,
@@ -9372,9 +9499,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 238410666,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.616,
+      "simulationSeed": 2026101428,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9382,25 +9509,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          5,
           0,
-          3,
+          0,
+          4,
           5,
-          2,
           3,
           2,
-          1,
-          5,
-          5
+          0,
+          0
         ],
         "finalScores": [
-          25,
+          30,
           10,
-          25,
-          25
+          17,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 129,
@@ -9445,9 +9573,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 1019104044,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.575,
+      "simulationSeed": 2026101429,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9455,25 +9583,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          0,
           3,
           2,
-          0,
-          5,
-          4,
-          4,
+          1,
           3,
-          3
+          5,
+          0,
+          2,
+          1,
+          0
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          20
+          26,
+          22,
+          21,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 130,
@@ -9518,9 +9647,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 785658707,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.7,
+      "simulationSeed": 2026101430,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 1,
@@ -9539,14 +9668,15 @@
           2
         ],
         "finalScores": [
-          25,
-          25,
-          20,
-          15
+          24,
+          23,
+          18,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 131,
@@ -9591,9 +9721,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 1821866189,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.488,
+      "simulationSeed": 2026101431,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9602,24 +9732,25 @@
       "winningWitness": {
         "facesByDieId": [
           4,
-          4,
-          0,
-          0,
-          4,
+          3,
+          2,
+          1,
           0,
           5,
+          5,
           3,
-          0
+          5
         ],
         "finalScores": [
-          15,
-          15,
-          15,
-          15
+          23,
+          20,
+          12,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 132,
@@ -9664,9 +9795,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.6125,
-      "simulationSeed": 998879934,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.344,
+      "simulationSeed": 2026101432,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9685,14 +9816,15 @@
           5
         ],
         "finalScores": [
-          25,
-          15,
-          15,
-          25
+          22,
+          20,
+          13,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 133,
@@ -9737,9 +9869,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.625,
-      "simulationSeed": 1895714915,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.348,
+      "simulationSeed": 2026101433,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9747,25 +9879,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          4,
+          3,
           0,
           2,
-          2,
-          1,
           3,
-          4,
-          4,
-          1,
-          1
+          3,
+          5,
+          3,
+          0
         ],
         "finalScores": [
-          25,
-          25,
-          15,
+          21,
+          16,
+          21,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 134,
@@ -9810,9 +9943,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.6,
-      "simulationSeed": 298547894,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.674,
+      "simulationSeed": 2026101434,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9831,14 +9964,15 @@
           2
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          15
+          24,
+          19,
+          21,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 135,
@@ -9883,9 +10017,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.6125,
-      "simulationSeed": 1184050807,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.427,
+      "simulationSeed": 2026101435,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 1,
@@ -9893,25 +10027,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          2,
+          0,
           4,
           2,
-          2,
+          5,
+          0,
+          4,
+          3,
           1,
-          4,
-          2,
-          4,
           1
         ],
         "finalScores": [
           30,
-          25,
-          15,
-          15
+          29,
+          7,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 136,
@@ -9956,9 +10091,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.6,
-      "simulationSeed": 984974263,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.493,
+      "simulationSeed": 2026101436,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -9977,14 +10112,15 @@
           5
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          20
+          29,
+          16,
+          19,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 137,
@@ -10029,9 +10165,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.5875,
-      "simulationSeed": 1260503541,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.652,
+      "simulationSeed": 2026101437,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -10050,14 +10186,15 @@
           0
         ],
         "finalScores": [
-          30,
+          28,
           15,
-          20,
-          20
+          17,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 138,
@@ -10102,9 +10239,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.6,
-      "simulationSeed": 1862062832,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.307,
+      "simulationSeed": 2026101438,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -10123,14 +10260,15 @@
           3
         ],
         "finalScores": [
-          25,
-          10,
-          25,
-          20
+          22,
+          14,
+          21,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 139,
@@ -10175,9 +10313,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.575,
-      "simulationSeed": 1881523189,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.159,
+      "simulationSeed": 2026101439,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 0,
@@ -10185,25 +10323,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          5,
-          5,
+          1,
+          4,
           3,
+          4,
+          3,
+          0,
           1,
-          2,
-          1,
-          5,
-          1
+          4,
+          4
         ],
         "finalScores": [
-          20,
-          10,
-          20,
-          20
+          27,
+          16,
+          26,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 140,
@@ -10248,9 +10387,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.575,
-      "simulationSeed": 85653344,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.354,
+      "simulationSeed": 2026101440,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 70,
         "reroll": 1,
@@ -10258,25 +10397,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          3,
+          2,
           0,
           3,
-          4,
-          1,
           2,
-          3,
-          5,
-          1,
-          5
+          4,
+          2,
+          2,
+          4
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          20
+          28,
+          18,
+          27,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 141,
@@ -10321,9 +10461,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.575,
-      "simulationSeed": 1891335971,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.318,
+      "simulationSeed": 2026101441,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10331,25 +10471,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          5,
+          1,
           2,
           2,
+          1,
           3,
-          5,
-          4,
-          0,
-          2
+          1,
+          2,
+          2,
+          4
         ],
         "finalScores": [
-          20,
-          20,
+          21,
           15,
+          19,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 142,
@@ -10394,9 +10535,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.5625,
-      "simulationSeed": 907887424,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.536,
+      "simulationSeed": 2026101442,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10415,14 +10556,15 @@
           2
         ],
         "finalScores": [
-          25,
-          25,
+          24,
+          24,
           15,
-          20
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 143,
@@ -10467,9 +10609,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.575,
-      "simulationSeed": 2102098710,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.442,
+      "simulationSeed": 2026101443,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10477,25 +10619,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          5,
+          1,
           2,
           1,
           5,
-          5,
-          0,
-          0,
           2,
           2,
-          5
+          1,
+          4
         ],
         "finalScores": [
+          31,
           25,
-          25,
-          10,
-          20
+          9,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 144,
@@ -10540,9 +10683,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.5625,
-      "simulationSeed": 1725091530,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.292,
+      "simulationSeed": 2026101444,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10550,25 +10693,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          1,
           5,
-          2,
-          2,
           4,
           1,
-          4,
-          2,
-          4,
-          5
+          3,
+          1,
+          0,
+          0,
+          1
         ],
         "finalScores": [
-          20,
-          20,
-          15,
-          20
+          21,
+          18,
+          12,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 145,
@@ -10613,9 +10757,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.5625,
-      "simulationSeed": 1495168062,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.321,
+      "simulationSeed": 2026101445,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 1,
@@ -10623,25 +10767,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          3,
+          2,
+          5,
+          2,
+          4,
+          2,
           0,
-          5,
-          5,
-          3,
-          4,
-          4,
-          3,
-          3,
-          0
+          1,
+          4
         ],
         "finalScores": [
-          25,
-          20,
-          15,
-          25
+          27,
+          22,
+          13,
+          20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 146,
@@ -10686,9 +10831,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.5625,
-      "simulationSeed": 1809182591,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.427,
+      "simulationSeed": 2026101446,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10707,14 +10852,15 @@
           5
         ],
         "finalScores": [
-          20,
-          15,
-          20,
-          15
+          21,
+          17,
+          21,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 147,
@@ -10759,9 +10905,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.55,
-      "simulationSeed": 1156731912,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.539,
+      "simulationSeed": 2026101447,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10781,13 +10927,14 @@
         ],
         "finalScores": [
           25,
-          15,
-          20,
-          15
+          12,
+          17,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 148,
@@ -10832,9 +10979,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.5625,
-      "simulationSeed": 1897518932,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.321,
+      "simulationSeed": 2026101448,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10853,14 +11000,15 @@
           1
         ],
         "finalScores": [
-          20,
-          10,
-          10,
-          15
+          17,
+          12,
+          11,
+          12
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 149,
@@ -10905,9 +11053,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.5375,
-      "simulationSeed": 1750738564,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.333,
+      "simulationSeed": 2026101449,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -10915,25 +11063,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          2,
+          0,
           4,
+          3,
           4,
           5,
-          0,
-          0,
-          0,
-          0,
-          0,
-          4
+          5,
+          2,
+          1
         ],
         "finalScores": [
-          25,
-          20,
-          25,
-          20
+          22,
+          14,
+          19,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 150,
@@ -10978,9 +11127,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.5375,
-      "simulationSeed": 862298711,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.297,
+      "simulationSeed": 2026101450,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 1,
@@ -10999,14 +11148,15 @@
           5
         ],
         "finalScores": [
-          20,
-          20,
-          15,
-          20
+          21,
+          21,
+          13,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 151,
@@ -11051,9 +11201,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.525,
-      "simulationSeed": 1154902912,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.254,
+      "simulationSeed": 2026101451,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11072,14 +11222,15 @@
           5
         ],
         "finalScores": [
-          30,
-          20,
-          20,
-          20
+          27,
+          19,
+          19,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 152,
@@ -11124,9 +11275,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.5125,
-      "simulationSeed": 568541070,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.149,
+      "simulationSeed": 2026101452,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11134,25 +11285,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          0,
-          1,
-          2,
-          4,
-          1,
-          4,
           3,
+          1,
+          3,
+          3,
+          4,
+          5,
           2,
-          5
+          0,
+          1
         ],
         "finalScores": [
-          30,
-          10,
-          25,
-          20
+          26,
+          9,
+          26,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 153,
@@ -11197,9 +11349,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.525,
-      "simulationSeed": 1710926920,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.447,
+      "simulationSeed": 2026101453,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11220,12 +11372,13 @@
         "finalScores": [
           25,
           20,
-          25,
+          24,
           15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 154,
@@ -11270,9 +11423,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.5125,
-      "simulationSeed": 1263144841,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.382,
+      "simulationSeed": 2026101454,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11291,14 +11444,15 @@
           0
         ],
         "finalScores": [
-          25,
-          25,
-          10,
-          25
+          27,
+          24,
+          8,
+          26
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 155,
@@ -11343,9 +11497,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.5125,
-      "simulationSeed": 592488515,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.645,
+      "simulationSeed": 2026101455,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 1,
@@ -11364,14 +11518,15 @@
           1
         ],
         "finalScores": [
-          25,
-          10,
-          20,
-          20
+          27,
+          11,
+          16,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 156,
@@ -11416,9 +11571,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.5125,
-      "simulationSeed": 1925934178,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.283,
+      "simulationSeed": 2026101456,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11426,25 +11581,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
+          4,
+          5,
+          5,
+          3,
           4,
           0,
-          3,
-          2,
-          3,
-          1,
-          4,
-          4,
-          2
+          5,
+          4
         ],
         "finalScores": [
-          25,
-          25,
+          23,
           20,
+          19,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 157,
@@ -11489,9 +11645,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.5,
-      "simulationSeed": 1071731134,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.499,
+      "simulationSeed": 2026101457,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11510,14 +11666,15 @@
           1
         ],
         "finalScores": [
-          30,
-          10,
-          25,
-          10
+          31,
+          11,
+          23,
+          7
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 158,
@@ -11562,9 +11719,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.5,
-      "simulationSeed": 348985483,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.568,
+      "simulationSeed": 2026101458,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11572,25 +11729,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
-          1,
-          5,
-          5,
-          1,
-          5,
+          3,
+          4,
           2,
+          3,
           5,
-          0
+          0,
+          2,
+          2,
+          3
         ],
         "finalScores": [
-          20,
-          20,
-          15,
-          20
+          25,
+          19,
+          21,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 159,
@@ -11635,9 +11793,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.5,
-      "simulationSeed": 1223562617,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.46,
+      "simulationSeed": 2026101459,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 0,
@@ -11645,25 +11803,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
           4,
-          3,
-          5,
           2,
-          4,
           0,
-          4,
+          5,
+          5,
+          1,
+          3,
+          0,
           1
         ],
         "finalScores": [
-          20,
-          20,
-          10,
-          15
+          27,
+          27,
+          11,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 160,
@@ -11708,9 +11867,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.5,
-      "simulationSeed": 1095142271,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.666,
+      "simulationSeed": 2026101460,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 75,
         "reroll": 1,
@@ -11729,14 +11888,15 @@
           4
         ],
         "finalScores": [
-          30,
-          25,
-          10,
+          31,
+          20,
+          12,
           10
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 161,
@@ -11781,9 +11941,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.4875,
-      "simulationSeed": 1434052962,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.572,
+      "simulationSeed": 2026101461,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -11791,25 +11951,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          2,
+          3,
           1,
+          3,
           5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          2
+          2,
+          4,
+          4,
+          5
         ],
         "finalScores": [
           25,
           20,
-          25,
-          20
+          15,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 162,
@@ -11854,9 +12015,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.475,
-      "simulationSeed": 765090635,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.365,
+      "simulationSeed": 2026101462,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -11875,14 +12036,15 @@
           3
         ],
         "finalScores": [
-          25,
-          25,
+          24,
+          24,
           15,
-          20
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 163,
@@ -11927,9 +12089,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.4875,
-      "simulationSeed": 1904798648,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.122,
+      "simulationSeed": 2026101463,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -11937,25 +12099,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          1,
-          1,
           0,
-          4,
+          0,
           2,
           3,
-          2,
-          1
+          4,
+          0,
+          1,
+          1,
+          5
         ],
         "finalScores": [
-          25,
+          26,
           20,
           20,
-          25
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 164,
@@ -12000,9 +12163,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.4625,
-      "simulationSeed": 1360002791,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.297,
+      "simulationSeed": 2026101464,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12010,25 +12173,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          2,
           0,
           0,
           2,
-          5,
-          5,
+          3,
+          4,
+          0,
           1,
-          3
+          2,
+          0
         ],
         "finalScores": [
-          25,
-          15,
-          20,
-          25
+          23,
+          22,
+          18,
+          20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 165,
@@ -12073,9 +12237,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.4625,
-      "simulationSeed": 213229016,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.427,
+      "simulationSeed": 2026101465,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 1,
@@ -12094,14 +12258,15 @@
           1
         ],
         "finalScores": [
-          25,
-          15,
+          26,
+          16,
           20,
-          15
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 166,
@@ -12146,9 +12311,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.4625,
-      "simulationSeed": 1696312327,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.511,
+      "simulationSeed": 2026101466,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12167,14 +12332,15 @@
           4
         ],
         "finalScores": [
-          25,
-          20,
-          20,
+          27,
+          17,
+          21,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 167,
@@ -12219,9 +12385,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.45,
-      "simulationSeed": 289458631,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.36,
+      "simulationSeed": 2026101467,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12229,25 +12395,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
-          4,
-          5,
           3,
+          4,
+          3,
+          1,
           5,
-          0,
           5,
-          5,
-          1
+          4,
+          2,
+          0
         ],
         "finalScores": [
-          20,
-          15,
-          20,
-          20
+          25,
+          19,
+          22,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 168,
@@ -12292,9 +12459,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.4625,
-      "simulationSeed": 1857804154,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.697,
+      "simulationSeed": 2026101468,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12313,14 +12480,15 @@
           3
         ],
         "finalScores": [
-          35,
-          5,
-          25,
-          20
+          36,
+          3,
+          21,
+          23
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 169,
@@ -12365,9 +12533,9 @@
           5
         ]
       ],
-      "estimatedWinRate": 0.45,
-      "simulationSeed": 1276095694,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.364,
+      "simulationSeed": 2026101469,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12387,13 +12555,14 @@
         ],
         "finalScores": [
           20,
-          20,
-          20,
-          20
+          19,
+          19,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 170,
@@ -12438,9 +12607,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.45,
-      "simulationSeed": 515589803,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.445,
+      "simulationSeed": 2026101470,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 1,
@@ -12459,14 +12628,15 @@
           4
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          25
+          28,
+          18,
+          15,
+          27
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 171,
@@ -12511,9 +12681,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.45,
-      "simulationSeed": 1280178819,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.317,
+      "simulationSeed": 2026101471,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12532,14 +12702,15 @@
           0
         ],
         "finalScores": [
-          25,
-          15,
-          15,
+          28,
+          11,
+          14,
           25
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 172,
@@ -12584,9 +12755,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.4375,
-      "simulationSeed": 1543113856,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.442,
+      "simulationSeed": 2026101472,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12605,14 +12776,15 @@
           5
         ],
         "finalScores": [
-          35,
-          30,
-          10,
-          15
+          32,
+          27,
+          12,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 173,
@@ -12657,9 +12829,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.45,
-      "simulationSeed": 1457593822,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.372,
+      "simulationSeed": 2026101473,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12667,25 +12839,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
+          2,
+          4,
           2,
           3,
-          3,
-          5,
-          5,
-          3,
           4,
-          1
+          3,
+          3,
+          1,
+          3
         ],
         "finalScores": [
           20,
-          15,
-          15,
-          20
+          10,
+          18,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 174,
@@ -12730,9 +12903,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.4375,
-      "simulationSeed": 2017182092,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.295,
+      "simulationSeed": 2026101474,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12740,25 +12913,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          4,
           2,
-          5,
-          3,
-          3,
-          5,
           1,
-          2,
+          1,
+          1,
           0,
-          3
+          0,
+          0,
+          2
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          20
+          28,
+          19,
+          24,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 175,
@@ -12803,9 +12977,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.4375,
-      "simulationSeed": 1719827429,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.438,
+      "simulationSeed": 2026101475,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 1,
@@ -12824,14 +12998,15 @@
           2
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          20
+          26,
+          19,
+          21,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 176,
@@ -12876,9 +13051,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.425,
-      "simulationSeed": 770333055,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.483,
+      "simulationSeed": 2026101476,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12897,14 +13072,15 @@
           0
         ],
         "finalScores": [
-          25,
-          25,
-          15,
-          20
+          29,
+          22,
+          16,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 177,
@@ -12949,9 +13125,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.425,
-      "simulationSeed": 1773299514,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.249,
+      "simulationSeed": 2026101477,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -12961,23 +13137,24 @@
         "facesByDieId": [
           4,
           2,
-          4,
-          0,
-          5,
           3,
+          2,
+          2,
+          2,
+          2,
           5,
-          3,
           3
         ],
         "finalScores": [
-          20,
-          15,
-          20,
-          20
+          23,
+          12,
+          23,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 178,
@@ -13022,9 +13199,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.425,
-      "simulationSeed": 1464421728,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.26,
+      "simulationSeed": 2026101478,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -13032,25 +13209,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          4,
+          0,
+          0,
           3,
-          1,
-          4,
-          1,
+          5,
           1,
           3,
-          1,
-          3
+          3,
+          5,
+          0
         ],
         "finalScores": [
-          30,
-          30,
-          15,
-          15
+          29,
+          20,
+          16,
+          20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 179,
@@ -13095,9 +13273,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.4,
-      "simulationSeed": 1692968917,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.678,
+      "simulationSeed": 2026101479,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 0,
@@ -13118,12 +13296,13 @@
         "finalScores": [
           30,
           10,
-          25,
-          25
+          22,
+          26
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 180,
@@ -13168,9 +13347,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.4125,
-      "simulationSeed": 1956020871,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.417,
+      "simulationSeed": 2026101480,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 80,
         "reroll": 1,
@@ -13189,14 +13368,15 @@
           2
         ],
         "finalScores": [
-          25,
-          25,
-          15,
-          15
+          26,
+          24,
+          13,
+          16
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 181,
@@ -13241,9 +13421,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.375,
-      "simulationSeed": 1252953038,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.322,
+      "simulationSeed": 2026101481,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13251,25 +13431,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
           4,
-          4,
-          0,
-          1,
-          4,
+          2,
           3,
           2,
+          2,
+          2,
+          4,
+          4,
           3
         ],
         "finalScores": [
-          20,
-          20,
-          15,
+          28,
+          14,
+          26,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 182,
@@ -13314,9 +13495,9 @@
           1
         ]
       ],
-      "estimatedWinRate": 0.35,
-      "simulationSeed": 178194849,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.243,
+      "simulationSeed": 2026101482,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13324,25 +13505,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          1,
+          0,
+          0,
+          0,
           2,
-          5,
-          4,
           2,
           2,
-          5,
-          4,
-          3,
-          2
+          1,
+          0
         ],
         "finalScores": [
-          30,
-          25,
-          10,
-          25
+          22,
+          22,
+          14,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 183,
@@ -13387,9 +13569,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.3625,
-      "simulationSeed": 1496969511,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.035,
+      "simulationSeed": 2026101483,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13397,25 +13579,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
+          1,
+          5,
+          5,
+          0,
           1,
           0,
-          5,
-          4,
-          2,
-          4,
-          5,
-          4,
-          1
+          1,
+          0
         ],
         "finalScores": [
-          25,
-          25,
-          15,
-          20
+          29,
+          19,
+          27,
+          13
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 184,
@@ -13460,9 +13643,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.3125,
-      "simulationSeed": 1010214148,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.417,
+      "simulationSeed": 2026101484,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13481,14 +13664,15 @@
           1
         ],
         "finalScores": [
-          25,
+          26,
           20,
-          25,
-          20
+          23,
+          19
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 185,
@@ -13533,9 +13717,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.35,
-      "simulationSeed": 1452238390,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.121,
+      "simulationSeed": 2026101485,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 1,
@@ -13545,23 +13729,24 @@
         "facesByDieId": [
           1,
           2,
+          2,
+          5,
           1,
-          2,
           4,
-          2,
-          0,
           3,
-          2
+          4,
+          4
         ],
         "finalScores": [
-          20,
-          15,
-          20,
-          15
+          26,
+          7,
+          25,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 186,
@@ -13606,9 +13791,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.3125,
-      "simulationSeed": 1747114304,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.205,
+      "simulationSeed": 2026101486,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13627,14 +13812,15 @@
           5
         ],
         "finalScores": [
-          25,
-          15,
-          25,
+          30,
+          13,
+          22,
           20
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 187,
@@ -13679,9 +13865,9 @@
           4
         ]
       ],
-      "estimatedWinRate": 0.2875,
-      "simulationSeed": 2124141305,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.219,
+      "simulationSeed": 2026101487,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13689,25 +13875,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          2,
           5,
+          5,
+          2,
+          5,
+          0,
+          2,
           4,
-          2,
-          2,
-          5,
-          0,
-          0,
-          3,
-          5
+          4
         ],
         "finalScores": [
+          23,
           20,
-          20,
-          20,
-          20
+          23,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 188,
@@ -13752,9 +13939,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.3125,
-      "simulationSeed": 1928810741,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.251,
+      "simulationSeed": 2026101488,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13762,25 +13949,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          0,
+          1,
+          1,
+          0,
           4,
-          2,
-          3,
-          5,
-          2,
-          2,
-          3,
+          1,
           4,
-          5
+          4,
+          0
         ],
         "finalScores": [
-          25,
-          25,
-          25,
-          15
+          22,
+          22,
+          19,
+          22
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 189,
@@ -13825,9 +14013,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.275,
-      "simulationSeed": 870112066,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.388,
+      "simulationSeed": 2026101489,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13835,25 +14023,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
+          1,
+          2,
+          2,
+          1,
           4,
-          5,
-          5,
           1,
-          5,
-          1,
-          1,
-          5,
-          4
+          3,
+          0,
+          1
         ],
         "finalScores": [
-          25,
-          25,
-          25,
-          10
+          21,
+          21,
+          20,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 190,
@@ -13898,9 +14087,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.275,
-      "simulationSeed": 24184717,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.226,
+      "simulationSeed": 2026101490,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 1,
@@ -13919,14 +14108,15 @@
           3
         ],
         "finalScores": [
-          30,
+          32,
           20,
-          15,
+          11,
           25
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 191,
@@ -13971,9 +14161,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.2375,
-      "simulationSeed": 768465174,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.246,
+      "simulationSeed": 2026101491,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -13981,25 +14171,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          3,
           0,
-          5,
-          0,
-          3,
+          4,
+          4,
+          1,
           0,
           0,
-          5
+          1,
+          0,
+          4
         ],
         "finalScores": [
-          25,
-          20,
-          20,
-          25
+          28,
+          21,
+          24,
+          15
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 192,
@@ -14044,9 +14235,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.2,
-      "simulationSeed": 2088645151,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.181,
+      "simulationSeed": 2026101492,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14054,25 +14245,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          5,
-          4,
-          5,
+          2,
+          2,
           1,
-          5,
-          5,
-          3,
-          3,
-          4
+          0,
+          4,
+          4,
+          1,
+          0,
+          5
         ],
         "finalScores": [
-          20,
-          20,
+          23,
+          21,
           15,
-          20
+          10
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 193,
@@ -14117,9 +14309,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.225,
-      "simulationSeed": 1097290033,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.235,
+      "simulationSeed": 2026101493,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14127,25 +14319,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          0,
-          3,
-          4,
-          3,
-          4,
-          4,
+          2,
           3,
           2,
-          2
+          4,
+          3,
+          1,
+          1,
+          0,
+          1
         ],
         "finalScores": [
-          25,
+          28,
+          23,
           20,
-          25,
-          20
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 194,
@@ -14190,9 +14383,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.175,
-      "simulationSeed": 291425408,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.126,
+      "simulationSeed": 2026101494,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14201,24 +14394,25 @@
       "winningWitness": {
         "facesByDieId": [
           2,
-          5,
-          2,
-          3,
           1,
+          5,
+          5,
+          3,
           0,
+          2,
           5,
-          5,
-          5
+          1
         ],
         "finalScores": [
           25,
-          20,
-          25,
-          20
+          24,
+          22,
+          14
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 195,
@@ -14263,9 +14457,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.1875,
-      "simulationSeed": 1130288278,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.095,
+      "simulationSeed": 2026101495,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 1,
@@ -14284,14 +14478,15 @@
           0
         ],
         "finalScores": [
-          25,
-          15,
-          25,
-          10
+          27,
+          14,
+          26,
+          11
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 196,
@@ -14336,9 +14531,9 @@
           3
         ]
       ],
-      "estimatedWinRate": 0.175,
-      "simulationSeed": 1033512358,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.066,
+      "simulationSeed": 2026101496,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14357,14 +14552,15 @@
           0
         ],
         "finalScores": [
-          30,
-          30,
-          10,
-          20
+          33,
+          27,
+          7,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 197,
@@ -14409,9 +14605,9 @@
           2
         ]
       ],
-      "estimatedWinRate": 0.1375,
-      "simulationSeed": 543681948,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.219,
+      "simulationSeed": 2026101497,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14419,25 +14615,26 @@
       },
       "winningWitness": {
         "facesByDieId": [
-          1,
-          5,
           4,
-          4,
-          5,
-          1,
           2,
+          4,
+          3,
+          2,
+          3,
+          4,
           1,
-          4
+          1
         ],
         "finalScores": [
-          25,
-          25,
-          15,
-          20
+          27,
+          24,
+          20,
+          17
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 198,
@@ -14482,9 +14679,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.1625,
-      "simulationSeed": 1003697915,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.275,
+      "simulationSeed": 2026101498,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14503,14 +14700,15 @@
           4
         ],
         "finalScores": [
-          25,
+          27,
           20,
-          25,
-          20
+          23,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 199,
@@ -14555,9 +14753,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.075,
-      "simulationSeed": 2008231018,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.086,
+      "simulationSeed": 2026101499,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 0,
@@ -14576,14 +14774,15 @@
           5
         ],
         "finalScores": [
-          25,
-          25,
-          20,
-          20
+          28,
+          22,
+          17,
+          21
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     },
     {
       "id": 200,
@@ -14628,9 +14827,9 @@
           0
         ]
       ],
-      "estimatedWinRate": 0.1125,
-      "simulationSeed": 1059397225,
-      "simulationTrials": 80,
+      "estimatedWinRate": 0.3,
+      "simulationSeed": 2026101500,
+      "simulationTrials": 1000,
       "reward": {
         "coin": 85,
         "reroll": 1,
@@ -14649,14 +14848,15 @@
           0
         ],
         "finalScores": [
-          30,
-          25,
-          20,
-          15
+          26,
+          26,
+          18,
+          18
         ]
       },
       "tutorial": "",
-      "firstRollOverride": null
+      "firstRollOverride": null,
+      "balanceStatus": "simulated_not_playtested"
     }
   ]
 }
